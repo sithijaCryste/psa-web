@@ -187,33 +187,33 @@ $url = $protocol . $host . $uri;
                         <h1 class="blog-title"><?php echo($data['header']) ?></h1>
                         <div class="row">
 
-                            <ul class="social-u ">
+                        <ul class="social-u ">
                                 <li class="">
                                     <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo ($url); ?>" target="_blank">
                                         <i class="fab fa-facebook-f icon"></i> </a>
                                 </li>
 
                                 <li class="">
-                                    <a href="https://www.facebook.com/dialog/share?link=<?php echo ($url); ?>&text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0AMeeting%20Between%20the%20Asian%20Development%20Bank%20and%20National%20People’s%20Power%20-%20NPP%20News%0A"><i class="fa-brands fa-facebook-messenger icon"></i></a>
+                                    <a href="https://www.facebook.com/dialog/share?link=<?php echo ($url); ?>&text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0A<?php echo($data['header']) ?>A"><i class="fa-brands fa-facebook-messenger icon"></i></a>
                                 </li>
                                 <li class="">
-                                    <a href="https://wa.me/?text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0AMeeting%20Between%20the%20Asian%20Development%20Bank%20and%20National%20People’s%20Power%20-%20NPP%20News%0A<?php echo ($url); ?>" target="_blank"><i class="fa-brands fa-whatsapp icon"></i></a>
+                                    <a href="https://wa.me/?text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0A<?php echo($data['header']) ?>%0A<?php echo ($url); ?>" target="_blank"><i class="fa-brands fa-whatsapp icon"></i></a>
                                 </li>
                                 <li class="">
-                                    <a href="https://t.me/share/url?url=<?php echo ($url); ?>&text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0AMeeting%20Between%20the%20Asian%20Development%20Bank%20and%20National%20People’s%20Power%20-%20NPP%20News%0A"><i class="fa-brands fa-telegram icon"></i></a>
+                                    <a href="https://t.me/share/url?url=<?php echo ($url); ?>&text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0A<?php echo($data['header']) ?>%0A"><i class="fa-brands fa-telegram icon"></i></a>
                                 </li>
                                 <li class="">
-                                    <a href="https://twitter.com/intent/tweet?text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0AMeeting%20Between%20the%20Asian%20Development%20Bank%20and%20National%20People’s%20Power%20-%20NPP%20News%0A &url=<?php echo ($url); ?>" target="_blank"><i class="fab fa-twitter icon"></i></a>
+                                    <a href="https://twitter.com/intent/tweet?text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0<?php echo($data['header']) ?>%0A &url=<?php echo ($url); ?>" target="_blank"><i class="fab fa-twitter icon"></i></a>
                                 </li>
                                 <li class="">
-                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo ($url); ?>&title=PSA News"><i class="fab fa-linkedin-in icon"></i></a>
+                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo ($url); ?>&title=<?php echo($data['header']) ?>"><i class="fab fa-linkedin-in icon"></i></a>
                                 </li>
                                 <li class="">
-                                <a href="mailto:?subject=[Latest News PSA]&body=[Hi!%0AThere%20is%20something%20may%20interesting%20you:%0AMeeting%20Between%20the%20Asian%20Development%20Bank%20and%20National%20People’s%20Power%20-%20NPP%20News%0A<?php echo ($url); ?>]"><i class="fa-solid fa-envelope icon"></i></a>
-                                </li>
-                                <li class="">
+                                <a href="mailto:?subject=[Latest News PSA]&body=[Hi!%0AThere%20is%20something%20may%20interesting%20you:%0<?php echo($data['header']) ?>%0A<?php echo ($url); ?>]"><i class="fa-solid fa-envelope icon"></i></a>
+                            </li>
+                            <li class="">
                                 <input type="text" class="d-none" value="<?php echo ($url); ?>" id="myInput" disabled>
-                                    <a onclick="myFunction();"><i class="fa-solid fa-share icon"></i></a>
+                                <a onclick="myFunction();"><i class="fa-solid fa-share icon"></i></a>
                                 </li>
 
 
