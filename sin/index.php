@@ -219,17 +219,11 @@ if (empty($notice['path'])){
                                 <div class="d-table-cell ">
                                     <h2 class="text-uppercase  ">People's Struggle Alliance vision</h2>
                                     <p class=" text-white truncate1 ">
-                                        At PSA, we're redefining prosperity for Sri Lanka. Our vision is
-                                        a united future where economic growth, social well-being, and
-                                        environmental sustainability go hand in hand. We empower
-                                        individuals, strengthen communities, and champion innovation.
-                                        Our commitment to education and sustainable practices ensures a
-                                        prosperous tomorrow for all generations. Join us in this journey
-                                        of reshaping the future, where no one is left behind, and
-                                        together, we set new standards for success.
+                                    අපගේ මෙහෙවර සමාජ සාධාරණත්වය මත කේන්ද්‍රගත වේ. සමාන අවස්ථා සාධාරණ ප්‍රතිඵල ලබා දෙන සමාජයක් අපි අපේක්ෂා කරමු. පංතිය, වාර්ගිකත්වය, ආගම, භාෂාව, කුලය, ස්ථානය හෝ ස්ත්‍රී පුරුෂ භාවයේ වෙනස්කම් ජීවිත සපුරාලීමට සහ සමාන සහභාගීත්වයට බාධාවක් නොවන ලෝකයක් අපි ඉලක්ක කරමු. අපගේ ඉලක්කය වන්නේ අවස්ථා, සම්පත් සහ වරප්‍රසාද සාධාරණ ලෙස බෙදා හැරීම, සැබෑ ඇතුළත් කිරීම් සහ යුක්තිය ඇති සමාජයක් ගොඩනැගීමයි. උපදේශනය, අධ්‍යාපනය සහ සහයෝගීතාවය තුළින්, බාධක ඉවත් කිරීමට සහ සැමට දීප්තිමත්, සාධාරණ අනාගතයක් ගොඩනැගීමට අපි වෙහෙස නොබලා කටයුතු කරමු.                                    
+
                                     </p>
     
-                                    <a href="#about" class="btn btn-danger mt-5">Learn More</a>
+                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -249,10 +243,10 @@ if (empty($notice['path'])){
                                 <div class="d-table-cell ">
                                     <h2 class="text-uppercase  ">People's Struggle Alliance vision</h2>
                                     <p class=" text-white truncate1">
-                                        At PSA, we're redefining prosperity for Sri Lanka. Our vision is a united future where economic growth, social well-being, and environmental sustainability go hand in hand. We empower individuals, strengthen communities, and champion innovation. Our commitment to education and sustainable practices ensures a prosperous tomorrow for all generations. Join us in this journey of reshaping the future, where no one is left behind, and together, we set new standards for success.
+                                    අපගේ මෙහෙවර සමාජ සාධාරණත්වය මත කේන්ද්‍රගත වේ. සමාන අවස්ථා සාධාරණ ප්‍රතිඵල ලබා දෙන සමාජයක් අපි අපේක්ෂා කරමු. පංතිය, වාර්ගිකත්වය, ආගම, භාෂාව, කුලය, ස්ථානය හෝ ස්ත්‍රී පුරුෂ භාවයේ වෙනස්කම් ජීවිත සපුරාලීමට සහ සමාන සහභාගීත්වයට බාධාවක් නොවන ලෝකයක් අපි ඉලක්ක කරමු. අපගේ ඉලක්කය වන්නේ අවස්ථා, සම්පත් සහ වරප්‍රසාද සාධාරණ ලෙස බෙදා හැරීම, සැබෑ ඇතුළත් කිරීම් සහ යුක්තිය ඇති සමාජයක් ගොඩනැගීමයි. උපදේශනය, අධ්‍යාපනය සහ සහයෝගීතාවය තුළින්, බාධක ඉවත් කිරීමට සහ සැමට දීප්තිමත්, සාධාරණ අනාගතයක් ගොඩනැගීමට අපි වෙහෙස නොබලා කටයුතු කරමු.                                    
                                     </p>
     
-                                    <a href="#about" class="btn btn-danger mt-5">Learn More</a>
+                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -275,7 +269,7 @@ if (empty($notice['path'])){
                                     අපගේ මෙහෙවර සමාජ සාධාරණත්වය මත කේන්ද්‍රගත වේ. සමාන අවස්ථා සාධාරණ ප්‍රතිඵල ලබා දෙන සමාජයක් අපි අපේක්ෂා කරමු. පංතිය, වාර්ගිකත්වය, ආගම, භාෂාව, කුලය, ස්ථානය හෝ ස්ත්‍රී පුරුෂ භාවයේ වෙනස්කම් ජීවිත සපුරාලීමට සහ සමාන සහභාගීත්වයට බාධාවක් නොවන ලෝකයක් අපි ඉලක්ක කරමු. අපගේ ඉලක්කය වන්නේ අවස්ථා, සම්පත් සහ වරප්‍රසාද සාධාරණ ලෙස බෙදා හැරීම, සැබෑ ඇතුළත් කිරීම් සහ යුක්තිය ඇති සමාජයක් ගොඩනැගීමයි. උපදේශනය, අධ්‍යාපනය සහ සහයෝගීතාවය තුළින්, බාධක ඉවත් කිරීමට සහ සැමට දීප්තිමත්, සාධාරණ අනාගතයක් ගොඩනැගීමට අපි වෙහෙස නොබලා කටයුතු කරමු.                                    
                                 </p>
     
-                                    <a href="#about" class="btn btn-danger mt-5">Learn More</a>
+                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -295,17 +289,11 @@ if (empty($notice['path'])){
                                 <div class="d-table-cell ">
                                     <h2 class="text-uppercase  ">People's Struggle Alliance vision</h2>
                                     <p class=" text-white truncate1">
-                                        At PSA, we're redefining prosperity for Sri Lanka. Our vision is
-                                        a united future where economic growth, social well-being, and
-                                        environmental sustainability go hand in hand. We empower
-                                        individuals, strengthen communities, and champion innovation.
-                                        Our commitment to education and sustainable practices ensures a
-                                        prosperous tomorrow for all generations. Join us in this journey
-                                        of reshaping the future, where no one is left behind, and
-                                        together, we set new standards for success.
+                                    අපගේ මෙහෙවර සමාජ සාධාරණත්වය මත කේන්ද්‍රගත වේ. සමාන අවස්ථා සාධාරණ ප්‍රතිඵල ලබා දෙන සමාජයක් අපි අපේක්ෂා කරමු. පංතිය, වාර්ගිකත්වය, ආගම, භාෂාව, කුලය, ස්ථානය හෝ ස්ත්‍රී පුරුෂ භාවයේ වෙනස්කම් ජීවිත සපුරාලීමට සහ සමාන සහභාගීත්වයට බාධාවක් නොවන ලෝකයක් අපි ඉලක්ක කරමු. අපගේ ඉලක්කය වන්නේ අවස්ථා, සම්පත් සහ වරප්‍රසාද සාධාරණ ලෙස බෙදා හැරීම, සැබෑ ඇතුළත් කිරීම් සහ යුක්තිය ඇති සමාජයක් ගොඩනැගීමයි. උපදේශනය, අධ්‍යාපනය සහ සහයෝගීතාවය තුළින්, බාධක ඉවත් කිරීමට සහ සැමට දීප්තිමත්, සාධාරණ අනාගතයක් ගොඩනැගීමට අපි වෙහෙස නොබලා කටයුතු කරමු.                                    
+
                                     </p>
     
-                                    <a href="#about" class="btn btn-danger mt-5">Learn More</a>
+                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -325,17 +313,11 @@ if (empty($notice['path'])){
                                 <div class="d-table-cell ">
                                     <h2 class="text-uppercase  ">People's Struggle Alliance vision</h2>
                                     <p class=" text-white truncate1">
-                                        At PSA, we're redefining prosperity for Sri Lanka. Our vision is
-                                        a united future where economic growth, social well-being, and
-                                        environmental sustainability go hand in hand. We empower
-                                        individuals, strengthen communities, and champion innovation.
-                                        Our commitment to education and sustainable practices ensures a
-                                        prosperous tomorrow for all generations. Join us in this journey
-                                        of reshaping the future, where no one is left behind, and
-                                        together, we set new standards for success.
+                                    අපගේ මෙහෙවර සමාජ සාධාරණත්වය මත කේන්ද්‍රගත වේ. සමාන අවස්ථා සාධාරණ ප්‍රතිඵල ලබා දෙන සමාජයක් අපි අපේක්ෂා කරමු. පංතිය, වාර්ගිකත්වය, ආගම, භාෂාව, කුලය, ස්ථානය හෝ ස්ත්‍රී පුරුෂ භාවයේ වෙනස්කම් ජීවිත සපුරාලීමට සහ සමාන සහභාගීත්වයට බාධාවක් නොවන ලෝකයක් අපි ඉලක්ක කරමු. අපගේ ඉලක්කය වන්නේ අවස්ථා, සම්පත් සහ වරප්‍රසාද සාධාරණ ලෙස බෙදා හැරීම, සැබෑ ඇතුළත් කිරීම් සහ යුක්තිය ඇති සමාජයක් ගොඩනැගීමයි. උපදේශනය, අධ්‍යාපනය සහ සහයෝගීතාවය තුළින්, බාධක ඉවත් කිරීමට සහ සැමට දීප්තිමත්, සාධාරණ අනාගතයක් ගොඩනැගීමට අපි වෙහෙස නොබලා කටයුතු කරමු.                                    
+
                                     </p>
     
-                                    <a href="#about" class="btn btn-danger mt-5">Learn More</a>
+                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
                                 </div>
                             </div>
                         </div>

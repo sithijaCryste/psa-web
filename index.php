@@ -228,7 +228,7 @@ if (empty($notice['path'])){
                                         together, we set new standards for success.
                                     </p>
     
-                                    <a href="#about" class="btn btn-danger mt-5">Learn More</a>
+                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -251,7 +251,7 @@ if (empty($notice['path'])){
                                         At PSA, we're redefining prosperity for Sri Lanka. Our vision is a united future where economic growth, social well-being, and environmental sustainability go hand in hand. We empower individuals, strengthen communities, and champion innovation. Our commitment to education and sustainable practices ensures a prosperous tomorrow for all generations. Join us in this journey of reshaping the future, where no one is left behind, and together, we set new standards for success.
                                     </p>
     
-                                    <a href="#about" class="btn btn-danger mt-5">Learn More</a>
+                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -274,7 +274,7 @@ if (empty($notice['path'])){
                                         At PSA, we're redefining prosperity for Sri Lanka. Our vision is a united future where economic growth, social well-being, and environmental sustainability go hand in hand. We empower individuals, strengthen communities, and champion innovation. Our commitment to education and sustainable practices ensures a prosperous tomorrow for all generations. Join us in this journey of reshaping the future, where no one is left behind, and together, we set new standards for success.
                                     </p>
     
-                                    <a href="#about" class="btn btn-danger mt-5">Learn More</a>
+                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -304,7 +304,7 @@ if (empty($notice['path'])){
                                         together, we set new standards for success.
                                     </p>
     
-                                    <a href="#about" class="btn btn-danger mt-5">Learn More</a>
+                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -334,7 +334,7 @@ if (empty($notice['path'])){
                                         together, we set new standards for success.
                                     </p>
     
-                                    <a href="#about" class="btn btn-danger mt-5">Learn More</a>
+                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
                                 </div>
                             </div>
                         </div>
