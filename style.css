@@ -61,7 +61,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 16px;
+  font-size: 20px;
 }
 #sin h1 {
   font-family: "Noto Serif Sinhala", serif;
@@ -1032,7 +1032,7 @@ h4.blog-title {
 }
 
 h1.blog-title {
-  font-size: 42px;
+  font-size: 32px;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-top: 15px;
@@ -1043,6 +1043,14 @@ h4.blog-title a {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 
 .blog-meta {

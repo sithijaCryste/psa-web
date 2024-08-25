@@ -174,7 +174,7 @@
 
                        
                     <?php
-$rs = Database::search("SELECT * FROM `gallery` ORDER BY `date` ASC");
+$rs = Database::search("SELECT * FROM `gallery` ORDER BY `date` DESC");
 $num = $rs->num_rows;
 
 for ($i = 0; $i < $num; $i++) {

@@ -12,7 +12,7 @@ if (0 != $page) {
     $pageno = 1;
 }
 
-$q = "SELECT * FROM `news` ORDER BY `date` ASC";
+$q = "SELECT * FROM `news` ORDER BY `date` DESC";
 $rs = Database::search($q);
 $num = $rs->num_rows;
 // echo($num);
