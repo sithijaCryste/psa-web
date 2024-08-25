@@ -221,8 +221,10 @@ $url = $protocol . $host . $uri;
 
 
                         </div>
+                        <div class="blog-mainImg">
                         <img src="admin/<?php echo($data['main-img'])  ?>" alt="" class="blog-img">
-                        <p class="blog-meta"><span class="blog-date"><?php echo($data['date'])  ?></span></p>
+
+                        </div>                        <p class="blog-meta"><span class="blog-date"><?php echo($data['date'])  ?></span></p>
                         <div class="blog-main-content">
                             <p><?php echo($data['content'])  ?></p>
 

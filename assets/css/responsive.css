@@ -348,4 +348,9 @@
     .contact-form {
         padding: 30px;
     }
+
+    .blog-img{
+        max-width: 100%;
+      height: auto;
+    }
 }
