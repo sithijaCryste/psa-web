@@ -138,6 +138,28 @@
                 <li class="list-group-item bg-danger"><a class="active" href="">தமிழ்</a></li>
             </ul>
         </div>
+        <a class="open-button " onclick="" href="https://wa.me/94740721180"><img src="assets/media/flaticon icons/help-desk.png" alt=""></a>
+       
+       
+      
+<button class="cssbuttons-io-button">
+  Join Us
+  <div class="icon">
+    <svg
+      height="24"
+      width="24"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </div>
+</button>
+
     </nav>
     <!-- Navbar -->
     <!-- Page Title -->
@@ -174,45 +196,63 @@
                 </div>
             </div>
             <!-- //Section Title -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <!-- <div class="about-bg" style="background-image: url(../assets/media/web-img/psa\ english.jpg)">
+            <div class="container-fluid">
+         <div class="row ">
+            <div class="col-lg-6">
+                <!-- <div class="about-bg" style="background-image: url(../assets/media/web-img/psa\ english.jpg)">
                        
                     </div> -->
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide "><img src="../assets/media/web-img/psa english.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="../assets/media/web-img/psa sinhala.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="../assets/media/web-img/psa tamil.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="../assets/media/web-img/psa president-english.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide"><img src="../assets/media/web-img/psa president-sinhala.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide"><img src="../assets/media/web-img/psa president-tamil.jpg" alt="">
-                            </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide "><img src="../assets/media/web-img/psa english.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/media/web-img/psa sinhala.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/media/web-img/psa tamil.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/media/web-img/psa president-english.jpg" alt="">
                         </div>
-
+                        <div class="swiper-slide"><img src="../assets/media/web-img/psa president-sinhala.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="../assets/media/web-img/psa president-tamil.jpg" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-content">
-                        <h2>What is <span>PSA </span>?</h2>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Corporis numquam ipsam ut deleniti perferendis aliquid ullam,
-                            voluptatibus nam sunt eum laudantium cupiditate iste, obcaecati
-                            deserunt dolores aliquam quia cum minus animi ipsa est facere
-                            culpa fugiat, maxime quam! Itaque aperiam sequi accusantium
-                            impedit recusandae nobis quod sunt deserunt provident omnis.
-                        </p>
-
-
-
-
-                    </div>
                 </div>
             </div>
+            <div class="col-lg-6">
+                <div class="about-content-ab">
+                    <h2>මොකක්ද මේ <span>PSA </span>?</h2>
+                    <p>
+                    <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+                    மக்கள் போராட்ட முன்னணியானது, முன்னிலை சோஷலிஸக் கட்சி, புதிய ஜனநாயக மாக்சிச-லெனினிசக் கட்சி, சோசலிச மக்கள் மன்றம் ஆகிய கட்சிகளுடன் கடந்த காலிமுகத்திடல் போராட்டம் மற்றும் முந்தைய போராட்டங்கள் மற்றும் பொது எழுச்சிகளில் ஈடுபட்ட ஆர்வலர்கள், தொழில் வல்லுநர்கள் மற்றும் கலைஞர்களின் பரந்த குழுவால் பிரதிநிதித்துவப்படுத்தப்படுகிறது.
+                    </p>
+                    
+                    <p>
+                    <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+                    இந்த கூட்டணி, வரவிருக்கும் தேர்தல் செயற்பாட்டில், கடந்த கால போராட்டங்களின் மக்களின் விருப்பத்தை பிரதிநிதித்துவப்படுத்தும், முழு நாட்டையும் கடுமையான நெருக்கடிக்கு இழுக்கும் IMF மரண பொறியை விட்டு வெளியேற அறிவுறுத்தும், இந்திய அமெரிக்க எதேச்சாதிகார தலையீடுகளுக்கு எதிரான திட்டத்தை முன்மொழியும் இடதுசாரிக் கூட்டணியாக உருவாக்கப்பட்டுள்ளது.
+                    </p>
+                    <p>
+                    <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+                    அதன்படி நாங்கள் முன்வைக்கும் கொள்கை 'மக்கள் கொள்கை'. <br>
+                     இந்த நாட்டில் பாதிக்கப்பட்டுள்ள பெரும்பான்மையான மக்கள் எதிர்கொள்ளும் பிரச்சினைகளுக்கு தீர்வு காண மக்கள் அதிகாரத்தைக் கட்டியெழுப்புவதன் ஊடாக அரச கட்டமைப்பையும் பொருளாதார மற்றும் சமூக அரசியல் கட்டமைப்பையும் மாற்றுவது தொடர்பான தீவிரமான வேலைத்திட்டத்தை நாங்கள் முன்மொழிகிறோம். 
+
+                    </p>
+                    <p>
+                    <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+
+                    இந்த நாட்டில் பல வருடங்களாக முக்கியமான பிரச்சினையாக இருந்து வந்த தேசிய இனப் பிரச்சினைக்கு வடக்கு மக்களையும் தென்பகுதி மக்களையும் உள்ளடக்கிய தீர்வை முன்வைக்க எங்களால் முடிந்துள்ளது.
+                    </p>
+                    <p>
+                    <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+
+                    தற்போதைய சமூக-அரசியல் நெருக்கடி என்பது தனிப்பட்ட மக்களின் பிரச்சனைகளுக்கு அப்பால் முழு முதலாளித்துவ அமைப்பின் நெருக்கடியாகும். எனவே, இந்த முழு அமைப்பையும் மாற்றி ஒரு சோசலிச சமுதாயத்தை கட்டியெழுப்பும் வேலைத்திட்டத்தை நாங்கள் முன்மொழிகிறோம். அந்த சோசலிச வேலைத்திட்டத்தை அடிப்படையாகக் கொண்டு எமது நிலைமாறுகால வேலைத்திட்டம் தயாரிக்கப்பட்டுள்ளது.
+                    </p>
+
+
+
+
+                </div>
+            </div>
+        </div>
+         </div>
         </div>
     </section>
     <!-- ====== // About Area ====== -->

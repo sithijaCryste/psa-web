@@ -33,7 +33,9 @@ include "admin/dist/config/connection.php"
     <div id="preloader">
         <div class="spinner">
             <div class="spinner-border"></div>
-            <img src="assets/media/icons/PSA logo.png" alt="Preloader Image" class="preloader-image">
+            <div class="preloader-image">
+                <img src="assets/media/icons/PSA new.png" alt="PSA logo">
+            </div>
         </div>
     </div>
 
@@ -359,14 +361,11 @@ if (empty($notice['path'])){
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center">
-                        <h2><img src="assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""> Who Are We <img src="assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""></h2>
+                        <h2><img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""> Who Are We <img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""></h2>
                         <p>
-                            The Frontline Socialist Party (FLSP) was inaugurated in the year 2011 consequent to the
-                            ideological and political fragmentation within the People’s Liberation Front which is
-                            generally known as JVP.
-                        </p>
+                        The People's Struggle Alliance is a people’s alliance of activists, professionals, artists and several left-wing parties in Sri Lanka who were involved in the Galle Face struggle and the previous struggles and popular uprisings.   
+                        </p>         
                     </div>
-                </div>
             </div>
             <!-- //Section Title -->
             <div class="row">
@@ -391,15 +390,10 @@ if (empty($notice['path'])){
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content">
-                        <h2>What is <span>PSA </span>?</h2>
+                        <h2>What is <span>PSA </span>Aim ?</h2>
 
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Corporis numquam ipsam ut deleniti perferendis aliquid ullam,
-                            voluptatibus nam sunt eum laudantium cupiditate iste, obcaecati
-                            deserunt dolores aliquam quia cum minus animi ipsa est facere
-                            culpa fugiat, maxime quam! Itaque aperiam sequi accusantium
-                            impedit recusandae nobis quod sunt deserunt provident omnis.
+                        The aim of the People's Struggle Alliance is to transform the current socio-political and economic systems of Sri Lanka by building a socialist society. We aim to address the problems affecting the majority of the population, solve long-term national issues, oppose external influences such as the IMF, and resist unnecessary foreign interference from countries like India and the United States. Our goal is to build people power to find solutions to the problems faced by the majority and to change the state structure, economy, and socio-political system. Therefore, we propose a comprehensive program to build a socialist society that will transform the entire system.
                         </p>
 
 
@@ -421,8 +415,8 @@ if (empty($notice['path'])){
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center">
-                        <h2><img src="assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""> Why Choose Us <img src="assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h2><img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""> Why Choose Us <img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""></h2>
+                        
                     </div>
                 </div>
             </div>
@@ -433,91 +427,87 @@ if (empty($notice['path'])){
                 <div class="col-lg-4 col-md-6">
                     <div class="single-service">
                         <div class="service-icon">
+                            <img src="assets/media/flaticon icons/hard-work.png" alt="" height="100px"
+                                width="100px">
+                        </div>
+                        <h2>The Aspirations of The People's Struggle</h2>
+                        <br>
+                        <p class="lang" key="justice">
+                        All the political parties and activists involved in the People's Struggle Alliance (PSA) have been actively involved in struggles to build people's power over the years. So, even in the election process, we represent the demands of the people and to build people's power to win their demands. Likewise, we stand for the implementation of the proposals and demands that have been put forward by numerous struggles, including the Galle Face People’s Struggle.
+                        </p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <img src="assets/media/flaticon icons/exit.png" alt="" height="100px" width="100px">
+                        </div>
+                        <h2>Exit IMF Programme</h2>
+                        <br>
+                        <p>
+                        The economic programme of a majority of the other candidates is not only to drag us into another debt trap under the guise of solving the economic crisis, but also to accept the IMF programme, which affects the economic and political autonomy of our country. But we propose to get out of this IMF death trap, and find a solution to the crisis through a people-oriented programme.
+                        </p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <img src="assets/media/flaticon icons/protest.png" alt="" height="100px" width="100px">
+                        </div>
+                        <h2>A Programme Against Indian-American Intervention
+                        </h2>
+                        <br>
+                        <p>
+                        Currently, countries like America, India and China are making plans to become the world's economic power by taking over countries around the world. The rulers of our country have become puppets of their programmes. Also, others who are demanding power, instead of rejecting these programmes, seem to be complying with them. But we propose a programme where the oppressed from around the world come together to protest against these forced interventions.
+                        </p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <img src="assets/media/flaticon icons/cooperation (3).png" alt="" height="100px"
+                                width="100px">
+                        </div>
+                        <h2>A Real Solution To The National Question</h2>
+                        <br>
+                        <p>
+                        Although it’s been over a decade since the war in the North-East came to a physical stop, all past administrations have failed to resolve the grievances of the people of the North-East. What has always happened is that the North-East issues have been shamefully ignored for the sake of political interests. Therefore, we present a historic proposal to resolve the national question for the people of the North-East and the people of the South. We propose a decentralisation of power, self-governing regions, along with a bicameral (two chambers) structure, which recognises people’s power. 
+                        </p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
                             <img src="assets/media/flaticon icons/social-justice (1).png" alt="" height="100px"
                                 width="100px">
                         </div>
-                        <h2>Social Justice</h2>
-                        <p class="lang" key="justice">
-                            Our mission centers on social justice. We envision a society where equal opportunities yield
-                            equitable outcomes. We aim for a world where differences in class, ethnicity, religion,
-                            language, caste, location, or gender don't hinder fulfilling lives and equal participation.
-                            Our goal is equitable distribution of opportunities, resources, and privileges, forging a
-                            society of true inclusivity and justice. Through advocacy, education, and collaboration, we
-                            work tirelessly to dismantle barriers and build a brighter, fairer future for all
-                        </p>
-                    </div>
-                </div>
-                <!-- //Single Service -->
-                <!-- Single Service -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-service">
-                        <div class="service-icon">
-                            <img src="assets/media/flaticon icons/hammer (1).png" alt="" height="100px" width="100px">
-                        </div>
-                        <h2>Economic Democracy</h2>
+                        <h2>A new Constitution That Guarantees People’s Power</h2>
+                        <br>
                         <p>
-                            We recognize the widespread struggle to meet basic needs in our society. In today's complex
-                            world, we understand that people require more than essentials – they need secure housing,
-                            food, healthcare, education, technology access, and leisure. Our definition of a robust
-                            economy includes supporting such a society, measuring prosperity not only by economic growth
-                            but by the quality of life for all citizens. Recent events underscore the importance of a
-                            resilient economy that prioritizes equity alongside growth and sustainable development in
-                            our policies.
-                        </p>
+                        In reality, people's power has been set aside by the current Constitution under the guise of people's sovereignty. When there is an Executive Presidency, the people do not have the power to recall the representatives they appoint. This is a Constitution that promotes racism and bigotry. Therefore, we propose a new constitution that constitutionally guarantees the rights of the people, which abolishes the Executive Presidency, and gives the people the power to make decisions.
+                    </p>
                     </div>
                 </div>
                 <!-- //Single Service -->
-                <!-- Single Service -->
+                 <!-- Single Service -->
                 <div class="col-lg-4 col-md-6">
                     <div class="single-service">
                         <div class="service-icon">
-                            <img src="assets/media/flaticon icons/cooperation.png" alt="" height="100px" width="100px">
-                        </div>
-                        <h2>Solidarity and Cooperation</h2>
-                        <p>
-                            We envision a compassionate, cooperative society where individuals recognize their rights
-                            and responsibilities toward one another. Our goal is to build strong communities, fostering
-                            belonging, safety, and mutual respect, as we believe such values are essential for thriving
-                            societies. Through education, inclusivity, and collective effort, we strive to create a
-                            world where everyone has the opportunity to reach their full potential, contributing to the
-                            well-being of all.
-                        </p>
-                    </div>
-                </div>
-                <!-- //Single Service -->
-                <!-- Single Service -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-service">
-                        <div class="service-icon">
-                            <img src="assets/media/flaticon icons/cooperation (1).png" alt="" height="100px"
+                            <img src="assets/media/flaticon icons/system.png" alt="" height="100px"
                                 width="100px">
                         </div>
-                        <h2>Sustainability</h2>
+                        <h2>System Change                        </h2>
+                        <br>
                         <p>
-                            We are dedicated to a better world for future generations. Our commitment includes long-term
-                            environmental protection and sustainable resource use. We advocate harmonious coexistence
-                            between nature and humanity, prioritizing responsible resource usage over short-term gains,
-                            all for the well-being of future generations. Through education, innovation, and global
-                            cooperation, we aim to leave a legacy of stewardship that ensures a thriving planet for
-                            generations to come. </p>
-                    </div>
-                </div>
-                <!-- //Single Service -->
-                <!-- Single Service -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-service">
-                        <div class="service-icon">
-                            <img src="assets/media/flaticon icons/cooperation (1).png" alt="" height="100px"
-                                width="100px">
-                        </div>
-                        <h2>Sustainability</h2>
-                        <p>
-                            We are dedicated to a better world for future generations. Our commitment includes long-term
-                            environmental protection and sustainable resource use. We advocate harmonious coexistence
-                            between nature and humanity, prioritizing responsible resource usage over short-term gains,
-                            all for the well-being of future generations. Through education, innovation, and global
-                            cooperation, we aim to leave a legacy of stewardship that ensures a thriving planet for
-                            generations to come. </p>
+                        During the COVID epidemic and the economic crisis, when large-scale companies piled up mountains of profits, the general public of this country was made to face the brunt of these crises. Even today, the regular people of this country bear the burden of a mountain of debt. The entire society is mired in serious disparity. Resulting in cynicism.So, instead of this cynical capitalism, we propose a programme to create a socialist social system.                    </p>
                     </div>
                 </div>
                 <!-- //Single Service -->
@@ -541,7 +531,7 @@ if (empty($notice['path'])){
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center">
-                        <h2><img src="assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""> Contact Us <img src="assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""></h2>
+                        <h2><img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""> Contact Us <img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>

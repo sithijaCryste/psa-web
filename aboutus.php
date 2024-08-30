@@ -26,7 +26,10 @@
     <div id="preloader">
         <div class="spinner">
             <div class="spinner-border"></div>
-            <img src="assets/media/icons/PSA logo.png" alt="Preloader Image" class="preloader-image">
+            <div class="preloader-image">
+                <img src="assets/media/icons/PSA logo.png" alt="PSA logo">
+                <img src="assets/media/flaticon icons/umbrella (2).png" alt="Umbrella icon">
+            </div>
         </div>
     </div>
 
@@ -106,7 +109,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link"  href="index.php">HOME</a>
+                        <a class="nav-link" href="index.php">HOME</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                     <li class="nav-item">
@@ -137,6 +140,27 @@
                 <li class="list-group-item bg-danger"><a href="">தமிழ்</a></li>
             </ul>
         </div>
+
+        <a class="open-button " onclick="" href="https://wa.me/94740721180"><img src="assets/media/flaticon icons/help-desk.png" alt=""></a>
+
+
+
+        <button class="cssbuttons-io-button">
+            Join Us
+            <div class="icon">
+                <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+        </button>
+
     </nav>
     <!-- Navbar -->
     <!-- Page Title -->
@@ -162,57 +186,74 @@
             <div class="row justify-content-start">
                 <div class="col-lg-12">
                     <div class="section-title text-start">
-                        <h1>People’s <span style="color: #ffc900;">Struggle</span> Alliance</h1>
-                        <h4>Who are the PSA?</h4>
+                        <h1><img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""> People’s <span style="color: #ffc900;">Struggle</span> Alliance <img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""></h1>
+                        <h4>Who is People's Struggle Alliance(PSA)?</h4>
                         <p>
-                            The Frontline Socialist Party (FLSP) was inaugurated in the year 2011 consequent to the
-                            ideological and political fragmentation within the People’s Liberation Front which is
-                            generally known as JVP.
-                        </p>
+                            The People's Struggle Alliance is an alliance of activists, professionals, artists and several left-wing parties in Sri Lanka who were involved in the Galle Face struggle and the previous struggles and popular uprisings.
                     </div>
-                </div>
-            </div>
-            <!-- //Section Title -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <!-- <div class="about-bg" style="background-image: url(assets/media/web-img/psa\ english.jpg)">
-                       
-                    </div> -->
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide "><img src="assets/media/web-img/psa english.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="assets/media/web-img/psa sinhala.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="assets/media/web-img/psa tamil.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="assets/media/web-img/psa president-english.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide"><img src="assets/media/web-img/psa president-sinhala.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide"><img src="assets/media/web-img/psa president-tamil.jpg" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-content">
-                        <h2>What is <span>PSA </span>?</h2>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Corporis numquam ipsam ut deleniti perferendis aliquid ullam,
-                            voluptatibus nam sunt eum laudantium cupiditate iste, obcaecati
-                            deserunt dolores aliquam quia cum minus animi ipsa est facere
-                            culpa fugiat, maxime quam! Itaque aperiam sequi accusantium
-                            impedit recusandae nobis quod sunt deserunt provident omnis.
-                        </p>
-
-
-
-
-                    </div>
+                    </p>
                 </div>
             </div>
         </div>
+        <!-- //Section Title -->
+         <div class="container-fluid">
+         <div class="row ">
+            <div class="col-lg-6">
+                <!-- <div class="about-bg" style="background-image: url(assets/media/web-img/psa\ english.jpg)">
+                       
+                    </div> -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide "><img src="assets/media/web-img/psa english.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/media/web-img/psa sinhala.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/media/web-img/psa tamil.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/media/web-img/psa president-english.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="assets/media/web-img/psa president-sinhala.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="assets/media/web-img/psa president-tamil.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content-ab">
+                    <h2>What is <span>PSA </span>?</h2>
+                    <p>
+                    <img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+                    The People's Struggle Alliance (PSA) is represented by a diverse group of activists, professionals and artists who have been involved in many struggles and popular uprisings in the past, three left-wing political parties - namely, the Frontline Socialist Party, the New Democratic Marxist-Leninist Party, and the Socialist People's Front.
+                    </p>
+                    
+                    <p>
+                    <img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+                        This Alliance was formed as a left alliance that hopes to represent the aspirations of the people from numerous past struggles, in the upcoming election process, that also suggests an Exit IMF programme, which is a death trap that will drag the whole country into a serious crisis, and that proposes a programme against the arbitrary intervention of India and America.
+                    </p>
+                    <p>
+                    <img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+                        Accordingly, the Manifesto we present is the 'People's Manifesto'.
+                        We are presenting a radical programme related to changing the State structure, economy and socio-political structure, by building people's power to address the issues affecting the majority of the people who are suffering in this country.
+                    </p>
+                    <p>
+                    <img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+
+                        We have been able to propose a solution involving the people of the north and the people of the south on the national question, which continues to be a critical issue over many decades in this country.
+                    </p>
+                    <p>
+                    <img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+
+                        The current socio-political crisis is a crisis of the entire capitalist system, beyond the problems of individual people. Therefore, we propose a programme that will change this entire system, and build a socialist society. Our transitional programme has been formulated based on socialist values.
+                    </p>
+
+
+
+
+                </div>
+            </div>
+        </div>
+         </div>
+        
+        
     </section>
     <!-- ====== // About Area ====== -->
     <!-- ====== Members ====== -->
@@ -264,10 +305,10 @@
     </section> -->
     <!-- ====== // Members ====== -->
 
-     <!-- ====== Partners ====== -->
-     <section id="about-partners" class="section-padding">
+    <!-- ====== Partners ====== -->
+    <section id="about-partners" class="section-padding">
         <div class="container">
-            
+
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="section-title text-center">
@@ -276,42 +317,43 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="mx-5 row g-2 row-gap-0 text-end ">
                 <div class="col-12 col-lg-3 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">Frontline Socialist Party</p>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt=""> Frontline Socialist Party</p>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt=""> Frontline Socialist Party</p>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist</p>
-                </div><div class="col-12 col-lg-3 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt=""> Frontline Socialist</p>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt=""> Frontline Socialist Party</p>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt=""> Frontline Socialist Party</p>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt=""> Frontline Socialist Party</p>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 ">
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt=""> Frontline Socialist Party</p>
                 </div>
             </div>
-            </div>
-            
+        </div>
+
         </div>
     </section>
     <!-- ====== // Partners ====== -->
@@ -422,8 +464,8 @@
     <!-- ====== // Footer Area ====== -->
 
     <!-- ====== ALL JS ====== -->
-    
-      </script>
+
+    </script>
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/lightbox.min.js"></script>

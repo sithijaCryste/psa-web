@@ -115,7 +115,7 @@ $url = $protocol . $host . $uri;
 
     <!-- Header 1 -->
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-danger">
+    <nav class="navbar navbar-expand-lg bg-danger sticky-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -157,6 +157,28 @@ $url = $protocol . $host . $uri;
                 <li class="list-group-item bg-danger"><a href="tam/officialdocuments.php">தமிழ்</a></li>
             </ul>
         </div>
+        <a class="open-button " onclick="" href="https://wa.me/94740721180"><img src="assets/media/flaticon icons/help-desk.png" alt=""></a>
+       
+       
+      
+<button class="cssbuttons-io-button">
+  Join Us
+  <div class="icon">
+    <svg
+      height="24"
+      width="24"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </div>
+</button>
+
     </nav>
     <!-- Navbar -->
     <!-- ====== // Header ====== -->

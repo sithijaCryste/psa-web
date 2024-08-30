@@ -342,11 +342,9 @@ if (empty($notice['path'])){
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center">
-                        <h2><img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""> Who Are We <img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""></h2>
+                        <h2><img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""> අපි කවුද? <img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""></h2>
                         <p>
-                            The Frontline Socialist Party (FLSP) was inaugurated in the year 2011 consequent to the
-                            ideological and political fragmentation within the People’s Liberation Front which is
-                            generally known as JVP.
+                        ජන අරගල සන්ධානය යනු ගාලුමුවදොර අරගලයට සහ පෙර පැවති අරගල සහ ජනතා නැගිටීම්වලට සම්බන්ධ වූ ශ්‍රී ලංකාවේ ක්‍රියාකාරීන්, වෘත්තිකයන්, කලාකරුවන් සහ වාමාංශික පක්ෂ කිහිපයක්ද එක්ව සෑදුනු ජනතාවගේ සන්ධානයකි.
                         </p>
                     </div>
                 </div>
@@ -374,15 +372,10 @@ if (empty($notice['path'])){
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content">
-                        <h2>What is <span>PSA </span>?</h2>
+                        <h2>මොකක්ද මේ <span>PSA </span>හි අරමුණ?</h2>
 
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Corporis numquam ipsam ut deleniti perferendis aliquid ullam,
-                            voluptatibus nam sunt eum laudantium cupiditate iste, obcaecati
-                            deserunt dolores aliquam quia cum minus animi ipsa est facere
-                            culpa fugiat, maxime quam! Itaque aperiam sequi accusantium
-                            impedit recusandae nobis quod sunt deserunt provident omnis.
+                        ජන අරගල සන්ධානයේ අරමුණ වන්නේ සමාජවාදී සමාජයක් ගොඩනැගීම තුළින් ශ්‍රී ලංකාවේ වත්මන් සමාජ දේශපාලන හා ආර්ථික ක්‍රම පරිවර්තනය කිරීමයි. ජනගහනයෙන් බහුතරයකට බලපාන ගැටළු විසඳීම, දිගුකාලීන ජාතික ගැටළු විසඳීම, IMF වැනි බාහිර බලපෑම්වලට විරුද්ධ වීම සහ ඉන්දියාව සහ එක්සත් ජනපදය වැනි රටවල අනවශ්‍ය විදේශීය ඇඟිලි ගැසීම් වලට එරෙහි වීම අපගේ අරමුණයි. බහුතරයක් මුහුණ දෙන ගැටලුවලට විසඳුම් සෙවීමට සහ රාජ්‍ය ව්‍යුහය, ආර්ථිකය, සමාජ දේශපාලන ක්‍රමය වෙනස් කිරීම සඳහා ජන බලය ගොඩනැගීම අපගේ අරමුණයි. ඒ නිසා සමස්ත ක්‍රමයම පරිවර්තනය කරන සමාජවාදී සමාජයක් ගොඩනැගීමේ පුළුල් වැඩපිළිවෙළක් අපි යෝජනා කරනවා.
                         </p>
 
 
@@ -404,8 +397,8 @@ if (empty($notice['path'])){
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center">
-                        <h2><img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""> Why Choose Us <img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h2><img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""> අපිව තෝරගතයුත්තේ ඇයි? <img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""></h2>
+                        
                     </div>
                 </div>
             </div>
@@ -416,87 +409,89 @@ if (empty($notice['path'])){
                 <div class="col-lg-4 col-md-6">
                     <div class="single-service">
                         <div class="service-icon">
+                            <img src="../assets/media/flaticon icons/hard-work.png" alt="" height="100px"
+                                width="100px">
+                        </div>
+                        <h2>ජන අරගලයේ අභිලාෂයන් නියෝජනය කිරීම</h2>
+                        <br>
+                        <p class="lang" key="justice">
+                        ජන අරගල සන්ධානයට සම්බන්ධ දේශපාන පක්ෂ සහ ක්‍රියාකාරීන් සියලු දෙනා පසුගිය කාලය පුරා ජනතා බලයක් ගොඩනැගීම මූලික කරගත් අරගල ක්‍රියාමාර්ග නිරත වුනු අය. මැතිවරණ ක්‍රියාවලිය ඇතුලෙත් අපි නියෝජනය කරන්නේ ජනතාවගේ ඉල්ලිම් සහ ඒවා දිනාගැනීම සඳහා වන ජනතා බලයක් ගොඩනැගීම. ඒ වගේම තමයි පසුගිය ගෝල්⁣ෆේස් අරගලය ඇතුලු අරගල ක්‍රියාමාර්ග තුල මතු වුනු යෝජනා‍, වැඩපිලිවෙල ක්‍රියාත්මක කිරීම වෙනුවෙන් අප පෙනී සිටිනවා.
+                        </p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <img src="../assets/media/flaticon icons/exit.png" alt="" height="100px" width="100px">
+                        </div>
+                        <h2> Exit IMF වැඩපිලිවෙල</h2>
+                        <br>
+                        <p>
+                        ආර්ථික අර්බුදය විසදීමේ මුවාවෙන් අප තවත් ණය උගුලකට ඇද දැමීම පමණක් ⁣නොවයි ඒ හරහා අපේ රටේ ආර්ථික, දේශපාලන ස්වාධිපත්‍යයට බලපෑම් සිදු කරන IMF වැඩපිලිවෙල පිලිගැනීම තමයි අනෙක් බහුතර අපේක්ෂකයන්ගේ ආර්ථික වැඩපිලිවෙල වෙලා තියෙන්නේ. නමුත් අපි යෝජනා කරනවා මේ IMF මර උගුලෙන් ඉවත් වෙලා ජනතාවාදි වැඩපිලිවෙලක් හරහා අර්බුදයට උත්තර සොයන වැඩපිලිවෙලක්.
+                        </p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <img src="../assets/media/flaticon icons/protest.png" alt="" height="100px" width="100px">
+                        </div>
+                        <h2>ඉන්දියන් - ඇමරිකන් මැදිහත්වීම් වලට එරෙහි වැඩපිලිවෙලක්
+                        </h2>
+                        <br>
+                        <p>
+                        මේ වෙද්දි ලෝකයේ රටවල් අත්පත් කරගනිමින් ලෝකයේ ආර්ථික බලවතුන් වෙන්න ඇමරිකාව‍, ඉන්දියාව‍, චීනය ඇතුලු රටවල් සැලසුම් සකස් කරමින් ඉන්නවා. අපේ රටේ පාලකයන් ඉන්නේ මේ රටවල වැඩපිලිවෙගේ රූකඩ බවට පත්වෙලා. ඒ වගේම බලය ඉල්ලා සිටින අයත් මේ වැඩපිලිවෙල ප්‍රතික්ෂේප කරනවා වෙනුවට ඒවට යටවෙන තත්ත්වයක් තමා තියෙන්නේ. හැබැයි අපි යෝජනා කරනවා මේ බලහත්කාරී මැදිහත්වීමට වලට විරෝධය පල කරන ව⁣⁣ගේම ඊට එරෙහිව ලොව පුරා පීඩිතයන් එකට එක්වන වැඩපිලිවෙලක්. 
+                        </p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <img src="../assets/media/flaticon icons/cooperation (3).png" alt="" height="100px"
+                                width="100px">
+                        </div>
+                        <h2>ජාතික ගැටලුවට සැබෑ විසදුමක්</h2>
+                        <br>
+                        <p>
+                        උතුරු-නැගෙනහිරේ දශක ගණනාවක යුද්ධය භෞතිකව අවසන් වුවත් තවත් දශකයක් යනතුරු උතුරු-නැගෙනහිර ජනතාවගේ ගැටලු වලට විසදුම් දෙන්න අසමත් වුන⁣ා පහුගිය කිසිම පාලනයක් වත්. හැම වෙලේම සිද්ධ වුනේ දේශපාලන වුවමනා වෙනුවෙන් උතුරු-නැගෙනහිර ප්‍රශ්න ලැජ්ජා සහගත විදියට පාවිචිචි වුනු එක. ඒ නිසා අපි ජාතික ගැටලුව සඳහා උතුරු-නැගෙනහිර ජනතාවත් දකුණේ ජනතාවත්‍, බලය විමධ්‍යගත කිරීමක් සහිත ස්වයං-පාලන ප්‍රදේශ ‍සහ ඒවා සමිබන්ධිත ද්විමණ්ඩල ව්‍යුහයක් වගේම ජනතා බලය පිලිගනිමින් මහජන සභා සහිත ඓතිහාසික යෝජනාවලියක් අපි ඉදිරිපත් කරනවා.
+                        </p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
                             <img src="../assets/media/flaticon icons/social-justice (1).png" alt="" height="100px"
                                 width="100px">
                         </div>
-                        <h2>Social Justice</h2>
+                        <h2>ජන බලය සහතික කරන අලුත් ව්‍යවස්ථාවක්</h2>
+                        <br>
                         <p>
-                        අපගේ මෙහෙවර සමාජ සාධාරණත්වය මත කේන්ද්‍රගත වේ. සමාන අවස්ථා සාධාරණ ප්‍රතිඵල ලබා දෙන සමාජයක් අපි අපේක්ෂා කරමු. පංතිය, වාර්ගිකත්වය, ආගම, භාෂාව, කුලය, ස්ථානය හෝ ස්ත්‍රී පුරුෂ භාවයේ වෙනස්කම් ජීවිත සපුරාලීමට සහ සමාන සහභාගීත්වයට බාධාවක් නොවන ලෝකයක් අපි ඉලක්ක කරමු. අපගේ ඉලක්කය වන්නේ අවස්ථා, සම්පත් සහ වරප්‍රසාද සාධාරණ ලෙස බෙදා හැරීම, සැබෑ ඇතුළත් කිරීම් සහ යුක්තිය ඇති සමාජයක් ගොඩනැගීමයි. උපදේශනය, අධ්‍යාපනය සහ සහයෝගීතාවය තුළින්, බාධක ඉවත් කිරීමට සහ සැමට දීප්තිමත්, සාධාරණ අනාගතයක් ගොඩනැගීමට අපි වෙහෙස නොබලා කටයුතු කරමු.
+                        ජනතා පරමාධිත්‍යයට මුවා වෙලා දැන් තියන ව්‍යවස්ථාව හරහා ජනතා බලය පැත්තකට දාලා තමයි ඇත්තටම තියෙන්නේ. විධායක ජනාධිපති ධුරයක් පවතිද්දි අපි පත්කරන නියෝජිතයන් නැවත කැදවීමේ බලයක් ජනතාවට නෑ. ජාතිවාදය, ආගම්වාදයට උඩගෙඩි දෙන ව්‍යවස්ථාවක් මේක. ඒ නිසා අපි යෝජනා කරනවා ජනතාවට තීරණ ගන්න බලය ලැබෙන විධායක ජනාධිපතිධූරය අහෝසි කරපු‍ ජනතා අයිතීන් ව්‍යවස්ථානුකූලව සහතික කරපු අලුත් ව්‍යවස්ථාවක්
                         </p>
                     </div>
                 </div>
                 <!-- //Single Service -->
-                <!-- Single Service -->
+                 <!-- Single Service -->
                 <div class="col-lg-4 col-md-6">
                     <div class="single-service">
                         <div class="service-icon">
-                            <img src="../assets/media/flaticon icons/hammer (1).png" alt="" height="100px" width="100px">
-                        </div>
-                        <h2>Economic Democracy</h2>
-                        <p>
-                            We recognize the widespread struggle to meet basic needs in our society. In today's complex
-                            world, we understand that people require more than essentials – they need secure housing,
-                            food, healthcare, education, technology access, and leisure. Our definition of a robust
-                            economy includes supporting such a society, measuring prosperity not only by economic growth
-                            but by the quality of life for all citizens. Recent events underscore the importance of a
-                            resilient economy that prioritizes equity alongside growth and sustainable development in
-                            our policies.
-                        </p>
-                    </div>
-                </div>
-                <!-- //Single Service -->
-                <!-- Single Service -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-service">
-                        <div class="service-icon">
-                            <img src="../assets/media/flaticon icons/cooperation.png" alt="" height="100px" width="100px">
-                        </div>
-                        <h2>Solidarity and Cooperation</h2>
-                        <p>
-                            We envision a compassionate, cooperative society where individuals recognize their rights
-                            and responsibilities toward one another. Our goal is to build strong communities, fostering
-                            belonging, safety, and mutual respect, as we believe such values are essential for thriving
-                            societies. Through education, inclusivity, and collective effort, we strive to create a
-                            world where everyone has the opportunity to reach their full potential, contributing to the
-                            well-being of all.
-                        </p>
-                    </div>
-                </div>
-                <!-- //Single Service -->
-                <!-- Single Service -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-service">
-                        <div class="service-icon">
-                            <img src="../assets/media/flaticon icons/cooperation (1).png" alt="" height="100px"
+                            <img src="../assets/media/flaticon icons/system.png" alt="" height="100px"
                                 width="100px">
                         </div>
-                        <h2>Sustainability</h2>
+                        <h2>ක්‍රම වෙනසක්</h2>
+                        <br>
                         <p>
-                            We are dedicated to a better world for future generations. Our commitment includes long-term
-                            environmental protection and sustainable resource use. We advocate harmonious coexistence
-                            between nature and humanity, prioritizing responsible resource usage over short-term gains,
-                            all for the well-being of future generations. Through education, innovation, and global
-                            cooperation, we aim to leave a legacy of stewardship that ensures a thriving planet for
-                            generations to come. </p>
-                    </div>
-                </div>
-                <!-- //Single Service -->
-                <!-- Single Service -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-service">
-                        <div class="service-icon">
-                            <img src="../assets/media/flaticon icons/cooperation (1).png" alt="" height="100px"
-                                width="100px">
+                        පහුගිය කොවිඩ් වසංගතය වෙලාවෙත්‍, ආර්ථික අර්බුදය වෙලාවෙත් මහා පරිමාණ සමාගම් ලාභ කඳු ගොඩ ගහද්දි, මේ රටේ සමාන්‍ය ජනතාව බරපතල විදියට වන්දි ගෙව්වා. අදටත් ණය කන්දක බර දරන්නේ මේ රටේ සාමාන්‍ය මිනිස්සු. මුලු සමාජයම බරපතල විෂමතාවකින් මිරිකිලා තියෙන්නේ. නරුමත්වයට යමින් තියෙන්නේ. ඉතින් මේ නරුම ධනවාදය වෙනු⁣වට අපි යෝජනා කරනවා සමාජවාදි සමාජ ක්‍රමයක් නිර්මාණය කිරීමේ වැඩපිලිවෙලක්.
+                        </p>
                         </div>
-                        <h2>Sustainability</h2>
-                        <p>
-                            We are dedicated to a better world for future generations. Our commitment includes long-term
-                            environmental protection and sustainable resource use. We advocate harmonious coexistence
-                            between nature and humanity, prioritizing responsible resource usage over short-term gains,
-                            all for the well-being of future generations. Through education, innovation, and global
-                            cooperation, we aim to leave a legacy of stewardship that ensures a thriving planet for
-                            generations to come. </p>
-                    </div>
                 </div>
                 <!-- //Single Service -->
             </div>
@@ -519,7 +514,7 @@ if (empty($notice['path'])){
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center">
-                        <h2><img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""> Contact Us <img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""></h2>
+                        <h2><img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""> Contact Us <img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>

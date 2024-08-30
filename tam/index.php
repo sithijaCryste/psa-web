@@ -373,15 +373,10 @@ if (empty($notice['path'])){
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content">
-                        <h2>What is <span>PSA </span>?</h2>
+                    <h2>இந்த <span>PSA </span>யின் நோக்கம் என்ன?</h2>
 
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Corporis numquam ipsam ut deleniti perferendis aliquid ullam,
-                            voluptatibus nam sunt eum laudantium cupiditate iste, obcaecati
-                            deserunt dolores aliquam quia cum minus animi ipsa est facere
-                            culpa fugiat, maxime quam! Itaque aperiam sequi accusantium
-                            impedit recusandae nobis quod sunt deserunt provident omnis.
+                        சோசலிச சமூகத்தை கட்டியெழுப்புவதன் ஊடாக இலங்கையின் தற்போதைய சமூக அரசியல் பொருளாதார அமைப்புகளை மாற்றியமைப்பதே மக்கள் போராட்டக் கூட்டணியின் நோக்கமாகும். பெரும்பான்மையான மக்களைப் பாதிக்கும் பிரச்சினைகளைத் தீர்ப்பது, நீண்டகால தேசியப் பிரச்சினைகளைத் தீர்ப்பது, IMF போன்ற வெளிப்புற தாக்கங்களை எதிர்ப்பது மற்றும் இந்தியா மற்றும் அமெரிக்கா போன்ற நாடுகளில் தேவையற்ற வெளிநாட்டுத் தலையீடுகளை எதிர்ப்பதை நாங்கள் நோக்கமாகக் கொண்டுள்ளோம். பெரும்பான்மையினர் எதிர்கொள்ளும் பிரச்சினைகளுக்கு தீர்வு காணவும், அரச கட்டமைப்பு, பொருளாதாரம் மற்றும் சமூக அரசியல் அமைப்பை மாற்றவும் மக்கள் சக்தியை கட்டியெழுப்புவதே எமது நோக்கமாகும். எனவே, முழு அமைப்பையும் மாற்றும் ஒரு சோசலிச சமுதாயத்தை கட்டியெழுப்ப ஒரு விரிவான வேலைத்திட்டத்தை நாங்கள் முன்மொழிகிறோம்.
                         </p>
 
 
@@ -403,7 +398,7 @@ if (empty($notice['path'])){
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center">
-                        <h2><img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""> Why Choose Us <img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""></h2>
+                        <h4><img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""> Why Choose Us <img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""></h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
@@ -413,88 +408,91 @@ if (empty($notice['path'])){
             <div class="row">
                 <!-- Single Service -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="single-service">
+                    <div class="single-service tam-serivce">
+                        <div class="service-icon">
+                            <img src="../assets/media/flaticon icons/hard-work.png" alt="" height="100px"
+                                width="100px">
+                        </div>
+                        <h4>மக்கள் போராட்டத்தின் அபிலாஷைகளை பிரதிநிதித்துவப்படுத்துதல்                        </h4>
+                        <br>
+                        <p class="lang" key="justice">
+                        மக்கள் போராட்ட முன்னணியில் உள்ள அனைத்து அரசியல் கட்சிகளும், செயற்பாட்டாளர்களும் கடந்த காலங்களில் மக்கள் அதிகாரத்தைக் கட்டியெழுப்பும் நோக்கில் போராட்ட நடவடிக்கைகளில் ஈடுபட்டுள்ளனர். தேர்தல் நடவடிக்கைகளில் கூட, நாங்கள் மக்களின் கோரிக்கைகளை பிரதிநிதித்துவப்படுத்தி, அவற்றை வென்றெடுக்க ஒரு மக்கள் அதிகாரத்தை உருவாக்குகிறோம். அதேபோன்று, கடந்த காலிமுகத்திடல் போராட்டம் உள்ளிட்ட போராட்ட நடவடிக்கைகளின் போது உருவான முன்மொழிவுகள் மற்றும் திட்டங்களை செயல்படுத்துவதற்காக நாங்கள் முன் நிற்கிறோம்.
+                        </p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service tam-serivce">
+                        <div class="service-icon">
+                            <img src="../assets/media/flaticon icons/exit.png" alt="" height="100px" width="100px">
+                        </div>
+                        <h4> Exit IMF வேலைத்திட்டம்
+                        </h4>
+                        <br>
+                        <p>
+                        பொருளாதார நெருக்கடியைத் தீர்ப்பது என்ற போர்வையில் நம்மை இன்னொரு கடன் பொறிக்குள் இழுப்பது மட்டுமல்ல, நமது நாட்டின் பொருளாதார, அரசியல் சுயாதீனத்தை பாதிக்கும் IMF திட்டத்தை ஏற்றுக்கொள்வதுதான் மற்றைய பெரும்பான்மை வேட்பாளர்களின் பொருளாதார வேலைத்திட்டம். ஆனால் இந்த IMF மரணப் பொறியிலிருந்து வெளியேறி, மக்கள் சார்ந்த திட்டத்தின் மூலம் நெருக்கடிக்குத் தீர்வு காணும் வேலைத்திட்டத்தை நாங்கள் முன்மொழிகிறோம்.
+</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service tam-serivce">
+                        <div class="service-icon">
+                            <img src="../assets/media/flaticon icons/protest.png" alt="" height="100px" width="100px">
+                        </div>
+                        <h4>இந்திய-அமெரிக்க தலையீட்டிற்கு எதிரான திட்டத்தை நாங்கள் முன்மொழிகிறோம்
+                        </h4>
+                        <br>
+                        <p>
+                        தற்போது அமெரிக்கா, இந்தியா, சீனா போன்ற நாடுகள் உலக நாடுகளை கைப்பற்றி உலகின் பொருளாதார வல்லரசாக மாற திட்டங்களை வகுத்து வருகின்றன. இந்நாடுகளின் வேலைத்திட்டத்தின் கைப்பாவைகளாக எமது நாட்டின் ஆட்சியாளர்கள் மாறிவிட்டனர். அத்துடன் இத்திட்டத்தை நிராகரிப்பதற்குப் பதிலாக அதிகாரத்தைக் கோருபவர்கள் அதற்கு அடிபணியும் நிலையும் உள்ளது. ஆனால் இந்த நிர்ப்பந்தமான தலையீட்டிற்கு எதிராக உலகெங்கிலும் உள்ள ஒடுக்கப்பட்டவர்கள் ஒன்று கூடி போராட்டம் நடத்தும் திட்டத்தை நாங்கள் முன்மொழிகிறோம்.
+</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service tam-serivce">
+                        <div class="service-icon">
+                            <img src="../assets/media/flaticon icons/cooperation (3).png" alt="" height="100px"
+                                width="100px">
+                        </div>
+                        <h4>தேசிய பிரச்சனைக்கு உண்மையான தீர்வு
+                        </h4>
+                        <br>
+                        <p>
+                        வட-கிழக்கில் பல தசாப்தகால யுத்தம் முடிவுக்கு வந்தாலும் இன்னும் ஒரு தசாப்த காலமாக வடக்கு மக்களின் பிரச்சினைகளை தீர்க்க முன்னைய எந்த நிர்வாகமும் முன்வரவில்லை. அரசியல் நலன்களுக்காக வடக்கின் பிரச்சினைகள் வெட்கக்கேடான வகையில் புறக்கணிக்கப்படுவதுதான் எப்போதும் நடந்தது. எனவே, தேசிய இனப் பிரச்சினைக்காக, வடக்கு - கிழக்கு மக்களுக்கும் தெற்கு மக்களுக்கும், அதிகாரப் பரவலாக்கம் உள்ள தன்னாட்சிப் பிரதேசங்களை ஏற்படுத்துவதோடு அவற்றுடன் தொடர்புடைய இருசபைக் கட்டமைப்புடன் மக்கள் அதிகாரத்தை மக்கள் சபைகள் ஏற்றுக்கொள்ளும் வரலாற்றுத் தீர்மானத்தை முன்வைத்திருக்கிறோம்.</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service tam-serivce">
                         <div class="service-icon">
                             <img src="../assets/media/flaticon icons/social-justice (1).png" alt="" height="100px"
                                 width="100px">
                         </div>
-                        <h2>Social Justice</h2>
+                        <h4>மக்கள் அதிகாரத்தை உறுதி செய்யும் புதிய அரசியலமைப்பு</h4>
+                        <br>
                         <p>
-                        எங்கள் நோக்கம் சமூக நீதியை மையமாகக் கொண்டுள்ளது. சம வாய்ப்புகள் சமமான விளைவுகளை அளிக்கும் ஒரு சமூகத்தை நாங்கள் கற்பனை செய்கிறோம். வர்க்கம், இனம், மதம், மொழி, சாதி, இருப்பிடம் அல்லது பாலினம் ஆகியவற்றில் உள்ள வேறுபாடுகள் வாழ்க்கையை நிறைவு செய்வதற்கும் சமமான பங்கேற்பிற்கும் இடையூறாக இல்லாத ஒரு உலகத்தை நாங்கள் நோக்கமாகக் கொண்டுள்ளோம். எங்கள் இலக்கு வாய்ப்புகள், வளங்கள் மற்றும் சலுகைகளை சமமாகப் பகிர்ந்தளித்து, உண்மையான உள்ளடக்கம் மற்றும் நீதியுள்ள சமூகத்தை உருவாக்குவது. வக்காலத்து, கல்வி மற்றும் ஒத்துழைப்பு மூலம், தடைகளை அகற்றி, அனைவருக்கும் பிரகாசமான, நேர்மையான எதிர்காலத்தை உருவாக்க நாங்கள் அயராது உழைக்கிறோம்.                        </p>
+                        உண்மையில் மக்கள் இறைமை என்ற போர்வையில் தற்போதைய அரசியலமைப்பின் ஊடாக மக்கள் அதிகாரம் ஒதுக்கிவைக்கப்பட்டுள்ளது. நிறைவேற்று அதிகாரம் கொண்ட ஜனாதிபதி முறை இருக்கும் போது நாம் நியமிக்கும் பிரதிநிதிகளை மீள அழைக்கும் அதிகாரம் மக்களுக்கு இல்லை. இது இனவாதத்தையும் மதவெறியையும் ஊக்குவிக்கும் அரசியலமைப்பாகும். எனவே, நிறைவேற்று அதிகாரம் கொண்ட ஜனாதிபதி முறைமையை ஒழித்து, தீர்மானங்களை எடுக்கும் அதிகாரத்தை மக்களுக்கு வழங்கும், அரசியலமைப்பு ரீதியாக மக்களின் உரிமைகளை உறுதிப்படுத்தும் புதிய அரசியலமைப்பை உருவாக்கும் திட்டத்தை முன்வைக்கிறோம்.</p>
                     </div>
                 </div>
                 <!-- //Single Service -->
-                <!-- Single Service -->
+                 <!-- Single Service -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="single-service">
+                    <div class="single-service tam-serivce">
                         <div class="service-icon">
-                            <img src="../assets/media/flaticon icons/hammer (1).png" alt="" height="100px" width="100px">
-                        </div>
-                        <h2>Economic Democracy</h2>
-                        <p>
-                            We recognize the widespread struggle to meet basic needs in our society. In today's complex
-                            world, we understand that people require more than essentials – they need secure housing,
-                            food, healthcare, education, technology access, and leisure. Our definition of a robust
-                            economy includes supporting such a society, measuring prosperity not only by economic growth
-                            but by the quality of life for all citizens. Recent events underscore the importance of a
-                            resilient economy that prioritizes equity alongside growth and sustainable development in
-                            our policies.
-                        </p>
-                    </div>
-                </div>
-                <!-- //Single Service -->
-                <!-- Single Service -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-service">
-                        <div class="service-icon">
-                            <img src="../assets/media/flaticon icons/cooperation.png" alt="" height="100px" width="100px">
-                        </div>
-                        <h2>Solidarity and Cooperation</h2>
-                        <p>
-                            We envision a compassionate, cooperative society where individuals recognize their rights
-                            and responsibilities toward one another. Our goal is to build strong communities, fostering
-                            belonging, safety, and mutual respect, as we believe such values are essential for thriving
-                            societies. Through education, inclusivity, and collective effort, we strive to create a
-                            world where everyone has the opportunity to reach their full potential, contributing to the
-                            well-being of all.
-                        </p>
-                    </div>
-                </div>
-                <!-- //Single Service -->
-                <!-- Single Service -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-service">
-                        <div class="service-icon">
-                            <img src="../assets/media/flaticon icons/cooperation (1).png" alt="" height="100px"
+                            <img src="../assets/media/flaticon icons/system.png" alt="" height="100px"
                                 width="100px">
                         </div>
-                        <h2>Sustainability</h2>
+                        <h4>முறைமை மாற்றம்</h4>
+                        <br>
                         <p>
-                            We are dedicated to a better world for future generations. Our commitment includes long-term
-                            environmental protection and sustainable resource use. We advocate harmonious coexistence
-                            between nature and humanity, prioritizing responsible resource usage over short-term gains,
-                            all for the well-being of future generations. Through education, innovation, and global
-                            cooperation, we aim to leave a legacy of stewardship that ensures a thriving planet for
-                            generations to come. </p>
-                    </div>
-                </div>
-                <!-- //Single Service -->
-                <!-- Single Service -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-service">
-                        <div class="service-icon">
-                            <img src="../assets/media/flaticon icons/cooperation (1).png" alt="" height="100px"
-                                width="100px">
+                        கடந்த கோவிட் பெருந்தொற்று மற்றும் பொருளாதார நெருக்கடியின் போது, பெரிய அளவிலான கம்பனிகள் இலாப மலைகளைக் குவித்தபோது, இந்த நாட்டின் சாதாரண மக்கள் கடுமையான இழப்புக்களை எதிர்கொண்டனர். இன்றும் இந்நாட்டுப் பொது மக்கள் மலையளவு கடன் சுமையை சுமக்கிறார்கள். ஒட்டுமொத்த சமூகமும் கடுமையான ஏற்றத்தாழ்வில் சிக்கித் தவிக்கிறது; சுயநலன்களால் உந்தப்படும் நிலைக்கு செல்கிறது. எனவே, இந்த இழிந்த முதலாளித்துவத்திற்கு பதிலாக, ஒரு சோசலிச சமூக அமைப்பை உருவாக்கும் திட்டத்தை நாங்கள் முன்மொழிகிறோம்.
+                        </p>
                         </div>
-                        <h2>Sustainability</h2>
-                        <p>
-                            We are dedicated to a better world for future generations. Our commitment includes long-term
-                            environmental protection and sustainable resource use. We advocate harmonious coexistence
-                            between nature and humanity, prioritizing responsible resource usage over short-term gains,
-                            all for the well-being of future generations. Through education, innovation, and global
-                            cooperation, we aim to leave a legacy of stewardship that ensures a thriving planet for
-                            generations to come. </p>
-                    </div>
                 </div>
                 <!-- //Single Service -->
             </div>

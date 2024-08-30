@@ -358,6 +358,7 @@ button:focus {
   position: absolute;
   z-index: 999;
   max-width: 40%;
+  
 }
 
 .hero-content h2 {
@@ -527,7 +528,28 @@ button:focus {
   opacity: 0.5;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
+.about-content-ab{
+  position: relative;
+  width: 100%;
+}
+.about-content-ab h2 span{
+  color: #ffc900;
+  font-size: 100%;
+}
+.about-content-ab h4 {
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
 
+.about-content-ab p {
+  font-weight: 400;
+  margin: 10px 0;
+}
+.about-content-ab h5 {
+  margin: 30px 0;
+  text-transform: uppercase;
+}
 .about-content h2 span {
   color: #ffc900;
   font-size: 100%;
@@ -681,10 +703,19 @@ button:focus {
   .single-service {
     height: 600px;
   }
+  .tam-serivce{
+    height: 700px;
+  }
 }
-
+.single-service h2{
+  line-height: normal;
+}
+.single-service h4{
+  line-height: normal;
+}
 .single-service h2,
-.single-service p {
+.single-service p,
+.single-service h4 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -703,7 +734,8 @@ button:focus {
 }
 
 .single-service:hover h2,
-.single-service:hover p {
+.single-service:hover p,
+.single-service:hover h4 {
   color: #fff;
 }
 
@@ -1888,15 +1920,6 @@ input:-webkit-autofill {
   animation: spin 1s linear infinite;
 }
 
-.preloader-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80px; /* Adjust size as needed */
-  height: 80px; /* Adjust size as needed */
-}
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -1906,10 +1929,49 @@ input:-webkit-autofill {
   }
 }
 
+.preloader-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px; /* Adjust size as needed */
+  height: 80px; /* Adjust size as needed */
+}
+
+.preloader-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Initially hide all images */
+}
+
+/* Animation for the first image */
+.preloader-image img:first-child {
+  animation: fadeInOut 2s infinite;
+}
+
+/* Animation for the second image */
+/* .preloader-image img:last-child {
+  animation: fadeInOut 2s infinite;
+  animation-delay: 1s; 
+} */
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 /* Hide preloader when content is loaded */
 body.loaded #preloader {
   display: none;
 }
+
 
 /* hover about image */
 .ab-hov {
@@ -2287,6 +2349,10 @@ iframe {
   right: 30px;
   width: 75px;
 }
+.open-button img{
+  width: 100%;
+  max-width: 100%;
+}
 
 /* Add some hover effects to buttons */
 .open-button:hover {
@@ -2545,9 +2611,7 @@ iframe {
   transform: scale(0.95);
 }
 
-.umbIcon {
-  transform: rotate(340deg);
-}
+
 
 .ytBtn {
   background-color: #ff0000;
@@ -2745,3 +2809,6 @@ License Terms .blog-doc {
   transform: rotate(45deg);
 }
 
+.icon_about{
+  transform: scaleX(1);
+}
