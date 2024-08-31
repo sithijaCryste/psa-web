@@ -1,5 +1,25 @@
+<?php 
+require "admin/dist/config/connection.php";
+$docId = $_GET["d"];
+if(isset($docId)){
+    $q = "SELECT * FROM `document` WHERE `id` = '".$docId."'";
 
-<?php require "../admin/dist/config/connection.php" ?>
+    $result = Database::search($q);
+    $data = $result->fetch_assoc();
+// Get the protocol (http or https)
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+
+// Get the host (domain name)
+$host = $_SERVER['HTTP_HOST'];
+
+// Get the URI (path and query string)
+$uri = $_SERVER['REQUEST_URI'];
+
+// Combine them to form the full URL
+$url = $protocol . $host . $uri;
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,13 +34,13 @@
 
     <!-- ====== ALL CSS ====== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css" />
-    <link rel="stylesheet" href="../assets/css/lightbox.min.css" />
-    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../assets/css/animate.css" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 
 <body data-spy="scroll" data-target=".navbar-nav">
@@ -28,7 +48,7 @@
     <div id="preloader">
         <div class="spinner">
             <div class="spinner-border"></div>
-            <img src="../assets/media/icons/PSA logo.png" alt="Preloader Image" class="preloader-image">
+            <img src="assets/media/icons/PSA logo.png" alt="Preloader Image" class="preloader-image">
         </div>
     </div>
 
@@ -39,14 +59,13 @@
     <!-- Header 1 -->
     <header class="bg-secondary header1">
         <div class="container d-flex flex-wrap justify-content-center">
-            <a href="/"
+            <a href="index.php"
                 class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-                <img src="../assets/media/icons/PSA full logo.png" alt="Bootstrap" height="80" width="250" />
+                <img src="assets/media/icons/PSA full logo.png" alt="Bootstrap" height="80" width="250" />
             </a>
             <div class="col-4 col-lg-auto mb-3 mb-lg-0 d-lg-flex d-none py-3 mx-2">
                 <div class="d-flex">
-                    <a href="" class="icons d-flex justify-content-center align-items-center mx-2"><img
-                            src="../assets/media/flaticon icons/telephone.png" alt=""></a>
+                    <a href="" class="icons d-flex justify-content-center align-items-center mx-2"><img src="assets/media/flaticon icons/telephone.png" alt=""></a>
                 </div>
                 <div class="row">
                     <div class="col">
@@ -61,8 +80,7 @@
             </div>
             <div class="col-4 col-lg-auto mb-3 mb-lg-0 d-lg-flex d-none py-3 mx-2">
                 <div class="d-flex">
-                    <a href="" class="icons d-flex justify-content-center align-items-center mx-2"><img
-                            src="../assets/media/flaticon icons/message.png" alt=""></a>
+                    <a href="" class="icons d-flex justify-content-center align-items-center mx-2"><img src="assets/media/flaticon icons/message.png" alt=""></a>
                 </div>
                 <div class="row">
                     <div class="col">
@@ -108,35 +126,35 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="index.php">HOME</a>
+                        <a class="nav-link " aria-current="page" href="index.php" id="home-page">HOME</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutus.php">ABOUT US</a>
+                        <a class="nav-link" href="aboutus.php" id="about-page">ABOUT US</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="news.php">NEWS</a>
+                        <a class="nav-link " href="news.php" id="news-page">NEWS</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="gallery.php">GALLERY</a>
+                        <a class="nav-link" href="gallery.php" id="gallery-page">GALLERY</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">OFFICIAL DOCUMENTS</a>
+                        <a class="nav-link active" href="officialdocuments.php" >OFFICIAL DOCUMENTS</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Q & A</a>
+                        <a class="nav-link" href="#" id="qa-page">Q & A</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                 </ul>
             </div>
             <ul class="list-group list-group-horizontal bg-danger">
-                <li class="list-group-item bg-danger"><a href="../gallery.php">English</a></li>
-                <li class="list-group-item bg-danger"><a href="">සිංහල</a></li>
-                <li class="list-group-item bg-danger"><a href="../tam/gallery.php">தமிழ்</a></li>
+                <li class="list-group-item bg-danger"><a href="">English</a></li>
+                <li class="list-group-item bg-danger"><a href="sin/officialdocuments.php">සිංහල</a></li>
+                <li class="list-group-item bg-danger"><a href="tam/officialdocuments.php">தமிழ்</a></li>
             </ul>
         </div>
         <a class="open-button " onclick="" href="https://wa.me/94740721180"><img src="assets/media/flaticon icons/help-desk.png" alt=""></a>
@@ -163,85 +181,102 @@
 
     </nav>
     <!-- Navbar -->
-
-    <!-- Page Title -->
-    <div class="page-title bg-img section-padding bg-overlay"
-        style="background-image: url(../assets/images/hero-area/img9.jpg)">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <h2>News</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- // Page Title -->
-
     <!-- ====== // Header ====== -->
 
-    <div class="container mt-4" id="playVi">
-        <div class="row">
-            <div class="col-lg-12">
-                <div id="player" class="col-12 player"></div>
+    <!-- Page Title -->
+    <!-- <div class="page-title bg-img section-padding bg-overlay"
+            style="background-image: url(assets/images/breadcrumb.jpg)">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2>Single Blog</h2>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </div> -->
+    <!-- // Page Title -->
+    </header>
+    <!-- ====== // Header ====== -->
+
+
 
     <section class="blog-section">
         <div class="container">
             <div class="row">
+                <!-- Blog Main Content -->
                 <div class="col-lg-12">
-                    <div class="blog-area">
+                    <div class="blog-post">
+                        <h1 class="blog-title"><?php echo($data['name_sin']) ?></h1>
                         <div class="row">
+                            
+                            <ul class="social-u ">
+                                <li class="">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo ($url); ?>" target="_blank">
+                                        <i class="fab fa-facebook-f icon"></i> </a>
+                                </li>
 
-                       
-                    <?php
-$rs = Database::search("SELECT * FROM `gallery` ORDER BY `date` DESC");
-$num = $rs->num_rows;
+                                <li class="">
+                                    <a href="https://www.facebook.com/dialog/share?link=<?php echo ($url); ?>&text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0A<?php echo($data['name_sin']) ?>A"><i class="fa-brands fa-facebook-messenger icon"></i></a>
+                                </li>
+                                <li class="">
+                                    <a href="https://wa.me/?text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0A<?php echo($data['name_sin']) ?>%0A<?php echo ($url); ?>" target="_blank"><i class="fa-brands fa-whatsapp icon"></i></a>
+                                </li>
+                                <li class="">
+                                    <a href="https://t.me/share/url?url=<?php echo ($url); ?>&text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0A<?php echo($data['name_sin']) ?>%0A"><i class="fa-brands fa-telegram icon"></i></a>
+                                </li>
+                                <li class="">
+                                    <a href="https://twitter.com/intent/tweet?text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0<?php echo($data['name_sin']) ?>%0A &url=<?php echo ($url); ?>" target="_blank"><i class="fab fa-twitter icon"></i></a>
+                                </li>
+                                <li class="">
+                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo ($url); ?>&title=<?php echo($data['name_sin']) ?>"><i class="fab fa-linkedin-in icon"></i></a>
+                                </li>
+                                <li class="">
+                                <a href="mailto:?subject=[Latest News PSA]&body=[Hi!%0AThere%20is%20something%20may%20interesting%20you:%0<?php echo($data['name_sin']) ?>%0A<?php echo ($url); ?>]"><i class="fa-solid fa-envelope icon"></i></a>
+                            </li>
+                            <li class="">
+                                <input type="text" class="d-none" value="<?php echo ($url); ?>" id="myInput" disabled>
+                                <a onclick="myFunction();"><i class="fa-solid fa-share icon"></i></a>
+                                </li>
 
-for ($i = 0; $i < $num; $i++) {
-    $d = $rs->fetch_assoc();
-?>
-                            <!-- Single Blog -->
-                            <div class="col-12 col-md-6 col-lg-4 ">
-                                <div class="single-blog1 ">
-                                    <div class="blog-thumb d-flex justify-content-center thumbnail-container" data-video="<?php echo($d['url']) ?>">
-                                        <a href="#playVi" class="d-flex justify-content-center align-items-center ytBtn" data-video="<?php echo($d['url']) ?>"><i class="fa-brands fa-youtube"></i></a>
-                                    </div>
-                                    <h4 class="blog-title"><?php echo($d['title']) ?></h4>
-                                    <p class="blog-meta1"><?php echo($d['date']) ?></p>
 
-                                </div>
-                            </div>
-                            <!-- Single Blog -->
-
-                            <?php
-}
-                            ?>
-                             </div>
+                            </ul>
+                            
+                            
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-lg-6 text-center">
-                                <a href="#" class="button blog-btn">Load More</a>
+                        <iframe src="../admin/<?php echo($data['url'])  ?>" alt="" class="blog-doc" type="application/pdf" title="Document Preview"></iframe>
+                        <p class="blog-meta"><span class="blog-date"><?php echo($data['date'])  ?></span></p>
+                        <div class="blog-main-content">
+
+                            <div class="blog-content-footer">
+
                             </div>
                         </div>
+                        <!--  Blog Photos -->
+                        
+
+
+
+                        <!-- // Blog Photos -->
+
+
                     </div>
                 </div>
+                <!-- // Blog Main Content -->
 
-                <!-- Sidebar -->
 
-                <!-- // Sidebar -->
             </div>
         </div>
     </section>
-<!-- ====== Footer Area ====== -->
-<footer class="footer-area">
+
+
+    <!-- ====== Footer Area ====== -->
+    <footer class="footer-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <a href="/"
                         class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-                        <img src="../assets/media/icons/PSA full logo-white.png" alt="Bootstrap" height="100"
+                        <img src="assets/media/icons/PSA full logo-white.png" alt="Bootstrap" height="100"
                             width="250" />
                     </a>
                     <div class="row d-block">
@@ -272,9 +307,9 @@ for ($i = 0; $i < $num; $i++) {
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="row d-block">
-                        <h3>සැරිසරන්න </h3>
+                        <h3>Recent Post</h3>
                         <div class="col-8">
                             <a href="" class="text-white text-decoration-none">Home </a>
                         </div>
@@ -290,9 +325,9 @@ for ($i = 0; $i < $num; $i++) {
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="row d-block">
-                        <h3>නවතම පුවත්</h3>
+                        <h3>Navigate</h3>
                         <div class="col-8">
                             <a href="" class="text-white text-decoration-none">Home </a>
                         </div>
@@ -308,7 +343,20 @@ for ($i = 0; $i < $num; $i++) {
                         </div>
                     </div>
                 </div>
-               
+                <div class="col-lg-3">
+                    <div class="row d-block">
+                        <h3>Newsletter SignUp</h3>
+                        <div class="col-8">
+                            <a href="" class="text-white text-decoration-none">Home </a>
+                        </div>
+
+                        <div class="col-8">
+                            <a href="" class="text-white text-decoration-none">Home</a>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -323,42 +371,53 @@ for ($i = 0; $i < $num; $i++) {
         </div>
     </footer>
     <!-- ====== // Footer Area ====== -->
+<script>
+   function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
 
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
 
-    <!-- ====== ALL JS ====== -->
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
 
-
-
-        
-        <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const ytBtns = document.querySelectorAll('.ytBtn');
-        ytBtns.forEach(btn => {
-            btn.addEventListener('click', function(event) {
-                event.preventDefault();
-                const playVi = document.getElementById('playVi');
-                playVi.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    });
+  // Alert the copied text
+  alert("Copied the Url: " + copyText.value);
+}
 </script>
+ 
 
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/skill.bar.js"></script>
+    <script src="assets/js/fact.counter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script src="../assets/js/jquery-3.3.1.min.js"></script>
-<script src="../assets/js/bootstrap.bundle.js"></script>
-<script src="../assets/js/lightbox.min.js"></script>
-<script src="../assets/js/owl.carousel.min.js"></script>
-<script src="../assets/js/jquery.mixitup.js"></script>
-<script src="../assets/js/wow.min.js"></script>
-<script src="../assets/js/typed.js"></script>
-<script src="../assets/js/skill.bar.js"></script>
-<script src="../assets/js/fact.counter.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
-<script src="../assets/js/main.js"></script>
-
-<script src="https://kit.fontawesome.com/495854b60c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/495854b60c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
 
+</body>
+
+</html>
+<?php 
+}else{
+    ?>
+<script>
+    alert("Something Went Wrong");
+</script>
+
+<?php
+}
+
+?>

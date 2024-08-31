@@ -561,7 +561,7 @@ if (empty($notice['path'])){
     <footer class="footer-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <a href="/"
                         class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
                         <img src="../assets/media/icons/PSA full logo-white.png" alt="Bootstrap" height="100"
@@ -595,9 +595,9 @@ if (empty($notice['path'])){
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <div class="row d-block">
-                        <h3>Recent Post</h3>
+                        <h3>සැරිසරන්න </h3>
                         <div class="col-8">
                             <a href="" class="text-white text-decoration-none">Home </a>
                         </div>
@@ -613,9 +613,9 @@ if (empty($notice['path'])){
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <div class="row d-block">
-                        <h3>Navigate</h3>
+                        <h3>නවතම පුවත්</h3>
                         <div class="col-8">
                             <a href="" class="text-white text-decoration-none">Home </a>
                         </div>
@@ -631,20 +631,7 @@ if (empty($notice['path'])){
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="row d-block">
-                        <h3>Newsletter SignUp</h3>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home</a>
-                        </div>
-
-                    </div>
-                </div>
-
+               
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">

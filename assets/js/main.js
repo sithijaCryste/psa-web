@@ -347,7 +347,7 @@ function loadDocumentSi(s) {
     // alert(x);
 
     var f = new FormData();
-    f.append("p", page);
+    f.append("doc", page);
 
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -366,7 +366,7 @@ function loadDocumentTa(t) {
     // alert(x);
 
     var f = new FormData();
-    f.append("p", page);
+    f.append("doc", page);
 
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {

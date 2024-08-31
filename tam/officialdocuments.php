@@ -1,3 +1,5 @@
+<?php require "../admin/dist/config/connection.php" ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,10 +10,9 @@
     <title>Safs - HTML</title>
 
     <!-- ====== Google Fonts ====== -->
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Gemunu+Libre:wght@200..800&family=Noto+Sans+Sinhala:wght@100..900&family=Noto+Sans+Tamil+Supplement&family=Noto+Sans+Tamil:wght@100&family=Noto+Serif+Sinhala:wght@100..900&family=Tiro+Tamil:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" />
+
+    <!-- ====== ALL CSS ====== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap.css" />
     <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css" />
@@ -20,9 +21,12 @@
     <link rel="stylesheet" href="../assets/css/animate.css" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <style>
+        
+    </style>
 </head>
 
-<body data-spy="scroll" data-target=".navbar-nav" onload="loadNewsSi(0);" id="sin">
+<body data-spy="scroll" data-target=".navbar-nav" onload="loadDocumentTa(0)">
     <!-- Preloader -->
     <div id="preloader">
         <div class="spinner">
@@ -38,7 +42,7 @@
     <!-- Header 1 -->
     <header class="bg-secondary header1">
         <div class="container d-flex flex-wrap justify-content-center">
-            <a href="/"
+            <a href="index.php"
                 class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
                 <img src="../assets/media/icons/PSA full logo.png" alt="Bootstrap" height="80" width="250" />
             </a>
@@ -115,7 +119,7 @@
                         <div class="nav-hover d-none"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="news.php">NEWS</a>
+                        <a class="nav-link " href="news.php">NEWS</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                     <li class="nav-item">
@@ -123,7 +127,7 @@
                         <div class="nav-hover d-none"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">OFFICIAL DOCUMENTS</a>
+                        <a class="nav-link active" href="#">OFFICIAL DOCUMENTS</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                     <li class="nav-item">
@@ -133,12 +137,12 @@
                 </ul>
             </div>
             <ul class="list-group list-group-horizontal bg-danger">
-                <li class="list-group-item  bg-danger"><a class=" " href="../news.php">English</a></li>
-                <li class="list-group-item bg-danger"><a class="active" href="">සිංහල</a></li>
-                <li class="list-group-item bg-danger"><a class="" href="../tam/news.php">தமிழ்</a></li>
+                <li class="list-group-item bg-danger"><a href="">English</a></li>
+                <li class="list-group-item bg-danger"><a href="sin/news.php">සිංහල</a></li>
+                <li class="list-group-item bg-danger"><a href="">தமிழ்</a></li>
             </ul>
         </div>
-        <a class="open-button " onclick="" href="https://wa.me/94740721180"><img src="assets/media/flaticon icons/help-desk.png" alt=""></a>
+        <a class="open-button " onclick="" href="https://wa.me/94740721180"><img src="../assets/media/flaticon icons/help-desk.png" alt=""></a>
        
        
       
@@ -159,49 +163,49 @@
     </svg>
   </div>
 </button>
-
     </nav>
     <!-- Navbar -->
-   <!-- Page Title -->
-   <div class="page-title bg-img section-padding bg-overlay" style="background-image: url(../assets/images/hero-area/img9.jpg)" >
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 text-center">
-                <h2 >ප්‍රවෘත්ති</h2>
+
+        <!-- Page Title -->
+        <div class="page-title bg-img section-padding bg-overlay" style="background-image: url(../assets/images/hero-area/img9.jpg)">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2>Official Documents</h2>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- // Page Title -->
-
-<!-- ====== // Header ====== -->
+        <!-- // Page Title -->
+  
+    <!-- ====== // Header ====== -->
 
 
 
-<section class="blog-section">
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="blog-area" id="snid" >
-                
-                    
-                
-               
-            </div>
-        </div>
-        
-        <!-- Sidebar -->
-        
-        <!-- // Sidebar -->
-    </div>
-</div>
-</section>
-
-       <!-- ====== Footer Area ====== -->
-    <footer class="footer-area">
+    <section class="blog-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-12">
+                    <div class="blog-area" id="docTid">
+                        
+                            
+                        
+                       
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                
+                <!-- // Sidebar -->
+            </div>
+        </div>
+    </section>
+
+       <!-- ====== Footer Area ====== -->
+       <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
                     <a href="/"
                         class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
                         <img src="../assets/media/icons/PSA full logo-white.png" alt="Bootstrap" height="100"
@@ -235,9 +239,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="row d-block">
-                        <h3>සැරිසරන්න </h3>
+                        <h3>Recent Post</h3>
                         <div class="col-8">
                             <a href="" class="text-white text-decoration-none">Home </a>
                         </div>
@@ -253,9 +257,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="row d-block">
-                        <h3>නවතම පුවත්</h3>
+                        <h3>Navigate</h3>
                         <div class="col-8">
                             <a href="" class="text-white text-decoration-none">Home </a>
                         </div>
@@ -271,7 +275,20 @@
                         </div>
                     </div>
                 </div>
-               
+                <div class="col-lg-3">
+                    <div class="row d-block">
+                        <h3>Newsletter SignUp</h3>
+                        <div class="col-8">
+                            <a href="" class="text-white text-decoration-none">Home </a>
+                        </div>
+
+                        <div class="col-8">
+                            <a href="" class="text-white text-decoration-none">Home</a>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -286,6 +303,7 @@
         </div>
     </footer>
     <!-- ====== // Footer Area ====== -->
+
 
     <!-- ====== ALL JS ====== -->
     <script>
@@ -309,8 +327,6 @@
      <script src="../assets/js/jquery.mixitup.js"></script>
      <script src="../assets/js/wow.min.js"></script>
      <script src="../assets/js/typed.js"></script>
-     <script src="../assets/js/skill.bar.js"></script>
-     <script src="../assets/js/fact.counter.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
  
      <script src="../assets/js/main.js"></script>
