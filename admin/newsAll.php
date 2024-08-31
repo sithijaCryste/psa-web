@@ -20,6 +20,8 @@ require "dist/config/connection.php";
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Tempusdominus Bootstrap 4 -->
   <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
   <!-- iCheck -->
   <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- JQVMap -->
@@ -196,24 +198,29 @@ require "dist/config/connection.php";
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+            <?php $searchQuery = isset($_GET['q']) ? $_GET['q'] : ''; ?>
+            <form class="d-flex" role="search" method="GET">
+                <input class="form-control bg-body-secondary me-2" type="search" placeholder="Search" aria-label="Search" id="sGallery" name="q" value="<?php echo htmlspecialchars($searchQuery); ?>">
+                <button type="submit" class="btn btn-outline-warning">Search</button>
+            </form>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
+      
     </div>
     <!-- /.content-header -->
-
+    
     <!-- Main content -->
     <section class="blog-section">
+      
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="blog-area">
                         <div class="row">
                         <?php
-$rs = Database::search("SELECT * FROM `news` ORDER BY `date` DESC");
+$rs = Database::search("SELECT * FROM `news` WHERE `header` LIKE '%$searchQuery%' OR `date` LIKE '%$searchQuery%' ORDER BY `date` DESC");
 $num = $rs->num_rows;
 
 for ($i = 0; $i < $num; $i++) {
@@ -229,7 +236,12 @@ for ($i = 0; $i < $num; $i++) {
                                     <a href="news-single.php?n=<?php echo($news['id']) ?>" class="btn btn-info">Read More</a>
                                     <a href="newsUpdate.php?n=<?php echo($news['id']) ?>" class="btn btn-success btn-sm text-end">Update</a>
                                     <a onclick="newsDelete(<?php echo($news['id']) ?>);" class="btn btn-danger btn-sm text-end">Delete</a>
-                                    
+                                    <div class="form-check form-switch text-start mx-3">
+                            <input class="form-check-input" type="checkbox" role="switch" id="fd<?php echo $news['id']; ?>" onchange="changeNewsStatus(<?php echo $news['id']; ?>);" <?php echo ($news['status_id'] == 2) ? 'checked' : ''; ?> />
+                            <label class="form-check-label fw-bold text-info" for="fd<?php echo $news['id']; ?>">
+                              <?php echo ($news['status_id'] == 2) ? 'Pinned' : 'Unpinned'; ?>
+                            </label>
+                          </div>
                                 </div>
                                 
                             </div>
@@ -284,6 +296,8 @@ for ($i = 0; $i < $num; $i++) {
         element.textContent = truncatedText;
       }
     });
+
+   
 </script>
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>

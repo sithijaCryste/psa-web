@@ -82,8 +82,8 @@ if (empty($title)) {
         $dateTime = $date . ' ' . $NewTime;
 
         // SQL Insert Query with Corrected Syntax
-        $insert_query = "INSERT INTO `news` (`header`, `header_sin`, `header_ta`, `content`, `content_sin`, `content_ta`, `main-img`, `img2`, `img3`, `date`) 
-                        VALUES ('$title', '$titleSi', '$titleTa', '$content', '$contentSi', '$contentTa', '".$paths[0]."', '".$paths[1]."', '".$paths[2]."', '$dateTime')";
+        $insert_query = "INSERT INTO `news` (`header`, `header_sin`, `header_ta`, `content`, `content_sin`, `content_ta`, `main-img`, `img2`, `img3`, `date`,`status_id`) 
+                        VALUES ('$title', '$titleSi', '$titleTa', '$content', '$contentSi', '$contentTa', '".$paths[0]."', '".$paths[1]."', '".$paths[2]."', '$dateTime','1')";
 
         $result = Database::iud($insert_query);
 

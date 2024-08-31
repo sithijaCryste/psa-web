@@ -358,7 +358,7 @@ function categoryregister() {
     form.append("c", addnewcategory.value);
     form.append("cs", addnewcategoryS.value);
     form.append("ct", addnewcategoryT.value);
-    form.append("i", addnewcatIcon.value);
+    form.append("i", addnewcatIcon.files[0]);
 
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -375,14 +375,20 @@ function categoryregister() {
 
 function docAddProcess(){
     var inputDocTitle = document.getElementById('inputDocTitle');
+    var inputDocTitleSi = document.getElementById('inputDocTitleSi');
+    var inputDocTitleTa = document.getElementById('inputDocTitleTa');
     var cat = document.getElementById('cat');
     var docFile = document.getElementById('docFile');
+    var docFileTa = document.getElementById('docFileTa');
 
     var form = new FormData();
 
     form.append('inputDocTitle',inputDocTitle.value);
+    form.append('inputDocTitleSi',inputDocTitleSi.value);
+    form.append('inputDocTitleTa',inputDocTitleTa.value);
     form.append('cat',cat.value);
     form.append('docFile',docFile.files[0]);
+    form.append('docFile2',docFileTa.files[0]);
     
     var request = new XMLHttpRequest();
     request.onreadystatechange = function(){
@@ -402,16 +408,22 @@ function docAddProcess(){
 
 function docUpdateProcess(){
     var inputDocTitle = document.getElementById('uinputDocTitle');
+    var inputDocTitleSi = document.getElementById('uinputDocTitleSi');
+    var inputDocTitleTa = document.getElementById('uinputDocTitleTa');
     var cat = document.getElementById('ucat');
     var docFile = document.getElementById('udocFile');
+    var docFile2 = document.getElementById('udocFileTa');
     var doID = document.getElementById('doID');
 
     var form = new FormData();
 
     form.append('inputDocTitle',inputDocTitle.value);
+    form.append('inputDocTitleSi',inputDocTitleSi.value);
+    form.append('inputDocTitleTa',inputDocTitleTa.value);
     form.append('doID',doID.value);
     form.append('cat',cat.value);
     form.append('docFile',docFile.files[0]);
+    form.append('docFile2',docFile2.files[0]);
     
     var request = new XMLHttpRequest();
     request.onreadystatechange = function(){
@@ -475,3 +487,26 @@ function changeStatus(x) {
     r.send();
 
 }
+ function changeNewsStatus(x){
+    // alert(x);
+    var news_id = x;
+
+    var r = new XMLHttpRequest();
+
+    r.onreadystatechange = function () {
+        if (r.readyState == 4) {
+            var t = r.responseText;
+
+            if (t == "Pinned" || t == "Unpinned") {
+                window.location.reload();
+            } else {
+                alert(t);
+            }
+
+        }
+    }
+
+    r.open("GET", "changeNewsStatusProcess.php?n=" + news_id, true);
+    r.send();
+
+ }

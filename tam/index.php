@@ -50,14 +50,14 @@ include "../admin/dist/config/connection.php";
             <div class="col-4 col-lg-auto mb-3 mb-lg-0 d-lg-flex d-none py-3 mx-2">
                 <div class="d-flex">
                     <a href="" class="icons d-flex justify-content-center align-items-center mx-2"><img
-                        src="../assets/media/flaticon icons/telephone.png" alt=""></a>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <h6 class="mb-0">Contact Us</h6>
-                            <div class="row">
-                                <a href="" class="text-decoration-none">
-                                <p class="mb-0">0712345678</p>
+                            src="../assets/media/flaticon icons/telephone.png" alt=""></a>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h6 class="mb-0">Contact Us</h6>
+                        <div class="row">
+                            <a href="tel:0716487812" class="text-decoration-none">
+                                <p class="mb-0">071 648 7812</p>
                             </a>
                         </div>
                     </div>
@@ -66,13 +66,13 @@ include "../admin/dist/config/connection.php";
             <div class="col-4 col-lg-auto mb-3 mb-lg-0 d-lg-flex d-none py-3 mx-2">
                 <div class="d-flex">
                     <a href="" class="icons d-flex justify-content-center align-items-center mx-2"><img
-                        src="../assets/media/flaticon icons/message.png" alt=""></a>
+                            src="../assets/media/flaticon icons/message.png" alt=""></a>
                 </div>
                 <div class="row">
                     <div class="col">
                         <h6 class="mb-0">Email us</h6>
-                        <a href="" class="text-decoration-none">
-                            <p class="mb-0">psamail@gmail.com</p>
+                        <a href="mailto:psalliancelk@gmail.com" class="text-decoration-none">
+                            <p class="mb-0">psalliancelk@gmail.com</p>
                         </a>
                     </div>
                 </div>
@@ -83,18 +83,19 @@ include "../admin/dist/config/connection.php";
                     <div class="social-bg">
                         <!-- Social Link -->
                         <div class="social-aria2">
-                            <a target="_blank" href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/peoplesstrugglealliance?mibextid=ZbWKwL" class="fb"><i class="fab fa-facebook-f"></i></a>
                             <a target="_blank" href="#" class="twit"><i class="fab fa-twitter"></i></a>
                             <a target="_blank" href="#" class="ins"><i class="fab fa-instagram"></i></a>
-                            <a target="_blank" href="#" class="yt"><i class="fab fa-youtube"></i></a>
-                            <a target="_blank" href="#" class="tik"><i class="fab fa-tiktok"></i></a>
+                            <a target="_blank" href="https://youtube.com/@peoplesstrugglealliance?si=Fj1v0Nxske7lMXXD" class="yt"><i class="fab fa-youtube"></i></a>
+                            <a target="_blank" href="https://www.tiktok.com/@psa_lk?_t=8pL3TTMOKOX&_r=1" class="tik"><i class="fab fa-tiktok"></i></a>
+
                         </div>
                         <!-- // Social Link -->
-                        
+
                         <!-- // Social Link -->
                     </div>
                 </div>
-                
+
             </div>
         </header>
         
@@ -127,7 +128,7 @@ include "../admin/dist/config/connection.php";
                         <div class="nav-hover d-none"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="policies-page">OFFICIAL DOCUMENTS</a>
+                        <a class="nav-link" href="officialdocuments.php" id="policies-page">OFFICIAL DOCUMENTS</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                     <li class="nav-item">
@@ -142,27 +143,21 @@ include "../admin/dist/config/connection.php";
                 <li class="list-group-item bg-danger"><a  class="active" href="" >தமிழ்</a></li>
             </ul>
         </div>
-        <a class="open-button " onclick="" href="https://wa.me/94740721180"><img src="../assets/media/flaticon icons/help-desk.png" alt=""></a>
-       
-       
-      
-<button class="cssbuttons-io-button">
-  Join Us
-  <div class="icon">
-    <svg
-      height="24"
-      width="24"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="M0 0h24v24H0z" fill="none"></path>
-      <path
-        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-        fill="currentColor"
-      ></path>
-    </svg>
-  </div>
-</button>
+        <a class="cssbuttons-io-button text-decoration-none" href="https://wa.me/94716487812" > 
+            Join Us
+            <div class="icon">
+                <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+        </a>
 
 
 <!-- HTML !-->
@@ -208,21 +203,29 @@ if (empty($notice['path'])){
     
     <!-- Hero Area Slider -->
     <div class="hero-area-slids owl-carousel ">
+    <?php
+            $ns = Database::search("SELECT * FROM `news` WHERE `status_id` = '2' ORDER BY `status_id` = 2 DESC, `date` DESC ");
+            $numNs = $ns->num_rows;
+
+            for($y = 0; $y < $numNs; $y++ ){
+                $newc = $ns->fetch_assoc();
+           
+        ?>
         <div class="single-slider">
             <!-- Single Background -->
-            <div class="slider-bg" style="background-image: url(../assets/images/hero-area/img10.jpg)">
+            <div class="slider-bg" style="background-image: url('../admin/<?php echo($newc['main-img']) ?>')">
                 <div class="hero-aria" id="home">
                     <!-- Hero Area Content -->
                     <div class="container ">
                         <div class="hero-content  h-100">
                             <div class="d-table ">
                                 <div class="d-table-cell ">
-                                    <h2 class="text-uppercase  ">மக்கள் போராட்ட முன்னணி</h2>
+                                    <h2 class="text-uppercase newsHeadTruncate "><?php echo($newc['header_ta']) ?></h2>
                                     <p class=" text-white truncate1 ">
-                                    எங்கள் நோக்கம் சமூக நீதியை மையமாகக் கொண்டுள்ளது. சம வாய்ப்புகள் சமமான விளைவுகளை அளிக்கும் ஒரு சமூகத்தை நாங்கள் கற்பனை செய்கிறோம். வர்க்கம், இனம், மதம், மொழி, சாதி, இருப்பிடம் அல்லது பாலினம் ஆகியவற்றில் உள்ள வேறுபாடுகள் வாழ்க்கையை நிறைவு செய்வதற்கும் சமமான பங்கேற்பிற்கும் இடையூறாக இல்லாத ஒரு உலகத்தை நாங்கள் நோக்கமாகக் கொண்டுள்ளோம். எங்கள் இலக்கு வாய்ப்புகள், வளங்கள் மற்றும் சலுகைகளை சமமாகப் பகிர்ந்தளித்து, உண்மையான உள்ளடக்கம் மற்றும் நீதியுள்ள சமூகத்தை உருவாக்குவது. வக்காலத்து, கல்வி மற்றும் ஒத்துழைப்பு மூலம், தடைகளை அகற்றி, அனைவருக்கும் பிரகாசமான, நேர்மையான எதிர்காலத்தை உருவாக்க நாங்கள் அயராது உழைக்கிறோம்.
+                                    <?php echo($newc['content_ta']) ?>
                                     </p>
     
-                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
+                                    <a href="single-news.php?n=<?php echo ($newc['id']) ?>" class="btn btn-danger mt-2">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -231,100 +234,8 @@ if (empty($notice['path'])){
             </div>
             <!-- // Single Background -->
         </div>
-        <div class="single-slider">
-            <!-- Single Background -->
-            <div class="slider-bg" style="background-image: url(../assets/images/hero-area/img7.jpg)">
-                <div class="hero-aria" id="home">
-                    <!-- Hero Area Content -->
-                    <div class="container ">
-                        <div class="hero-content  h-100">
-                            <div class="d-table ">
-                                <div class="d-table-cell ">
-                                    <h2 class="text-uppercase  ">மக்கள் போராட்ட முன்னணி</h2>
-                                    <p class=" text-white truncate1">
-                                    எங்கள் நோக்கம் சமூக நீதியை மையமாகக் கொண்டுள்ளது. சம வாய்ப்புகள் சமமான விளைவுகளை அளிக்கும் ஒரு சமூகத்தை நாங்கள் கற்பனை செய்கிறோம். வர்க்கம், இனம், மதம், மொழி, சாதி, இருப்பிடம் அல்லது பாலினம் ஆகியவற்றில் உள்ள வேறுபாடுகள் வாழ்க்கையை நிறைவு செய்வதற்கும் சமமான பங்கேற்பிற்கும் இடையூறாக இல்லாத ஒரு உலகத்தை நாங்கள் நோக்கமாகக் கொண்டுள்ளோம். எங்கள் இலக்கு வாய்ப்புகள், வளங்கள் மற்றும் சலுகைகளை சமமாகப் பகிர்ந்தளித்து, உண்மையான உள்ளடக்கம் மற்றும் நீதியுள்ள சமூகத்தை உருவாக்குவது. வக்காலத்து, கல்வி மற்றும் ஒத்துழைப்பு மூலம், தடைகளை அகற்றி, அனைவருக்கும் பிரகாசமான, நேர்மையான எதிர்காலத்தை உருவாக்க நாங்கள் அயராது உழைக்கிறோம்.
-                                    </p>
-    
-                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- // Single Background -->
-        </div>
-        <div class="single-slider">
-            <!-- Single Background -->
-            <div class="slider-bg" style="background-image: url(../assets/images/hero-area/img9.jpg)">
-                <div class="hero-aria" id="home">
-                    <!-- Hero Area Content -->
-                    <div class="container ">
-                        <div class="hero-content  h-100">
-                            <div class="d-table ">
-                                <div class="d-table-cell ">
-                                    <h2 class="text-uppercase  ">மக்கள் போராட்ட முன்னணி</h2>
-                                    <p class=" text-white truncate1">
-                                    எங்கள் நோக்கம் சமூக நீதியை மையமாகக் கொண்டுள்ளது. சம வாய்ப்புகள் சமமான விளைவுகளை அளிக்கும் ஒரு சமூகத்தை நாங்கள் கற்பனை செய்கிறோம். வர்க்கம், இனம், மதம், மொழி, சாதி, இருப்பிடம் அல்லது பாலினம் ஆகியவற்றில் உள்ள வேறுபாடுகள் வாழ்க்கையை நிறைவு செய்வதற்கும் சமமான பங்கேற்பிற்கும் இடையூறாக இல்லாத ஒரு உலகத்தை நாங்கள் நோக்கமாகக் கொண்டுள்ளோம். எங்கள் இலக்கு வாய்ப்புகள், வளங்கள் மற்றும் சலுகைகளை சமமாகப் பகிர்ந்தளித்து, உண்மையான உள்ளடக்கம் மற்றும் நீதியுள்ள சமூகத்தை உருவாக்குவது. வக்காலத்து, கல்வி மற்றும் ஒத்துழைப்பு மூலம், தடைகளை அகற்றி, அனைவருக்கும் பிரகாசமான, நேர்மையான எதிர்காலத்தை உருவாக்க நாங்கள் அயராது உழைக்கிறோம்.
-                                    </p>
-    
-                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- // Single Background -->
-        </div>
-        <div class="single-slider">
-            <!-- Single Background -->
-            <div class="slider-bg" style="background-image: url(../assets/images/hero-area/img6.jpg)">
-                <div class="hero-aria" id="home">
-                    <!-- Hero Area Content -->
-                    <div class="container ">
-                        <div class="hero-content  h-100">
-                            <div class="d-table ">
-                                <div class="d-table-cell ">
-                                    <h2 class="text-uppercase  ">மக்கள் போராட்ட முன்னணி</h2>
-                                    <p class=" text-white truncate1">
-                                    எங்கள் நோக்கம் சமூக நீதியை மையமாகக் கொண்டுள்ளது. சம வாய்ப்புகள் சமமான விளைவுகளை அளிக்கும் ஒரு சமூகத்தை நாங்கள் கற்பனை செய்கிறோம். வர்க்கம், இனம், மதம், மொழி, சாதி, இருப்பிடம் அல்லது பாலினம் ஆகியவற்றில் உள்ள வேறுபாடுகள் வாழ்க்கையை நிறைவு செய்வதற்கும் சமமான பங்கேற்பிற்கும் இடையூறாக இல்லாத ஒரு உலகத்தை நாங்கள் நோக்கமாகக் கொண்டுள்ளோம். எங்கள் இலக்கு வாய்ப்புகள், வளங்கள் மற்றும் சலுகைகளை சமமாகப் பகிர்ந்தளித்து, உண்மையான உள்ளடக்கம் மற்றும் நீதியுள்ள சமூகத்தை உருவாக்குவது. வக்காலத்து, கல்வி மற்றும் ஒத்துழைப்பு மூலம், தடைகளை அகற்றி, அனைவருக்கும் பிரகாசமான, நேர்மையான எதிர்காலத்தை உருவாக்க நாங்கள் அயராது உழைக்கிறோம்.
-
-                                    </p>
-    
-                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- // Single Background -->
-        </div>
-        <div class="single-slider">
-            <!-- Single Background -->
-            <div class="slider-bg" style="background-image: url(../assets/images/hero-area/img12.jpg)">
-                <div class="hero-aria" id="home">
-                    <!-- Hero Area Content -->
-                    <div class="container ">
-                        <div class="hero-content  h-100">
-                            <div class="d-table ">
-                                <div class="d-table-cell ">
-                                    <h2 class="text-uppercase  ">மக்கள் போராட்ட முன்னணி</h2>
-                                    <p class=" text-white truncate1">
-                                    எங்கள் நோக்கம் சமூக நீதியை மையமாகக் கொண்டுள்ளது. சம வாய்ப்புகள் சமமான விளைவுகளை அளிக்கும் ஒரு சமூகத்தை நாங்கள் கற்பனை செய்கிறோம். வர்க்கம், இனம், மதம், மொழி, சாதி, இருப்பிடம் அல்லது பாலினம் ஆகியவற்றில் உள்ள வேறுபாடுகள் வாழ்க்கையை நிறைவு செய்வதற்கும் சமமான பங்கேற்பிற்கும் இடையூறாக இல்லாத ஒரு உலகத்தை நாங்கள் நோக்கமாகக் கொண்டுள்ளோம். எங்கள் இலக்கு வாய்ப்புகள், வளங்கள் மற்றும் சலுகைகளை சமமாகப் பகிர்ந்தளித்து, உண்மையான உள்ளடக்கம் மற்றும் நீதியுள்ள சமூகத்தை உருவாக்குவது. வக்காலத்து, கல்வி மற்றும் ஒத்துழைப்பு மூலம், தடைகளை அகற்றி, அனைவருக்கும் பிரகாசமான, நேர்மையான எதிர்காலத்தை உருவாக்க நாங்கள் அயராது உழைக்கிறோம்.
-
-                                    </p>
-    
-                                    <a href="#about" class="btn btn-danger mt-2">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- // Single Background -->
-        </div>
+        <?php } ?>
+        
     </div>
     <!-- // Hero Area Slider -->
     </div>

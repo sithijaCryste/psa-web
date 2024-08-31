@@ -380,3 +380,144 @@ function loadDocumentTa(t) {
     request.open("POST", "loadDocumentTa.php", true);
     request.send(f);
 }
+function searchNews(x) {
+    var page = x;
+    var news = document.getElementById("sNews");
+  
+    // alert(page);
+    // alert(news.value);
+  
+    var f = new FormData();
+    f.append("n", news.value);
+    f.append("pg", page);
+    f.append("type", "newsSearch");
+  
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if ((request.readyState == 4) & (request.status == 200)) {
+        var response = request.responseText;
+        // alert(response);
+        document.getElementById("nid").innerHTML = response;
+      }
+    };
+  
+    request.open("POST", "searchProcess.php", true);
+    request.send(f);
+  }
+  function searchDoc(x) {
+    var page = x;
+    var doc = document.getElementById("sdoc");
+     // alert(page);
+    // alert(doc.value);
+  
+    var f = new FormData();
+    f.append("d", doc.value);
+    f.append("pg", page);
+    f.append("type", "docSearch");
+  
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if ((request.readyState == 4) & (request.status == 200)) {
+        var response = request.responseText;
+        // alert(response);
+        document.getElementById("docid").innerHTML = response;
+      }
+    };
+  
+    request.open("POST", "searchProcess.php", true);
+    request.send(f);
+  }
+  function searchDocTa(x) {
+    var page = x;
+    var doc = document.getElementById("Tadoc");
+     // alert(page);
+    // alert(doc.value);
+  
+    var f = new FormData();
+    f.append("d", doc.value);
+    f.append("pg", page);
+    f.append("type", "docSearch");
+  
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if ((request.readyState == 4) & (request.status == 200)) {
+        var response = request.responseText;
+        // alert(response);
+        document.getElementById("docTid").innerHTML = response;
+      }
+    };
+  
+    request.open("POST", "searchProcessTa.php", true);
+    request.send(f);
+  }
+  function searchNewsTa(x) {
+    var page = x;
+    var news = document.getElementById("TaNews");
+  
+    // alert(page);
+    // alert(news.value);
+  
+    var f = new FormData();
+    f.append("n", news.value);
+    f.append("pg", page);
+    f.append("type", "newsSearch");
+  
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if ((request.readyState == 4) & (request.status == 200)) {
+        var response = request.responseText;
+        // alert(response);
+        document.getElementById("tnid").innerHTML = response;
+      }
+    };
+  
+    request.open("POST", "searchProcessTa.php", true);
+    request.send(f);
+  }
+  function searchNewsSi(x) {
+    var page = x;
+    var news = document.getElementById("sinnews");
+  
+    // alert(page);
+    // alert(news.value);
+  
+    var f = new FormData();
+    f.append("n", news.value);
+    f.append("pg", page);
+    f.append("type", "newsSearch");
+  
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if ((request.readyState == 4) & (request.status == 200)) {
+        var response = request.responseText;
+        // alert(response);
+        document.getElementById("snid").innerHTML = response;
+      }
+    };
+  
+    request.open("POST", "searchProcessSi.php", true);
+    request.send(f);
+  }
+  function searchDocTa(x) {
+    var page = x;
+    var doc = document.getElementById("sindoc");
+     // alert(page);
+    // alert(doc.value);
+  
+    var f = new FormData();
+    f.append("d", doc.value);
+    f.append("pg", page);
+    f.append("type", "docSearch");
+  
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if ((request.readyState == 4) & (request.status == 200)) {
+        var response = request.responseText;
+        // alert(response);
+        document.getElementById("docSid").innerHTML = response;
+      }
+    };
+  
+    request.open("POST", "searchProcessSi.php", true);
+    request.send(f);
+  }

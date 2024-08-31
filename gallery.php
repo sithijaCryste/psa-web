@@ -1,4 +1,3 @@
-
 <?php require "admin/dist/config/connection.php" ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,8 +51,8 @@
                     <div class="col">
                         <h6 class="mb-0">Contact Us</h6>
                         <div class="row">
-                            <a href="" class="text-decoration-none">
-                                <p class="mb-0">0712345678</p>
+                            <a href="tel:0716487812" class="text-decoration-none">
+                                <p class="mb-0">071 648 7812</p>
                             </a>
                         </div>
                     </div>
@@ -67,8 +66,8 @@
                 <div class="row">
                     <div class="col">
                         <h6 class="mb-0">Email us</h6>
-                        <a href="" class="text-decoration-none">
-                            <p class="mb-0">psamail@gmail.com</p>
+                        <a href="mailto:psalliancelk@gmail.com" class="text-decoration-none">
+                            <p class="mb-0">psalliancelk@gmail.com</p>
                         </a>
                     </div>
                 </div>
@@ -79,11 +78,11 @@
                     <div class="social-bg">
                         <!-- Social Link -->
                         <div class="social-aria2">
-                            <a target="_blank" href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/peoplesstrugglealliance?mibextid=ZbWKwL" class="fb"><i class="fab fa-facebook-f"></i></a>
                             <a target="_blank" href="#" class="twit"><i class="fab fa-twitter"></i></a>
                             <a target="_blank" href="#" class="ins"><i class="fab fa-instagram"></i></a>
-                            <a target="_blank" href="#" class="yt"><i class="fab fa-youtube"></i></a>
-                            <a target="_blank" href="#" class="tik"><i class="fab fa-tiktok"></i></a>
+                            <a target="_blank" href="https://youtube.com/@peoplesstrugglealliance?si=Fj1v0Nxske7lMXXD" class="yt"><i class="fab fa-youtube"></i></a>
+                            <a target="_blank" href="https://www.tiktok.com/@psa_lk?_t=8pL3TTMOKOX&_r=1" class="tik"><i class="fab fa-tiktok"></i></a>
 
                         </div>
                         <!-- // Social Link -->
@@ -134,32 +133,29 @@
                 </ul>
             </div>
             <ul class="list-group list-group-horizontal bg-danger">
-                <li class="list-group-item bg-danger"><a href="">English</a></li>
-                <li class="list-group-item bg-danger"><a href="">සිංහල</a></li>
-                <li class="list-group-item bg-danger"><a href="">தமிழ்</a></li>
+                <li class="list-group-item bg-danger"><a href="#">English</a></li>
+                <li class="list-group-item bg-danger"><a href="sin/gallery.php">සිංහල</a></li>
+                <li class="list-group-item bg-danger"><a href="tam/gallery.php">தமிழ்</a></li>
             </ul>
         </div>
-        <a class="open-button " onclick="" href="https://wa.me/94740721180"><img src="assets/media/flaticon icons/help-desk.png" alt=""></a>
-       
-       
-      
-<button class="cssbuttons-io-button">
-  Join Us
-  <div class="icon">
-    <svg
-      height="24"
-      width="24"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="M0 0h24v24H0z" fill="none"></path>
-      <path
-        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-        fill="currentColor"
-      ></path>
-    </svg>
-  </div>
-</button>
+
+
+
+        <a class="cssbuttons-io-button text-decoration-none" href="https://wa.me/94716487812" > 
+            Join Us
+            <div class="icon">
+                <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+        </a>
 
     </nav>
     <!-- Navbar -->
@@ -179,44 +175,55 @@
 
     <!-- ====== // Header ====== -->
 
-    <div class="container mt-4" id="playVi">
+    <div class="container mt-4 mb-4" id="playVi">
         <div class="row">
             <div class="col-lg-12">
                 <div id="player" class="col-12 player"></div>
             </div>
         </div>
     </div>
+    <div class="row float-end m-3">
+        <?php $searchQuery = isset($_GET['q']) ? $_GET['q'] : ''; ?>
+        <div class="col-lg-12">
+            <form class="d-flex" role="search" method="GET">
+                <input class="form-control bg-body-secondary me-2" type="search" placeholder="Search" aria-label="Search" id="sGallery" name="q" value="<?php echo htmlspecialchars($searchQuery); ?>">
+                <button type="submit" class="btn btn-outline-warning">Search</button>
+            </form>
 
+
+        </div>
+    </div>
     <section class="blog-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="blog-area">
                         <div class="row">
-<?php
-$rs = Database::search("SELECT * FROM `gallery` ORDER BY `date` DESC");
-$num = $rs->num_rows;
+                            <?php
+                            
+                            $rs = Database::search("SELECT * FROM `gallery` WHERE `title` LIKE '%$searchQuery%' OR `date` LIKE '%$searchQuery%' ORDER BY `date` DESC");
+                            $num = $rs->num_rows;
 
-for ($i = 0; $i < $num; $i++) {
-    $d = $rs->fetch_assoc();
-?>
-                            <!-- Single Blog -->
-                            <div class="col-12 col-md-6 col-lg-4 ">
-                                <div class="single-blog1 ">
-                                    <div class="blog-thumb d-flex justify-content-center thumbnail-container" data-video="<?php echo($d['url']) ?>">
-                                        <a href="#playVi" class="d-flex justify-content-center align-items-center ytBtn" data-video="<?php echo($d['url']) ?>"><i class="fa-brands fa-youtube"></i></a>
+                            for ($i = 0; $i < $num; $i++) {
+                                $d = $rs->fetch_assoc();
+                            ?>
+                                <!-- Single Blog -->
+                                <div class="col-12 col-md-6 col-lg-4 ">
+                                    <div class="single-blog1 ">
+                                        <div class="blog-thumb d-flex justify-content-center thumbnail-container" data-video="<?php echo ($d['url']) ?>">
+                                            <a href="#playVi" class="d-flex justify-content-center align-items-center ytBtn" data-video="<?php echo ($d['url']) ?>"><i class="fa-brands fa-youtube"></i></a>
+                                        </div>
+                                        <h4 class="blog-title"><?php echo ($d['title']) ?></h4>
+                                        <p class="blog-meta1"><?php echo ($d['date']) ?></p>
+
                                     </div>
-                                    <h4 class="blog-title"><?php echo($d['title']) ?></h4>
-                                    <p class="blog-meta1"><?php echo($d['date']) ?></p>
-
                                 </div>
-                            </div>
-                            <!-- Single Blog -->
+                                <!-- Single Blog -->
 
                             <?php
-}
+                            }
                             ?>
-                            
+
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-lg-6 text-center">
@@ -341,36 +348,52 @@ for ($i = 0; $i < $num; $i++) {
 
 
 
-        
-        <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const ytBtns = document.querySelectorAll('.ytBtn');
-        ytBtns.forEach(btn => {
-            btn.addEventListener('click', function(event) {
-                event.preventDefault();
-                const playVi = document.getElementById('playVi');
-                playVi.scrollIntoView({ behavior: 'smooth' });
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const ytBtns = document.querySelectorAll('.ytBtn');
+            ytBtns.forEach(btn => {
+                btn.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const playVi = document.getElementById('playVi');
+                    playVi.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
             });
         });
-    });
-</script>
+
+        function searchGallery() {
+            const searchInput = document.getElementById('sGallery').value.toLowerCase();
+            const blogs = document.querySelectorAll('.single-blog1');
+
+            blogs.forEach(blog => {
+                const title = blog.querySelector('.blog-title').innerText.toLowerCase();
+                const date = blog.querySelector('.blog-meta1').innerText.toLowerCase();
+
+                if (title.includes(searchInput) || date.includes(searchInput)) {
+                    blog.style.display = '';
+                } else {
+                    blog.style.display = 'none';
+                }
+            });
+        }
+    </script>
 
 
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/js/bootstrap.bundle.js"></script>
-<script src="assets/js/lightbox.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/jquery.mixitup.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/typed.js"></script>
-<script src="assets/js/skill.bar.js"></script>
-<script src="assets/js/fact.counter.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 
-<script src="https://kit.fontawesome.com/495854b60c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/495854b60c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
-

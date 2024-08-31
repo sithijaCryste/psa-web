@@ -1014,10 +1014,7 @@ button:focus {
   height: 350px;
 }
 
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+
 .truncate1 {
   display: -webkit-box;
   -webkit-line-clamp: 5; /* Number of lines to display */
@@ -1083,6 +1080,15 @@ h4.blog-title a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
+}
+.newsHeadTruncate{
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: normal;
+  line-height: 20px;
 }
 
 .blog-meta {
@@ -2753,6 +2759,11 @@ iframe {
   transition: 0.5s;
 }
 .serviceBox .service-icon a {
+  color: white;
+  font-size: 40px;
+  margin: 0 auto 30px;
+}
+.serviceBox .service-icon img {
   color: white;
   font-size: 40px;
   margin: 0 auto 30px;

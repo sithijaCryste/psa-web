@@ -1,5 +1,5 @@
 <?php 
-require "admin/dist/config/connection.php";
+require "../admin/dist/config/connection.php";
 $docId = $_GET["d"];
 if(isset($docId)){
     $q = "SELECT * FROM `document` WHERE `id` = '".$docId."'";
@@ -34,13 +34,13 @@ $url = $protocol . $host . $uri;
 
     <!-- ====== ALL CSS ====== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
-    <link rel="stylesheet" href="assets/css/lightbox.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="../assets/css/lightbox.min.css" />
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
 </head>
 
 <body data-spy="scroll" data-target=".navbar-nav">
@@ -48,7 +48,7 @@ $url = $protocol . $host . $uri;
     <div id="preloader">
         <div class="spinner">
             <div class="spinner-border"></div>
-            <img src="assets/media/icons/PSA logo.png" alt="Preloader Image" class="preloader-image">
+            <img src="../assets/media/icons/PSA logo.png" alt="Preloader Image" class="preloader-image">
         </div>
     </div>
 
@@ -61,18 +61,19 @@ $url = $protocol . $host . $uri;
         <div class="container d-flex flex-wrap justify-content-center">
             <a href="index.php"
                 class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-                <img src="assets/media/icons/PSA full logo.png" alt="Bootstrap" height="80" width="250" />
+                <img src="../assets/media/icons/PSA full logo.png" alt="Bootstrap" height="80" width="250" />
             </a>
             <div class="col-4 col-lg-auto mb-3 mb-lg-0 d-lg-flex d-none py-3 mx-2">
                 <div class="d-flex">
-                    <a href="" class="icons d-flex justify-content-center align-items-center mx-2"><img src="assets/media/flaticon icons/telephone.png" alt=""></a>
+                    <a href="" class="icons d-flex justify-content-center align-items-center mx-2"><img
+                            src="../../assets/media/flaticon icons/telephone.png" alt=""></a>
                 </div>
                 <div class="row">
                     <div class="col">
                         <h6 class="mb-0">Contact Us</h6>
                         <div class="row">
-                            <a href="" class="text-decoration-none">
-                                <p class="mb-0">0712345678</p>
+                            <a href="tel:0716487812" class="text-decoration-none">
+                                <p class="mb-0">071 648 7812</p>
                             </a>
                         </div>
                     </div>
@@ -80,13 +81,14 @@ $url = $protocol . $host . $uri;
             </div>
             <div class="col-4 col-lg-auto mb-3 mb-lg-0 d-lg-flex d-none py-3 mx-2">
                 <div class="d-flex">
-                    <a href="" class="icons d-flex justify-content-center align-items-center mx-2"><img src="assets/media/flaticon icons/message.png" alt=""></a>
+                    <a href="" class="icons d-flex justify-content-center align-items-center mx-2"><img
+                            src="../../assets/media/flaticon icons/message.png" alt=""></a>
                 </div>
                 <div class="row">
                     <div class="col">
                         <h6 class="mb-0">Email us</h6>
-                        <a href="" class="text-decoration-none">
-                            <p class="mb-0">psamail@gmail.com</p>
+                        <a href="mailto:psalliancelk@gmail.com" class="text-decoration-none">
+                            <p class="mb-0">psalliancelk@gmail.com</p>
                         </a>
                     </div>
                 </div>
@@ -97,11 +99,11 @@ $url = $protocol . $host . $uri;
                     <div class="social-bg">
                         <!-- Social Link -->
                         <div class="social-aria2">
-                            <a target="_blank" href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/peoplesstrugglealliance?mibextid=ZbWKwL" class="fb"><i class="fab fa-facebook-f"></i></a>
                             <a target="_blank" href="#" class="twit"><i class="fab fa-twitter"></i></a>
                             <a target="_blank" href="#" class="ins"><i class="fab fa-instagram"></i></a>
-                            <a target="_blank" href="#" class="yt"><i class="fab fa-youtube"></i></a>
-                            <a target="_blank" href="#" class="tik"><i class="fab fa-tiktok"></i></a>
+                            <a target="_blank" href="https://youtube.com/@peoplesstrugglealliance?si=Fj1v0Nxske7lMXXD" class="yt"><i class="fab fa-youtube"></i></a>
+                            <a target="_blank" href="https://www.tiktok.com/@psa_lk?_t=8pL3TTMOKOX&_r=1" class="tik"><i class="fab fa-tiktok"></i></a>
 
                         </div>
                         <!-- // Social Link -->
@@ -152,32 +154,26 @@ $url = $protocol . $host . $uri;
                 </ul>
             </div>
             <ul class="list-group list-group-horizontal bg-danger">
-                <li class="list-group-item bg-danger"><a href="">English</a></li>
-                <li class="list-group-item bg-danger"><a href="sin/officialdocuments.php">සිංහල</a></li>
-                <li class="list-group-item bg-danger"><a href="tam/officialdocuments.php">தமிழ்</a></li>
+                <li class="list-group-item bg-danger"><a href="../officialdocuments.php">English</a></li>
+                <li class="list-group-item bg-danger"><a href="../sin/officialdocuments.php">සිංහල</a></li>
+                <li class="list-group-item bg-danger"><a href="#" class="active">தமிழ்</a></li>
             </ul>
         </div>
-        <a class="open-button " onclick="" href="https://wa.me/94740721180"><img src="assets/media/flaticon icons/help-desk.png" alt=""></a>
-       
-       
-      
-<button class="cssbuttons-io-button">
-  Join Us
-  <div class="icon">
-    <svg
-      height="24"
-      width="24"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="M0 0h24v24H0z" fill="none"></path>
-      <path
-        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-        fill="currentColor"
-      ></path>
-    </svg>
-  </div>
-</button>
+        <a class="cssbuttons-io-button text-decoration-none" href="https://wa.me/94716487812" > 
+            Join Us
+            <div class="icon">
+                <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+        </a>
 
     </nav>
     <!-- Navbar -->
@@ -185,7 +181,7 @@ $url = $protocol . $host . $uri;
 
     <!-- Page Title -->
     <!-- <div class="page-title bg-img section-padding bg-overlay"
-            style="background-image: url(assets/images/breadcrumb.jpg)">
+            style="background-image: url(../assets/images/breadcrumb.jpg)">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 text-center">
@@ -243,7 +239,7 @@ $url = $protocol . $host . $uri;
                             
                             
                         </div>
-                        <iframe src="../admin/<?php echo($data['url'])  ?>" alt="" class="blog-doc" type="application/pdf" title="Document Preview"></iframe>
+                        <iframe src="../admin/<?php echo($data['url_tam'])  ?>" alt="" class="blog-doc" type="application/pdf" title="Document Preview"></iframe>
                         <p class="blog-meta"><span class="blog-date"><?php echo($data['date'])  ?></span></p>
                         <div class="blog-main-content">
 
@@ -276,7 +272,7 @@ $url = $protocol . $host . $uri;
                 <div class="col-lg-3">
                     <a href="/"
                         class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-                        <img src="assets/media/icons/PSA full logo-white.png" alt="Bootstrap" height="100"
+                        <img src="../assets/media/icons/PSA full logo-white.png" alt="Bootstrap" height="100"
                             width="250" />
                     </a>
                     <div class="row d-block">
@@ -389,18 +385,18 @@ $url = $protocol . $host . $uri;
 </script>
  
 
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.js"></script>
-    <script src="assets/js/lightbox.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery.mixitup.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/typed.js"></script>
-    <script src="assets/js/skill.bar.js"></script>
-    <script src="assets/js/fact.counter.js"></script>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/lightbox.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/jquery.mixitup.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/typed.js"></script>
+    <script src="../assets/js/skill.bar.js"></script>
+    <script src="../assets/js/fact.counter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 
     <script src="https://kit.fontawesome.com/495854b60c.js" crossorigin="anonymous"></script>
 </body>

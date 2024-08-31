@@ -197,8 +197,11 @@ require "dist/config/connection.php";
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+            <?php $searchQuery = isset($_GET['q']) ? $_GET['q'] : ''; ?>
+            <form class="d-flex" role="search" method="GET">
+                <input class="form-control bg-body-secondary me-2" type="search" placeholder="Search" aria-label="Search" id="sGallery" name="q" value="<?php echo htmlspecialchars($searchQuery); ?>">
+                <button type="submit" class="btn btn-outline-warning">Search</button>
+            </form>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -223,7 +226,7 @@ require "dist/config/connection.php";
                     <div class="blog-area">
                         <div class="row">
 <?php
-$rs = Database::search("SELECT * FROM `gallery` ORDER BY `date` DESC");
+$rs = Database::search("SELECT * FROM `gallery` WHERE `title` LIKE '%$searchQuery%' OR `date` LIKE '%$searchQuery%' ORDER BY `date` DESC");
 $num = $rs->num_rows;
 
 for ($i = 0; $i < $num; $i++) {

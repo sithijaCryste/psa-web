@@ -65,7 +65,7 @@ if ($num2 == 0) {
         <div class="col-lg-6 text-center">
             <ul class="pagination d-flex justify-content-center align-items-center text-center">
                 <li class="page-item">
-                    <a class="page-link" <?php if ($pageno <= 1) { echo("#"); } else { ?>onclick="loadDocument(<?php echo ($pageno - 1) ?>)"<?php } ?>><<</a>
+                    <a class="page-link" <?php if ($pageno <= 1) { echo("#"); } else { ?>onclick="loadDocumentTa(<?php echo ($pageno - 1) ?>)"<?php } ?>><<</a>
                 </li>
 
                 <?php
@@ -73,13 +73,13 @@ if ($num2 == 0) {
                     if ($y == $pageno) {
                         ?>
                         <li class="page-item active">
-                            <a class="page-link" onclick="loadDocument(<?php echo ($y) ?>);"><?php echo ($y) ?></a>
+                            <a class="page-link" onclick="loadDocumentTa(<?php echo ($y) ?>);"><?php echo ($y) ?></a>
                         </li>
                         <?php
                     } else {
                         ?>
                         <li class="page-item">
-                            <a class="page-link" onclick="loadDocument(<?php echo ($y) ?>);"><?php echo ($y) ?></a>
+                            <a class="page-link" onclick="loadDocumentTa(<?php echo ($y) ?>);"><?php echo ($y) ?></a>
                         </li>
                         <?php
                     }
@@ -87,7 +87,7 @@ if ($num2 == 0) {
                 ?>
 
                 <li class="page-item">
-                    <a class="page-link" <?php if ($pageno >= $num_of_pages) { echo("#"); } else { ?>onclick="loadDocument(<?php echo ($pageno + 1) ?>);"<?php } ?>>>></a>
+                    <a class="page-link" <?php if ($pageno >= $num_of_pages) { echo("#"); } else { ?>onclick="loadDocumentTa(<?php echo ($pageno + 1) ?>);"<?php } ?>>>></a>
                 </li>
             </ul>
         </div>

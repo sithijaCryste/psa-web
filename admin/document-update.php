@@ -236,6 +236,14 @@ if(isset($docId)){
                                         <input type="text" id="uinputDocTitle" class="form-control" value="<?php echo($doc['name']) ?>">
                                     </div>
                                     <div class="form-group">
+                                        <label for="uinputDocTitle">Document Title(සිංහල)</label>
+                                        <input type="text" id="uinputDocTitleSi" class="form-control" value="<?php echo($doc['name_sin']) ?>">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="uinputDocTitle">Document Title(தமிழ்)</label>
+                                        <input type="text" id="uinputDocTitleTa" class="form-control" value="<?php echo($doc['name_tam']) ?>">
+                                    </div>
+                                    <div class="form-group">
                                     <select class="form-select" aria-label="Default select example" id="ucat"> 
                                         <option value="<?php echo($catD['cat_id']) ?>"><?php echo($catD['cat_name']) ?></option>
                             <?php
@@ -257,6 +265,10 @@ if(isset($docId)){
                                     <div class="form-group">
                                         <label for="udocFile">Document (PDF only)</label>
                                         <input type="file" id="udocFile" class="form-control" value="<?php echo($doc['url']) ?>">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="udocFile">Document (PDF only)</label>
+                                        <input type="file" id="udocFileTa" class="form-control" value="<?php echo($doc['url_tam']) ?>">
                                     </div>
 
                                 </div>

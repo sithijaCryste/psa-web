@@ -225,6 +225,14 @@ if (isset($_SESSION["a"])) {
                                         <input type="text" id="inputDocTitle" class="form-control">
                                     </div>
                                     <div class="form-group">
+                                        <label for="inputDocTitleSi">Document Title(සිංහල) </label>
+                                        <input type="text" id="inputDocTitleSi" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputDocTitleTa">Document Title(தமிழ்)</label>
+                                        <input type="text" id="inputDocTitleTa" class="form-control">
+                                    </div>
+                                    <div class="form-group">
                                     <select class="form-select" aria-label="Default select example" id="cat"> 
                                         <option value="0">Select Your Category</option>
                             <?php
@@ -246,6 +254,10 @@ if (isset($_SESSION["a"])) {
                                     <div class="form-group">
                                         <label for="docFile">Document (PDF only)</label>
                                         <input type="file" id="docFile" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="docFile">Document Tamil (PDF only)</label>
+                                        <input type="file" id="docFileTa" class="form-control">
                                     </div>
 
                                 </div>
