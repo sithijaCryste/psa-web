@@ -312,7 +312,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="section-title text-center">
-                        <h2>Partner Organizations & Political Parties</h2>
+                        <h2><img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""> Partner Organizations & Political Parties <img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""></h2>
 
                     </div>
                 </div>

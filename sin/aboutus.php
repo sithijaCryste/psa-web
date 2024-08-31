@@ -185,8 +185,8 @@
             <div class="row justify-content-start">
                 <div class="col-lg-12">
                     <div class="section-title text-start">
-                        <h1>ජන <span style="color: #ffc900;">අරගල</span> සන්ධානය</h1>
-                        <h4>කවුද මේ ජන අරගල සන්ධානය</h4>
+                        <h1><img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""> ජන <span style="color: #ffc900;">අරගල</span> සන්ධානය <img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""></h1>
+                        <h4>කවුද මේ ජන අරගල සන්ධානය(PSA)?</h4>
                         <p>
                         ජන අරගල සන්ධානය යනු ගාලුමුවදොර අරගලයට සහ පෙර පැවති අරගල සහ ජනතා නැගිටීම්වලට සම්බන්ධ වූ ශ්‍රී ලංකාවේ ක්‍රියාකාරීන්, වෘත්තිකයන්, කලාකරුවන් සහ වාමාංශික පක්ෂ කිහිපයක්ද එක්ව සෑදුනු ජනතාවගේ සන්ධානයකි.
                         </p>
@@ -309,44 +309,26 @@
             <div class="row justify-content-start">
                 <div class="col-lg-12">
                     <div class="section-title text-center">
-                        <h2>Partner Organizations & Political Parties</h2>
+                        <h2><img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""> අප හා සම්බන්ධ සංවිධාන සහ දේශපාලන පක්ෂ <img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""></h2>
 
                     </div>
                 </div>
             </div>
             
-            <div class="row">
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+            <div class="mx-5 row g-2 row-gap-0 text-end ">
+                <div class="col-12 col-lg-3 col-md-6 ">
+
+                    <p class="text-start"><img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">පෙරටුගාමී සමාජවාදි පක්ෂය‍</p>
                 </div>
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+                <div class="col-12 col-lg-3 col-md-6 ">
+
+                    <p class="text-start"><img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">නව ප්‍රජාතන්ත්‍රවාදී මාක්ස් ලෙනින්වාදී පක්ෂය‍</p>
                 </div>
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+                <div class="col-12 col-lg-3 col-md-6 ">
+
+                    <p class="text-start"><img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">සමාජවාදී ජනතා සංසදය</p>
                 </div>
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist</p>
-                </div><div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
-                </div>
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
-                </div>
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
-                </div>
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
-                </div>
+               
             </div>
         </div>
     </section>

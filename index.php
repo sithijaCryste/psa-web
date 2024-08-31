@@ -532,7 +532,7 @@ if (empty($notice['path'])){
                 <div class="col-lg-6">
                     <div class="section-title text-center">
                         <h2><img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""> Contact Us <img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>Ask questions, argue and get answers.</p>
                     </div>
                 </div>
             </div>

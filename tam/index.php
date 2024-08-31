@@ -515,8 +515,8 @@ if (empty($notice['path'])){
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center">
-                        <h2><img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""> Contact Us <img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h2><img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""> எங்களை தொடர்பு <img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""></h2>
+                        <p>கேள்விகளைக் கேளுங்கள், வாதிடுங்கள் மற்றும் பதில்களைப் பெறுங்கள்.</p>
                     </div>
                 </div>
             </div>
@@ -528,26 +528,26 @@ if (empty($notice['path'])){
                     <!-- Form -->
                     <form class="row g-2">
                         <div class="col-md-6">
-                          <label for="inputName" class="form-label">Name</label>
+                          <label for="inputName" class="form-label">பெயர்</label>
                           <input type="email" class="form-control" id="inputName">
                         </div>
                         <div class="col-md-6">
-                          <label for="inputEmail" class="form-label">Email</label>
+                          <label for="inputEmail" class="form-label">மின்னஞ்சல் முகவரி</label>
                           <input type="password" class="form-control" id="inputEmail">
                         </div>
                         <div class="col-12">
-                          <label for="inputSubject" class="form-label">Subject</label>
+                          <label for="inputSubject" class="form-label">வகைகள்</label>
                           <input type="text" class="form-control" id="inputSubject" >
                         </div>
                         
                         <div class="col-12">
-                            <label for="inputMessage" class="form-label">Message</label>
+                            <label for="inputMessage" class="form-label">கேள்வி</label>
                             <textarea type="text" class="form-control" id="inputMessage" rows="10" ></textarea>
                           </div>
                           
                         
                         <div class="col-12 d-flex justify-content-center align-items-center">
-                          <button type="submit" class=" col-6 btn btn-warning">Send Message</button>
+                          <button type="submit" class=" col-6 btn btn-warning">சமர்ப்பிக்</button>
                         </div>
                       </form>
                     <!-- // Form -->

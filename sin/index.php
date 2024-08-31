@@ -217,7 +217,7 @@ if (empty($notice['path'])){
                         <div class="hero-content  h-100">
                             <div class="d-table ">
                                 <div class="d-table-cell ">
-                                    <h2 class="text-uppercase  ">People's Struggle Alliance vision</h2>
+                                    <h2 class="text-uppercase  ">ජන අරගල සන්ධානය</h2>
                                     <p class=" text-white truncate1 ">
                                     අපගේ මෙහෙවර සමාජ සාධාරණත්වය මත කේන්ද්‍රගත වේ. සමාන අවස්ථා සාධාරණ ප්‍රතිඵල ලබා දෙන සමාජයක් අපි අපේක්ෂා කරමු. පංතිය, වාර්ගිකත්වය, ආගම, භාෂාව, කුලය, ස්ථානය හෝ ස්ත්‍රී පුරුෂ භාවයේ වෙනස්කම් ජීවිත සපුරාලීමට සහ සමාන සහභාගීත්වයට බාධාවක් නොවන ලෝකයක් අපි ඉලක්ක කරමු. අපගේ ඉලක්කය වන්නේ අවස්ථා, සම්පත් සහ වරප්‍රසාද සාධාරණ ලෙස බෙදා හැරීම, සැබෑ ඇතුළත් කිරීම් සහ යුක්තිය ඇති සමාජයක් ගොඩනැගීමයි. උපදේශනය, අධ්‍යාපනය සහ සහයෝගීතාවය තුළින්, බාධක ඉවත් කිරීමට සහ සැමට දීප්තිමත්, සාධාරණ අනාගතයක් ගොඩනැගීමට අපි වෙහෙස නොබලා කටයුතු කරමු.                                    
 
@@ -241,7 +241,7 @@ if (empty($notice['path'])){
                         <div class="hero-content  h-100">
                             <div class="d-table ">
                                 <div class="d-table-cell ">
-                                    <h2 class="text-uppercase  ">People's Struggle Alliance vision</h2>
+                                    <h2 class="text-uppercase  ">ජන අරගල සන්ධානය</h2>
                                     <p class=" text-white truncate1">
                                     අපගේ මෙහෙවර සමාජ සාධාරණත්වය මත කේන්ද්‍රගත වේ. සමාන අවස්ථා සාධාරණ ප්‍රතිඵල ලබා දෙන සමාජයක් අපි අපේක්ෂා කරමු. පංතිය, වාර්ගිකත්වය, ආගම, භාෂාව, කුලය, ස්ථානය හෝ ස්ත්‍රී පුරුෂ භාවයේ වෙනස්කම් ජීවිත සපුරාලීමට සහ සමාන සහභාගීත්වයට බාධාවක් නොවන ලෝකයක් අපි ඉලක්ක කරමු. අපගේ ඉලක්කය වන්නේ අවස්ථා, සම්පත් සහ වරප්‍රසාද සාධාරණ ලෙස බෙදා හැරීම, සැබෑ ඇතුළත් කිරීම් සහ යුක්තිය ඇති සමාජයක් ගොඩනැගීමයි. උපදේශනය, අධ්‍යාපනය සහ සහයෝගීතාවය තුළින්, බාධක ඉවත් කිරීමට සහ සැමට දීප්තිමත්, සාධාරණ අනාගතයක් ගොඩනැගීමට අපි වෙහෙස නොබලා කටයුතු කරමු.                                    
                                     </p>
@@ -264,7 +264,7 @@ if (empty($notice['path'])){
                         <div class="hero-content  h-100">
                             <div class="d-table ">
                                 <div class="d-table-cell ">
-                                    <h2 class="text-uppercase  ">People's Struggle Alliance vision</h2>
+                                    <h2 class="text-uppercase  ">ජන අරගල සන්ධානය</h2>
                                     <p class=" text-white truncate1">
                                     අපගේ මෙහෙවර සමාජ සාධාරණත්වය මත කේන්ද්‍රගත වේ. සමාන අවස්ථා සාධාරණ ප්‍රතිඵල ලබා දෙන සමාජයක් අපි අපේක්ෂා කරමු. පංතිය, වාර්ගිකත්වය, ආගම, භාෂාව, කුලය, ස්ථානය හෝ ස්ත්‍රී පුරුෂ භාවයේ වෙනස්කම් ජීවිත සපුරාලීමට සහ සමාන සහභාගීත්වයට බාධාවක් නොවන ලෝකයක් අපි ඉලක්ක කරමු. අපගේ ඉලක්කය වන්නේ අවස්ථා, සම්පත් සහ වරප්‍රසාද සාධාරණ ලෙස බෙදා හැරීම, සැබෑ ඇතුළත් කිරීම් සහ යුක්තිය ඇති සමාජයක් ගොඩනැගීමයි. උපදේශනය, අධ්‍යාපනය සහ සහයෝගීතාවය තුළින්, බාධක ඉවත් කිරීමට සහ සැමට දීප්තිමත්, සාධාරණ අනාගතයක් ගොඩනැගීමට අපි වෙහෙස නොබලා කටයුතු කරමු.                                    
                                 </p>
@@ -287,7 +287,7 @@ if (empty($notice['path'])){
                         <div class="hero-content  h-100">
                             <div class="d-table ">
                                 <div class="d-table-cell ">
-                                    <h2 class="text-uppercase  ">People's Struggle Alliance vision</h2>
+                                    <h2 class="text-uppercase  ">ජන අරගල සන්ධානය</h2>
                                     <p class=" text-white truncate1">
                                     අපගේ මෙහෙවර සමාජ සාධාරණත්වය මත කේන්ද්‍රගත වේ. සමාන අවස්ථා සාධාරණ ප්‍රතිඵල ලබා දෙන සමාජයක් අපි අපේක්ෂා කරමු. පංතිය, වාර්ගිකත්වය, ආගම, භාෂාව, කුලය, ස්ථානය හෝ ස්ත්‍රී පුරුෂ භාවයේ වෙනස්කම් ජීවිත සපුරාලීමට සහ සමාන සහභාගීත්වයට බාධාවක් නොවන ලෝකයක් අපි ඉලක්ක කරමු. අපගේ ඉලක්කය වන්නේ අවස්ථා, සම්පත් සහ වරප්‍රසාද සාධාරණ ලෙස බෙදා හැරීම, සැබෑ ඇතුළත් කිරීම් සහ යුක්තිය ඇති සමාජයක් ගොඩනැගීමයි. උපදේශනය, අධ්‍යාපනය සහ සහයෝගීතාවය තුළින්, බාධක ඉවත් කිරීමට සහ සැමට දීප්තිමත්, සාධාරණ අනාගතයක් ගොඩනැගීමට අපි වෙහෙස නොබලා කටයුතු කරමු.                                    
 
@@ -311,7 +311,7 @@ if (empty($notice['path'])){
                         <div class="hero-content  h-100">
                             <div class="d-table ">
                                 <div class="d-table-cell ">
-                                    <h2 class="text-uppercase  ">People's Struggle Alliance vision</h2>
+                                    <h2 class="text-uppercase  ">ජන අරගල සන්ධානය</h2>
                                     <p class=" text-white truncate1">
                                     අපගේ මෙහෙවර සමාජ සාධාරණත්වය මත කේන්ද්‍රගත වේ. සමාන අවස්ථා සාධාරණ ප්‍රතිඵල ලබා දෙන සමාජයක් අපි අපේක්ෂා කරමු. පංතිය, වාර්ගිකත්වය, ආගම, භාෂාව, කුලය, ස්ථානය හෝ ස්ත්‍රී පුරුෂ භාවයේ වෙනස්කම් ජීවිත සපුරාලීමට සහ සමාන සහභාගීත්වයට බාධාවක් නොවන ලෝකයක් අපි ඉලක්ක කරමු. අපගේ ඉලක්කය වන්නේ අවස්ථා, සම්පත් සහ වරප්‍රසාද සාධාරණ ලෙස බෙදා හැරීම, සැබෑ ඇතුළත් කිරීම් සහ යුක්තිය ඇති සමාජයක් ගොඩනැගීමයි. උපදේශනය, අධ්‍යාපනය සහ සහයෝගීතාවය තුළින්, බාධක ඉවත් කිරීමට සහ සැමට දීප්තිමත්, සාධාරණ අනාගතයක් ගොඩනැගීමට අපි වෙහෙස නොබලා කටයුතු කරමු.                                    
 
@@ -514,8 +514,8 @@ if (empty($notice['path'])){
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center">
-                        <h2><img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""> Contact Us <img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h2><img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""> අපව අමතන්න <img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""></h2>
+                        <p>ප්‍රශ්න කරන්න, තර්ක කරන්න සහ පිලිතුරු ලබාගන්න</p>
                     </div>
                 </div>
             </div>
@@ -527,26 +527,26 @@ if (empty($notice['path'])){
                     <!-- Form -->
                     <form class="row g-2">
                         <div class="col-md-6">
-                          <label for="inputName" class="form-label">Name</label>
+                          <label for="inputName" class="form-label">නම</label>
                           <input type="email" class="form-control" id="inputName">
                         </div>
                         <div class="col-md-6">
-                          <label for="inputEmail" class="form-label">Email</label>
+                          <label for="inputEmail" class="form-label">ඊමේල් ලිපිනය</label>
                           <input type="password" class="form-control" id="inputEmail">
                         </div>
                         <div class="col-12">
-                          <label for="inputSubject" class="form-label">Subject</label>
+                          <label for="inputSubject" class="form-label">කාණ්ඩය</label>
                           <input type="text" class="form-control" id="inputSubject" >
                         </div>
                         
                         <div class="col-12">
-                            <label for="inputMessage" class="form-label">Message</label>
+                            <label for="inputMessage" class="form-label">පණිවිඩය</label>
                             <textarea type="text" class="form-control" id="inputMessage" rows="10" ></textarea>
                           </div>
                           
                         
                         <div class="col-12 d-flex justify-content-center align-items-center">
-                          <button type="submit" class=" col-6 btn btn-warning">Send Message</button>
+                          <button type="submit" class=" col-6 btn btn-warning">පණිවිඩය යවන්න</button>
                         </div>
                       </form>
                     <!-- // Form -->

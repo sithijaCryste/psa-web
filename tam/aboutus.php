@@ -168,8 +168,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
-                    <h5 class="text-white">People’s Struggle Alliance</h5>
-                    <h2>අපි කවුද</h2>
+                    <h5 class="text-white"><img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""> மக்கள் போராட்ட முன்னணி <img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="32px" alt=""></h5>
+                    <h2>நாம் யார்</h2>
                 </div>
             </div>
         </div>
@@ -185,8 +185,8 @@
             <div class="row justify-content-start">
                 <div class="col-lg-12">
                     <div class="section-title text-start">
-                        <h1>People’s <span style="color: #ffc900;">Struggle</span> Alliance</h1>
-                        <h4>Who are the PSA?</h4>
+                        <h1><img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""> மக்கள் <span style="color: #ffc900;">போராட்ட</span> முன்னணி <img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""></h1>
+                        <h4>மக்கள் போராட்ட முன்னணி(PSA) யார்?</h4>
                         <p>
                             The Frontline Socialist Party (FLSP) was inaugurated in the year 2011 consequent to the
                             ideological and political fragmentation within the People’s Liberation Front which is
@@ -219,7 +219,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="about-content-ab">
-                    <h2>මොකක්ද මේ <span>PSA </span>?</h2>
+                    <h2><span>PSA </span>என்றால் என்ன?</h2>
                     <p>
                     <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
                     மக்கள் போராட்ட முன்னணியானது, முன்னிலை சோஷலிஸக் கட்சி, புதிய ஜனநாயக மாக்சிச-லெனினிசக் கட்சி, சோசலிச மக்கள் மன்றம் ஆகிய கட்சிகளுடன் கடந்த காலிமுகத்திடல் போராட்டம் மற்றும் முந்தைய போராட்டங்கள் மற்றும் பொது எழுச்சிகளில் ஈடுபட்ட ஆர்வலர்கள், தொழில் வல்லுநர்கள் மற்றும் கலைஞர்களின் பரந்த குழுவால் பிரதிநிதித்துவப்படுத்தப்படுகிறது.
@@ -312,43 +312,44 @@
             <div class="row justify-content-start">
                 <div class="col-lg-12">
                     <div class="section-title text-center">
-                        <h2>Partner Organizations & Political Parties</h2>
+                        <h2><img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""> கூட்டாளர் அமைப்புகள் & அரசியல் கட்சிகள் <img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""></h2>
 
                     </div>
                 </div>
             </div>
             
-            <div class="row">
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+            <div class="mx-5 row g-2 row-gap-0 text-end ">
+                <div class="col-12 col-lg-3 col-md-6 ">
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">Frontline Socialist Party</p>
                 </div>
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+                <div class="col-12 col-lg-3 col-md-6 ">
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt=""> Frontline Socialist Party</p>
                 </div>
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+                <div class="col-12 col-lg-3 col-md-6 ">
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt=""> Frontline Socialist Party</p>
                 </div>
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist</p>
-                </div><div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+                <div class="col-12 col-lg-3 col-md-6 ">
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt=""> Frontline Socialist</p>
                 </div>
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+                <div class="col-12 col-lg-3 col-md-6 ">
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt=""> Frontline Socialist Party</p>
                 </div>
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+                <div class="col-12 col-lg-3 col-md-6 ">
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt=""> Frontline Socialist Party</p>
                 </div>
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    
-                    <p class="text-start"><i class="fa-solid fa-hand-fist mx-2 fs-5" style="color: #f00000;"></i>Frontline Socialist Party</p>
+                <div class="col-12 col-lg-3 col-md-6 ">
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt=""> Frontline Socialist Party</p>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 ">
+
+                    <p class="text-start"><img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt=""> Frontline Socialist Party</p>
                 </div>
             </div>
         </div>
