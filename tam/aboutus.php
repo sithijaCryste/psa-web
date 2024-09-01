@@ -1,3 +1,4 @@
+<?php require "../admin/dist/config/connection.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -182,9 +183,7 @@
                         <h1><img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""> மக்கள் <span style="color: #ffc900;">போராட்ட</span> முன்னணி <img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""></h1>
                         <h4>மக்கள் போராட்ட முன்னணி(PSA) யார்?</h4>
                         <p>
-                            The Frontline Socialist Party (FLSP) was inaugurated in the year 2011 consequent to the
-                            ideological and political fragmentation within the People’s Liberation Front which is
-                            generally known as JVP.
+                        மக்கள் போராட்ட முன்னணி என்பது Galle Face ஆர்ப்பாட்டத்துக்கு மற்றும் அதற்கு முன்பு நடைபெற்ற போராட்டங்களுக்கும் மக்கள் எழுச்சிகளுக்கும் தொடர்புடைய இலங்கையின் செயற்பாட்டாளர்கள், தொழில்முறைநபர்கள், கலைஞர்கள் மற்றும் இடதுசாரி கட்சிகள் சில இணைந்து உருவாக்கப்பட்ட மக்கள் கூட்டணியாகும்
                         </p>
                     </div>
                 </div>
@@ -333,108 +332,7 @@
 
 
 
-    <!-- ====== Footer Area ====== -->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <a href="/"
-                        class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-                        <img src="../assets/media/icons/PSA full logo-white.png" alt="Bootstrap" height="100"
-                            width="250" />
-                    </a>
-                    <div class="row d-block">
-                        <div class="col-8">
-                            <p class="text-white">
-                                <i class="fa-solid fa-location-dot"></i> Address: 123 Main St,
-                                Anytown, USA
-                            </p>
-                        </div>
-
-                        <div class="col-8">
-                            <p class="text-white">
-                                <i class="fa-solid fa-envelope"></i> Email:
-                                <a href="mailto:info@example.com">info@psa.lk</a>
-                            </p>
-                        </div>
-
-                        <div class="col-8">
-                            <p class="text-white">
-                                <i class="fa-solid fa-phone"></i> Phone: 555-555-5555,
-                                0712345678, 0718765432
-                            </p>
-                        </div>
-                        <div class="col-8">
-                            <p class="text-white">
-                                <i class="fa-solid fa-globe"></i> Fax: 555-555-5555
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="row d-block">
-                        <h3>Recent Post</h3>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home</a>
-                        </div>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="row d-block">
-                        <h3>Navigate</h3>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home</a>
-                        </div>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="row d-block">
-                        <h3>Newsletter SignUp</h3>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home</a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="copyright-text">
-                        <p class="text-white">
-                            &copy; 2024
-                            <a href="https://www.begindot.com/">People’s Struggle Alliance</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- ====== // Footer Area ====== -->
+    <?php include "footer.php"?>
 
     <!-- ====== ALL JS ====== -->
     

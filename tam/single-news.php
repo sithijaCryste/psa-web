@@ -27,7 +27,8 @@ $url = $protocol . $host . $uri;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8" />
-    <title>Safs - HTML</title>
+    <title><?php echo htmlspecialchars($data['header_ta']); ?> - PSA</title>
+<link rel="shortcut icon" href="../assets/media/icons/PSA new.png" type="image/x-icon">
 
     <!-- ====== Google Fonts ====== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -209,7 +210,7 @@ $url = $protocol . $host . $uri;
 
                         <ul class="social-u ">
                                 <li class="">
-                                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo ($url); ?>" target="_blank">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($url); ?>" target="_blank">
                                         <i class="fab fa-facebook-f icon"></i> </a>
                                 </li>
 
@@ -217,31 +218,27 @@ $url = $protocol . $host . $uri;
                                     <a href="https://www.facebook.com/dialog/share?link=<?php echo ($url); ?>&text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0A<?php echo($data['header_ta']) ?>A"><i class="fa-brands fa-facebook-messenger icon"></i></a>
                                 </li>
                                 <li class="">
-                                    <a href="https://wa.me/?text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0A<?php echo($data['header_ta']) ?>%0A<?php echo ($url); ?>" target="_blank"><i class="fa-brands fa-whatsapp icon"></i></a>
+                                    <a href="https://wa.me/?text=<?php echo urlencode("Hi! Check this out: " . $data['header_ta'] . " " . $url); ?>" target="_blank"><i class="fa-brands fa-whatsapp icon"></i></a>
                                 </li>
                                 <li class="">
-                                    <a href="https://t.me/share/url?url=<?php echo ($url); ?>&text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0A<?php echo($data['header_ta']) ?>%0A"><i class="fa-brands fa-telegram icon"></i></a>
+                                    <a href="https://t.me/share/url?url=<?php echo urlencode($url); ?>&text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0A<?php echo($data['header_ta']) ?>%0A"><i class="fa-brands fa-telegram icon"></i></a>
                                 </li>
                                 <li class="">
-                                    <a href="https://twitter.com/intent/tweet?text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0<?php echo($data['header_ta']) ?>%0A &url=<?php echo ($url); ?>" target="_blank"><i class="fab fa-twitter icon"></i></a>
+                                    <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode("Hi! Check this out: " . $data['header_ta'] . " " . $url); ?>" target="_blank"><i class="fab fa-twitter icon"></i></a>
                                 </li>
                                 <li class="">
-                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo ($url); ?>&title=<?php echo($data['header_ta']) ?>"><i class="fab fa-linkedin-in icon"></i></a>
+                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo urlencode($url); ?>&title=<?php echo($data['header_ta']) ?>"><i class="fab fa-linkedin-in icon"></i></a>
                                 </li>
                                 <li class="">
-                                <a href="mailto:?subject=[Latest News PSA]&body=[Hi!%0AThere%20is%20something%20may%20interesting%20you:%0<?php echo($data['header_ta']) ?>%0A<?php echo ($url); ?>]"><i class="fa-solid fa-envelope icon"></i></a>
+                                <a href="mailto:?subject=[Latest News PSA]&body=[Hi!%0AThere%20is%20something%20may%20interesting%20you:%0<?php echo($data['header_ta']) ?>%0A<?php echo urlencode($url); ?>]"><i class="fa-solid fa-envelope icon"></i></a>
                             </li>
                             <li class="">
-                                <input type="text" class="d-none" value="<?php echo ($url); ?>" id="myInput" disabled>
+                                <input type="text" class="d-none" value="<?php echo htmlspecialchars($url); ?>" id="myInput" disabled>
                                 <a onclick="myFunction();"><i class="fa-solid fa-share icon"></i></a>
                                 </li>
 
 
                             </ul>
-
-                        </div>
-                        <div class="blog-mainImg">
-                        <img src="../admin/<?php echo($data['main-img'])  ?>" alt="" class="blog-img">
 
                         </div>
                         <p class="blog-meta"><span class="blog-date"><?php echo($data['date'])  ?></span></p>
@@ -252,6 +249,11 @@ $url = $protocol . $host . $uri;
 
                             </div>
                         </div>
+                        <div class="blog-mainImg">
+                        <img src="../admin/<?php echo($data['main-img'])  ?>" alt="" class="blog-img">
+
+                        </div>
+                        <div class="blog-content-footer"></div>
                         <!--  Blog Photos -->
                         <div class="row">
                             <div class="col-12 col-lg-4 mt-2">
@@ -287,108 +289,7 @@ $url = $protocol . $host . $uri;
     </section>
 
 
-    <!-- ====== Footer Area ====== -->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <a href="/"
-                        class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-                        <img src="../assets/media/icons/PSA full logo-white.png" alt="Bootstrap" height="100"
-                            width="250" />
-                    </a>
-                    <div class="row d-block">
-                        <div class="col-8">
-                            <p class="text-white">
-                                <i class="fa-solid fa-location-dot"></i> Address: 123 Main St,
-                                Anytown, USA
-                            </p>
-                        </div>
-
-                        <div class="col-8">
-                            <p class="text-white">
-                                <i class="fa-solid fa-envelope"></i> Email:
-                                <a href="mailto:info@example.com">info@psa.lk</a>
-                            </p>
-                        </div>
-
-                        <div class="col-8">
-                            <p class="text-white">
-                                <i class="fa-solid fa-phone"></i> Phone: 555-555-5555,
-                                0712345678, 0718765432
-                            </p>
-                        </div>
-                        <div class="col-8">
-                            <p class="text-white">
-                                <i class="fa-solid fa-globe"></i> Fax: 555-555-5555
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="row d-block">
-                        <h3>Recent Post</h3>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home</a>
-                        </div>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="row d-block">
-                        <h3>Navigate</h3>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home</a>
-                        </div>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="row d-block">
-                        <h3>Newsletter SignUp</h3>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home</a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="copyright-text">
-                        <p class="text-white">
-                            &copy; 2024
-                            <a href="https://www.begindot.com/">People’s Struggle Alliance</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- ====== // Footer Area ====== -->
+   <?php include "footer.php"?>
 <script>
    function myFunction() {
   // Get the text field

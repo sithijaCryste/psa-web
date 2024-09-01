@@ -220,7 +220,7 @@ if (empty($notice['path'])){
                         <div class="hero-content  h-100">
                             <div class="d-table ">
                                 <div class="d-table-cell ">
-                                    <h2 class="text-uppercase newsHeadTruncate "><?php echo($newc['header_ta']) ?></h2>
+                                    <h2 class="text-uppercase truncate"><?php echo($newc['header_ta']) ?></h2>
                                     <p class=" text-white truncate1 ">
                                     <?php echo($newc['content_ta']) ?>
                                     </p>
@@ -252,11 +252,9 @@ if (empty($notice['path'])){
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center">
-                        <h2><img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""> Who Are We <img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""></h2>
+                        <h2><img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""> நாம் யார் <img src="../assets/media/flaticon icons/umbrella (2).png" class="umbIcon" width="32px" alt=""></h2>
                         <p>
-                            The Frontline Socialist Party (FLSP) was inaugurated in the year 2011 consequent to the
-                            ideological and political fragmentation within the People’s Liberation Front which is
-                            generally known as JVP.
+                        மக்கள் போராட்ட முன்னணி என்பது Galle Face ஆர்ப்பாட்டத்துக்கு மற்றும் அதற்கு முன்பு நடைபெற்ற போராட்டங்களுக்கும் மக்கள் எழுச்சிகளுக்கும் தொடர்புடைய இலங்கையின் செயற்பாட்டாளர்கள், தொழில்முறைநபர்கள், கலைஞர்கள் மற்றும் இடதுசாரி கட்சிகள் சில இணைந்து உருவாக்கப்பட்ட மக்கள் கூட்டணியாகும்
                         </p>
                     </div>
                 </div>
@@ -447,7 +445,7 @@ if (empty($notice['path'])){
                           <input type="password" class="form-control" id="inputEmail">
                         </div>
                         <div class="col-12">
-                          <label for="inputSubject" class="form-label">வகைகள்</label>
+                          <label for="inputSubject" class="form-label">கேள்விகளின் வகை</label>
                           <input type="text" class="form-control" id="inputSubject" >
                         </div>
                         
@@ -469,112 +467,24 @@ if (empty($notice['path'])){
     </section>
     <!-- ====== // Contact Area ====== -->
 
-    <!-- ====== Footer Area ====== -->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <a href="/"
-                        class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-                        <img src="../assets/media/icons/PSA full logo-white.png" alt="Bootstrap" height="100"
-                            width="250" />
-                    </a>
-                    <div class="row d-block">
-                        <div class="col-8">
-                            <p class="text-white">
-                                <i class="fa-solid fa-location-dot"></i> Address: 123 Main St,
-                                Anytown, USA
-                            </p>
-                        </div>
-
-                        <div class="col-8">
-                            <p class="text-white">
-                                <i class="fa-solid fa-envelope"></i> Email:
-                                <a href="mailto:info@example.com">info@psa.lk</a>
-                            </p>
-                        </div>
-
-                        <div class="col-8">
-                            <p class="text-white">
-                                <i class="fa-solid fa-phone"></i> Phone: 555-555-5555,
-                                0712345678, 0718765432
-                            </p>
-                        </div>
-                        <div class="col-8">
-                            <p class="text-white">
-                                <i class="fa-solid fa-globe"></i> Fax: 555-555-5555
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="row d-block">
-                        <h3>Recent Post</h3>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home</a>
-                        </div>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="row d-block">
-                        <h3>Navigate</h3>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home</a>
-                        </div>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="row d-block">
-                        <h3>Newsletter SignUp</h3>
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home </a>
-                        </div>
-
-                        <div class="col-8">
-                            <a href="" class="text-white text-decoration-none">Home</a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="copyright-text">
-                        <p class="text-white">
-                            &copy; 2024
-                            <a href="https://www.begindot.com/">People’s Struggle Alliance</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- ====== // Footer Area ====== -->
-
+    <?php include "footer.php"?>
     <!-- ====== ALL JS ====== -->
 
+    <script>
+        const truncateElements = document.querySelectorAll('.truncate');
+    
+    truncateElements.forEach((element) => {
+      const text = element.textContent;
+      const words = text.split(' ');
+      const maxWords = 6; // Change this to the number of words you want to display
 
+      if (words.length > maxWords) {
+        const truncatedText = words.slice(0, maxWords).join(' ') + '...';
+        element.textContent = truncatedText;
+      }
+    });
+        
+            </script>
     <script src="../assets/js/jquery-3.3.1.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.js"></script>
     <script src="../assets/js/lightbox.min.js"></script>
@@ -582,38 +492,13 @@ if (empty($notice['path'])){
     <script src="../assets/js/jquery.mixitup.js"></script>
     <script src="../assets/js/wow.min.js"></script>
     <script src="../assets/js/typed.js"></script>
-    <script src="../assets/js/skill.bar.js"></script>
-    <script src="../assets/js/fact.counter.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="../assets/js/main.js"></script>
 
     <script src="https://kit.fontawesome.com/495854b60c.js" crossorigin="anonymous"></script>
-    <script>
-        var arrLang = {
-            'sin' :{
-                'justice' : 'අපගේ මෙහෙවර සමාජ සාධාරණත්වය මත කේන්ද්‍රගත වේ. සමාන අවස්ථා සාධාරණ ප්‍රතිඵල ලබා දෙන සමාජයක් අපි අපේක්ෂා කරමු. පංතිය, වාර්ගිකත්වය, ආගම, භාෂාව, කුලය, ස්ථානය හෝ ස්ත්‍රී පුරුෂ භාවයේ වෙනස්කම් ජීවිත සපුරාලීමට සහ සමාන සහභාගීත්වයට බාධාවක් නොවන ලෝකයක් අපි ඉලක්ක කරමු. අපගේ ඉලක්කය වන්නේ අවස්ථා, සම්පත් සහ වරප්‍රසාද සාධාරණ ලෙස බෙදා හැරීම, සැබෑ ඇතුළත් කිරීම් සහ යුක්තිය ඇති සමාජයක් ගොඩනැගීමයි. උපදේශනය, අධ්‍යාපනය සහ සහයෝගීතාවය තුළින්, බාධක ඉවත් කිරීමට සහ සැමට දීප්තිමත්, සාධාරණ අනාගතයක් ගොඩනැගීමට අපි වෙහෙස නොබලා කටයුතු කරමු.'
-            },
-            'eng' :{
-                'justice' : 'Our mission is to build a society based on social equality. We aspire  a society where equal opportunities lead to equal outcomes. We believe that social barriers such as caste, ethnicity, religion, language, class, location or gender should not hinder people from living their lives to the fullest and participating equally. Our goal is to distribute opportunities, resources and rewards fairly, to promote inclusivity and to build a just society through education, guidance and cooperation, removing barriers and creating a bright, equal future for all.'
-                },
-                
-            'ta' :{
-                'justice' : 'எங்கள் நோக்கம் சமூக நீதியை மையமாகக் கொண்டுள்ளது. சம வாய்ப்புகள் சமமான விளைவுகளை அளிக்கும் ஒரு சமூகத்தை நாங்கள் கற்பனை செய்கிறோம். வர்க்கம், இனம், மதம், மொழி, சாதி, இருப்பிடம் அல்லது பாலினம் ஆகியவற்றில் உள்ள வேறுபாடுகள் வாழ்க்கையை நிறைவு செய்வதற்கும் சமமான பங்கேற்பிற்கும் இடையூறாக இல்லாத ஒரு உலகத்தை நாங்கள் நோக்கமாகக் கொண்டுள்ளோம். எங்கள் இலக்கு வாய்ப்புகள், வளங்கள் மற்றும் சலுகைகளை சமமாகப் பகிர்ந்தளித்து, உண்மையான உள்ளடக்கம் மற்றும் நீதியுள்ள சமூகத்தை உருவாக்குவது. வக்காலத்து, கல்வி மற்றும் ஒத்துழைப்பு மூலம், தடைகளை அகற்றி, அனைவருக்கும் பிரகாசமான, நேர்மையான எதிர்காலத்தை உருவாக்க நாங்கள் அயராது உழைக்கிறோம்.' 
-            }
-        };
-        
-        $(function(){
-            $('.translateLan').click(function(){
-                var lang = $(this).attr('id');
-        
-                $('.lang').each(function(index, element){
-                    $(this).text(arrLang[lang][$(this).attr('key')]);
-                });
-            });
-        });
-        
-            </script>
+  
 </body>
 
 </html>
