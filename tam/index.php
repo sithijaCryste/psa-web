@@ -441,30 +441,35 @@ if (empty($notice['path'])){
             <div class="row justify-content-center ">
                 <div class="col-lg-8">
                     <!-- Form -->
-                    <form class="row g-2">
+                    <div class="row g-2">
                         <div class="col-md-6">
-                          <label for="inputName" class="form-label">பெயர்</label>
-                          <input type="email" class="form-control" id="inputName">
+                          <label for="tname" class="form-label">பெயர்</label>
+                          <input type="text" class="form-control" id="tname">
                         </div>
                         <div class="col-md-6">
-                          <label for="inputEmail" class="form-label">மின்னஞ்சல் முகவரி</label>
-                          <input type="password" class="form-control" id="inputEmail">
+                          <label for="temail" class="form-label">மின்னஞ்சல் முகவரி</label>
+                          <input type="email" class="form-control" id="temail">
                         </div>
                         <div class="col-12">
-                          <label for="inputSubject" class="form-label">கேள்விகளின் வகை</label>
-                          <input type="text" class="form-control" id="inputSubject" >
+                          <label for="tsubject" class="form-label">கேள்விகளின் வகை</label>
+                          <input type="text" class="form-control" id="tsubject" >
                         </div>
                         
                         <div class="col-12">
-                            <label for="inputMessage" class="form-label">கேள்வி</label>
-                            <textarea type="text" class="form-control" id="inputMessage" rows="10" ></textarea>
+                            <label for="tmessage" class="form-label">கேள்வி</label>
+                            <textarea type="text" class="form-control" id="tmessage" rows="10" ></textarea>
                           </div>
                           
                         
+                        
                         <div class="col-12 d-flex justify-content-center align-items-center">
-                          <button type="submit" class=" col-6 btn btn-warning">சமர்ப்பிக்</button>
-                        </div>
-                      </form>
+                                <button onclick="sendEmailT();" class=" col-6 btn btn-warning " id="tsendbtn">சமர்ப்பிக்</button>
+                                <button class="col-6 btn btn-warning " id="tloading" type="button" disabled>
+                                    <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+                                    <span role="status">Sending...</span>
+                                </button>
+                            </div>
+                      </div>
                     <!-- // Form -->
                 </div>
             </div>
