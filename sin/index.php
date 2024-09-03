@@ -441,30 +441,34 @@ if (empty($notice['path'])){
             <div class="row justify-content-center ">
                 <div class="col-lg-8">
                     <!-- Form -->
-                    <form class="row g-2">
+                    <div class="row g-2">
                         <div class="col-md-6">
-                          <label for="inputName" class="form-label">නම</label>
-                          <input type="email" class="form-control" id="inputName">
+                          <label for="sname" class="form-label">නම</label>
+                          <input type="text" class="form-control" id="sname">
                         </div>
                         <div class="col-md-6">
-                          <label for="inputEmail" class="form-label">ඊමේල් ලිපිනය</label>
-                          <input type="password" class="form-control" id="inputEmail">
+                          <label for="semail" class="form-label">ඊමේල් ලිපිනය</label>
+                          <input type="email" class="form-control" id="semail">
                         </div>
                         <div class="col-12">
-                          <label for="inputSubject" class="form-label">කාණ්ඩය</label>
-                          <input type="text" class="form-control" id="inputSubject" >
+                          <label for="ssubject" class="form-label">කාණ්ඩය</label>
+                          <input type="text" class="form-control" id="ssubject" >
                         </div>
                         
                         <div class="col-12">
-                            <label for="inputMessage" class="form-label">පණිවිඩය</label>
-                            <textarea type="text" class="form-control" id="inputMessage" rows="10" ></textarea>
+                            <label for="smessage" class="form-label">පණිවිඩය</label>
+                            <textarea type="text" class="form-control" id="smessage" rows="10" ></textarea>
                           </div>
                           
                         
-                        <div class="col-12 d-flex justify-content-center align-items-center">
-                          <button type="submit" class=" col-6 btn btn-warning">පණිවිඩය යවන්න</button>
-                        </div>
-                      </form>
+                          <div class="col-12 d-flex justify-content-center align-items-center">
+                                <button onclick="sendEmailS();" class=" col-6 btn btn-warning " id="ssendbtn">‍පණිවිඩය යවන්න</button>
+                                <button class="col-6 btn btn-warning " id="sloading" type="button" disabled>
+                                    <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+                                    <span role="status">Sending...</span>
+                                </button>
+                            </div>
+                      </div>
                     <!-- // Form -->
                 </div>
             </div>

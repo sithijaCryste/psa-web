@@ -91,7 +91,7 @@ for($y = 0; $y < $num; $y++ ){
                         <div class="copyright-text">
                             <p class="text-white">
                                 &copy; 2024
-                                <a href="https://www.begindot.com/">People’s Struggle Alliance</a>
+                                <a href="https://www.psalliance.lk/">People’s Struggle Alliance</a>
                             </p>
                         </div>
                     </div>

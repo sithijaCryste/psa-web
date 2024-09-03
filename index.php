@@ -173,13 +173,21 @@ include "admin/dist/config/connection.php"
                 <li class="list-group-item bg-danger"><a class="translateLan" href="tam/index.php">தமிழ்</a></li>
             </ul>
         </div>
-        <a class="cssbuttons-io-button text-decoration-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Call For Fundings
+        <a class="cssbuttons-io-button text-decoration-none" href="https://wa.me/94716487812" > 
+            Join Us
             <div class="icon">
-                <i class="fa-solid fa-phone-volume"></i>
+                <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"></path>
+                </svg>
             </div>
         </a>
-
 
         <!-- HTML !-->
     </nav>

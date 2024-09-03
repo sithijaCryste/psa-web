@@ -17,8 +17,8 @@ $contentTa = mysqli_real_escape_string(Database::$connection, trim($_POST["conte
 if (empty($title)) {
     echo("Please enter the Product Name");
     return;
-} elseif (strlen($title) >100) {
-    echo("Title should be less than 35 characters");
+} elseif (strlen($title) >200) {
+    echo("Title should be less than 200 characters");
     return;
 } elseif (empty($content)) {
     echo("Please enter the News Content");

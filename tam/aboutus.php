@@ -207,15 +207,15 @@
                      $abnum = $abrs->num_rows;
                      if($abnum == 0){
                         ?>
-                       <div class="swiper-slide "><img src="assets/media/web-img/psa english.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="assets/media/web-img/psa sinhala.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="assets/media/web-img/psa tamil.jpg" alt=""></div>
+                       <div class="swiper-slide "><img src="../assets/media/web-img/psa english.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/media/web-img/psa sinhala.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/media/web-img/psa tamil.jpg" alt=""></div>
                     <?php
                     }
                      for ($i = 0; $i < $abnum; $i++) {
                        $ab = $abrs->fetch_assoc();
                     ?>
-                            <div class="swiper-slide "><img src="admin/<?php echo($ab['path']) ?>" alt=""></div>
+                            <div class="swiper-slide "><img src="../admin/<?php echo($ab['path']) ?>" alt=""></div>
                             <?php
                      }
                             ?>
@@ -266,46 +266,36 @@
             <div class="row ">
             <div class="col-lg-6">
                     <div class="about-content-ab">
-                        <h2>Why Vote for <span>Bopage</span>?</h2>
+                        <h2><span>போபேக்கு </span>ஏன் வாக்களிக்க வேண்டும்?</h2>
                         <p>
                             <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
-                            Nuwan Sanjeewa Bopage is the Presidential Candidate put forward by the
-People’s Struggle Alliance (PSA), and a member of its Executive Committee.
-He pursued his higher studies in law at Law College, Colombo, followed by
-Masters Degrees in Law and International Relations at the University of
-Colombo. He is an alumnus of D.S. Senanayake College, Colombo.                        </p>
+                            நுவன் சஞ்சீவ போபகே, மக்கள் போராட்ட முன்னணியால் (PSA) முன்னிறுத்தப்பட்ட ஜனாதிபதி வேட்பாளர் என்பதோடு அவர் அதன் செயற்குழு உறுப்பினர் ஆவார். கொழும்பில் உள்ள சட்டக் கல்லூரியில் சட்டத்தில் உயர் படிப்பைத் தொடர்ந்தோடு, அதைத் தொடர்ந்து கொழும்பு பல்கலைக்கழகத்தில் சட்டம் மற்றும் சர்வதேச உறவுகளில் முதுகலைப் பட்டம் பெற்றார். இவர் கொழும்பு டி.எஸ். சேனநாயக்க கல்லூரியின் பழைய மாணவர் ஆவார்.
+                       </p>
 
                         <p>
                             <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
-                            He took his oaths in 2007, and has worked as an Attorney-at-Law with a
-special focus on public interest litigation since then. Two such landmark cases
-were against the Chunnakam thermal power plant which was causing
-groundwater contamination, and the Fundamental Rights Petition by
-blogger/writer Ramzy Razeek, who was wrongfully arrested and detained
-under the ICCPR Act by the Sri Lankan Government.                        </p>
+                            அவர் 2007 இல் சட்டத்தரணியாக சத்தியப்பிரமாணம் செய்துகொண்டார். அன்றிலிருந்து பொது நல வழக்குகளில் சிறப்பு கவனம் செலுத்தி சட்டத்தரணியாக பணியாற்றினார். நிலத்தடி நீரை மாசுபடுத்தும் சுன்னாகம் அனல் மின் நிலையத்திற்கு எதிராகவும், இலங்கை அரசாங்கத்தால் ICCPR சட்டத்தின் கீழ் தவறாகக் கைது செய்யப்பட்டு தடுத்து வைக்கப்பட்ட வலைப்பதிவாளர்/எழுத்தாளர் ரம்சி ரஸீக்கின் அடிப்படை உரிமை மனுவுக்காகவும் வாதாடினார்.
+                        </p>
                         <p>
                             <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
-                            He has been active in left politics since 2003, and been a part of many
-people’s struggles such as the struggle against the Meethotamulla garbage
-dump and the 1000 Movement calling for a Rs. 1000 daily wage for plantation
-workers.
+                            2003 ஆம் ஆண்டு முதல் இடதுசாரி அரசியலில் தீவிரமாக ஈடுபட்டு வந்த அவர், மீதொட்டமுல்ல குப்பை மேட்டுக்கு எதிரான போராட்டம், 1000 ரூபாய் சம்பள இயக்கம் போன்ற பல மக்கள் போராட்டங்களில் பங்கேற்றவர். தோட்டத் தொழிலாளர்களுக்கு நாளாந்தம் 1000 சம்பளத்திற்கான போராட்டத்திலும் இணைந்தார்.
+
                         </p>
                         <p>
                             <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
 
-                            He is a father of three young children, and likes to sing and play guitar to
-                            unwind.                        </p>
+                            அவர் மூன்று இளம் குழந்தைகளின் தந்தை, என்பதுடன் ஓய்வு நேரத்தில் கிட்டார் வாசிப்பதையும் பாடுவதையும் விரும்பும் ஒருவர்.
+                        </p>
                         <p>
                             <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
 
-                            Nuwan has dedicated most of his adult life to fighting for equality, justice, and
-                            an overall system change.                        
+                            நுவன் தனது இளமைக் கால வாழ்க்கையின் பெரும்பகுதியை சமத்துவம், நீதி மற்றும் ஒட்டுமொத்த அமைப்பு மாற்றத்திற்காகப் போராடுவதற்காக அர்ப்பணித்துள்ளார்.                        
                         </p>
 
                         <h5>
                             
 
-                            A vote for Bopage is a win for the people!
+                        போபகேவுக்கான வாக்கு என்பது மக்களின் வெற்றி!
                         </h5>
 
 

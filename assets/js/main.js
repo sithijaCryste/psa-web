@@ -542,14 +542,10 @@ function searchNews(x) {
       if (r.readyState == 4) {
         loading.style.display = "none"; // Hide loading element
         var t = r.responseText;
-        if(t == "success"){
-            alert("Email sent successfully");
-            sendbtn.style.display = "block"; 
-        }else{
+        
             alert(t);
             sendbtn.style.display = "block"; 
-
-        }
+        
         
       }
     };
@@ -579,14 +575,44 @@ function searchNews(x) {
       if (r.readyState == 4) {
         loading.style.display = "none"; // Hide loading element
         var t = r.responseText;
-        if(t == "success"){
-            alert("Email sent successfully");
-            sendbtn.style.display = "block"; 
-        }else{
+       
             alert(t);
             sendbtn.style.display = "block"; 
+        
+        
+      }
+    };
+    loading.style.display = "block"; // Show loading element
+    sendbtn.style.display = "none"; // Hide sending element
+    r.open("POST", "emailSender.php", true);
+    r.send(form);
+    
+  }
 
-        }
+  function sendEmailS() {
+    var name = document.getElementById("sname");
+    var email = document.getElementById("semail");
+    var subject = document.getElementById("ssubject");
+    var message = document.getElementById("smessage");
+    var loading = document.getElementById("sloading");
+    var sendbtn = document.getElementById("ssendbtn");
+  
+    var form = new FormData();
+    form.append("name", name.value);
+    form.append("email", email.value);
+    form.append("subject", subject.value);
+    form.append("message",message.value);
+  
+    var r = new XMLHttpRequest();
+  
+    r.onreadystatechange = function () {
+      if (r.readyState == 4) {
+        loading.style.display = "none"; // Hide loading element
+        var t = r.responseText;
+        
+            alert(t);
+            sendbtn.style.display = "block"; 
+        
         
       }
     };
