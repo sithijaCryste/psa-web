@@ -160,9 +160,19 @@
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Category
-                <i class="fas fa-angle-left right"></i>
+                
               </p>
             </a>
+          </li>
+          <li class="nav-item ">
+            <a href="./aboutImg.php" class="nav-link ">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                About Image
+                
+              </p>
+            </a>
+            
           </li>
           
           <li class="nav-header">EXAMPLES</li>

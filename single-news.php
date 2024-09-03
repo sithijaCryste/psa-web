@@ -38,7 +38,7 @@ $url = $protocol . $host . $uri;
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8" />
     <title><?php echo htmlspecialchars($data['header']); ?> - PSA</title>
-<link rel="shortcut icon" href="assets/media/icons/PSA new.png" type="image/x-icon">
+<link rel="shortcut icon" href="assets/media/icons/PSA logo.png" type="image/x-icon">
     <!-- ====== Google Fonts ====== -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" />
     
@@ -161,6 +161,10 @@ $url = $protocol . $host . $uri;
                         <a class="nav-link" href="#" id="qa-page">Q & A</a>
                         <div class="nav-hover d-none"></div>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="supportus.php">SUPPORT US</a>
+                        <div class="nav-hover d-none"></div>
+                    </li>
                 </ul>
             </div>
             <ul class="list-group list-group-horizontal bg-danger">
@@ -170,7 +174,7 @@ $url = $protocol . $host . $uri;
             </ul>
         </div>
         <a class="cssbuttons-io-button text-decoration-none" href="https://wa.me/94716487812" > 
-            Join Us
+            Support Us
             <div class="icon">
                 <svg
                     height="24"

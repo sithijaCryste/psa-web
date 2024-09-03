@@ -27,10 +27,11 @@ $url = $protocol . $host . $uri;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8" />
-    <title>Safs - HTML</title>
+    <title>People’s Struggle Alliance - <?php echo($data['name_tam']) ?></title>
 
     <!-- ====== Google Fonts ====== -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" />
+    <link rel="shortcut icon" href="../assets/media/icons/PSA logo.png" type="image/x-icon">
 
     <!-- ====== ALL CSS ====== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -101,7 +102,7 @@ $url = $protocol . $host . $uri;
                         <div class="social-aria2">
                             <a target="_blank" href="https://www.facebook.com/peoplesstrugglealliance?mibextid=ZbWKwL" class="fb"><i class="fab fa-facebook-f"></i></a>
                             <a target="_blank" href="#" class="twit"><i class="fab fa-twitter"></i></a>
-                            <a target="_blank" href="#" class="ins"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="https://wa.me/94716487812" class="wtz"><i class="fa-brands fa-whatsapp"></i></a>
                             <a target="_blank" href="https://youtube.com/@peoplesstrugglealliance?si=Fj1v0Nxske7lMXXD" class="yt"><i class="fab fa-youtube"></i></a>
                             <a target="_blank" href="https://www.tiktok.com/@psa_lk?_t=8pL3TTMOKOX&_r=1" class="tik"><i class="fab fa-tiktok"></i></a>
 
@@ -149,6 +150,10 @@ $url = $protocol . $host . $uri;
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="qa-page">Q & A</a>
+                        <div class="nav-hover d-none"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="supportus.php">SUPPORT US</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                 </ul>
@@ -205,9 +210,9 @@ $url = $protocol . $host . $uri;
                         <h1 class="blog-title"><?php echo($data['name_tam']) ?></h1>
                         <div class="row">
                             
-                            <ul class="social-u ">
+                        <ul class="social-u ">
                                 <li class="">
-                                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo ($url); ?>" target="_blank">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($url); ?>" target="_blank">
                                         <i class="fab fa-facebook-f icon"></i> </a>
                                 </li>
 
@@ -215,27 +220,28 @@ $url = $protocol . $host . $uri;
                                     <a href="https://www.facebook.com/dialog/share?link=<?php echo ($url); ?>&text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0A<?php echo($data['name_tam']) ?>A"><i class="fa-brands fa-facebook-messenger icon"></i></a>
                                 </li>
                                 <li class="">
-                                    <a href="https://wa.me/?text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0A<?php echo($data['name_tam']) ?>%0A<?php echo ($url); ?>" target="_blank"><i class="fa-brands fa-whatsapp icon"></i></a>
+                                    <a href="https://wa.me/?text=<?php echo urlencode("Hi! Check this out: " . $data['name_tam'] . " " . $url); ?>" target="_blank"><i class="fa-brands fa-whatsapp icon"></i></a>
                                 </li>
                                 <li class="">
-                                    <a href="https://t.me/share/url?url=<?php echo ($url); ?>&text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0A<?php echo($data['name_tam']) ?>%0A"><i class="fa-brands fa-telegram icon"></i></a>
+                                    <a href="https://t.me/share/url?url=<?php echo urlencode($url); ?>&text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0A<?php echo($data['name_tam']) ?>%0A"><i class="fa-brands fa-telegram icon"></i></a>
                                 </li>
                                 <li class="">
-                                    <a href="https://twitter.com/intent/tweet?text=Hi!%0AThere%20is%20something%20may%20interesting%20you:%0<?php echo($data['name_tam']) ?>%0A &url=<?php echo ($url); ?>" target="_blank"><i class="fab fa-twitter icon"></i></a>
+                                    <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode("Hi! Check this out: " . $data['name_tam'] . " " . $url); ?>" target="_blank"><i class="fab fa-twitter icon"></i></a>
                                 </li>
                                 <li class="">
-                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo ($url); ?>&title=<?php echo($data['name_tam']) ?>"><i class="fab fa-linkedin-in icon"></i></a>
+                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo urlencode($url); ?>&title=<?php echo($data['name_tam']) ?>"><i class="fab fa-linkedin-in icon"></i></a>
                                 </li>
                                 <li class="">
-                                <a href="mailto:?subject=[Latest News PSA]&body=[Hi!%0AThere%20is%20something%20may%20interesting%20you:%0<?php echo($data['name_tam']) ?>%0A<?php echo ($url); ?>]"><i class="fa-solid fa-envelope icon"></i></a>
+                                <a href="mailto:?subject=[Latest News PSA]&body=[Hi!%0AThere%20is%20something%20may%20interesting%20you:%0<?php echo($data['name_tam']) ?>%0A<?php echo urlencode($url); ?>]"><i class="fa-solid fa-envelope icon"></i></a>
                             </li>
                             <li class="">
-                                <input type="text" class="d-none" value="<?php echo ($url); ?>" id="myInput" disabled>
+                                <input type="text" class="d-none" value="<?php echo htmlspecialchars($url); ?>" id="myInput" disabled>
                                 <a onclick="myFunction();"><i class="fa-solid fa-share icon"></i></a>
                                 </li>
 
 
                             </ul>
+                            
                             
                             
                         </div>

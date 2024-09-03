@@ -28,7 +28,7 @@ $url = $protocol . $host . $uri;
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8" />
     <title><?php echo htmlspecialchars($data['header']); ?> - PSA</title>
-<link rel="shortcut icon" href="../assets/media/icons/PSA new.png" type="image/x-icon">
+<link rel="shortcut icon" href="../assets/media/icons/PSA logo.png" type="image/x-icon">
 
     <!-- ====== Google Fonts ====== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,7 +104,7 @@ $url = $protocol . $host . $uri;
                         <div class="social-aria2">
                             <a target="_blank" href="https://www.facebook.com/peoplesstrugglealliance?mibextid=ZbWKwL" class="fb"><i class="fab fa-facebook-f"></i></a>
                             <a target="_blank" href="#" class="twit"><i class="fab fa-twitter"></i></a>
-                            <a target="_blank" href="#" class="ins"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="https://wa.me/94716487812" class="wtz"><i class="fa-brands fa-whatsapp"></i></a>
                             <a target="_blank" href="https://youtube.com/@peoplesstrugglealliance?si=Fj1v0Nxske7lMXXD" class="yt"><i class="fab fa-youtube"></i></a>
                             <a target="_blank" href="https://www.tiktok.com/@psa_lk?_t=8pL3TTMOKOX&_r=1" class="tik"><i class="fab fa-tiktok"></i></a>
 
@@ -152,6 +152,10 @@ $url = $protocol . $host . $uri;
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="qa-page">Q & A</a>
+                        <div class="nav-hover d-none"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="supportus.php">SUPPORT US</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                 </ul>

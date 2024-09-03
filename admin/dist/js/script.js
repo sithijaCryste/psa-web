@@ -510,3 +510,73 @@ function changeStatus(x) {
     r.send();
 
  }
+
+ function addAboutImg() {
+    var AboutImg = document.getElementById('AboutImg');
+
+    var form = new FormData();
+
+    form.append('image',AboutImg.files[0]);
+    
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function(){
+        if(request.readyState == 4 & request.status == 200){
+            var response = request.responseText;
+            if(response == "success"){
+                alert(response);
+            }else{
+                alert(response);
+            }
+        }
+    }
+    request.open("POST", "about-addImgProcess.php", true);
+    request.send(form);
+
+}
+function updateAboutImg(){
+
+    var AboutIdU = document.getElementById('AboutIdU');
+    var AboutImgU = document.getElementById('AboutImgU');
+
+    var form = new FormData();
+
+    form.append('id',AboutIdU.value);
+    form.append('image',AboutImgU.files[0]);
+    
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function(){
+        if(request.readyState == 4 & request.status == 200){
+            var response = request.responseText;
+            if(response == "success"){
+                alert(response);
+                window.location.reload();
+            }else{
+                alert(response);
+            }
+        }
+    }
+    request.open("POST", "about-imgupdateProcess.php", true);
+    request.send(form);
+
+}
+
+function aboutDelete(x){
+    if (confirm("Are you sure deleting this?")) {
+        var f = new FormData();
+        f.append("i", x);
+
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 & request.status == 200) {
+                var response = request.responseText;
+                alert(response);
+                window.location.reload();
+
+            }
+        }
+
+        request.open("POST", "about-imgDeleteProcess.php", true);
+        request.send(f);
+
+    }
+}

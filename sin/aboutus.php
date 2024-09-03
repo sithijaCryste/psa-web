@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8" />
-    <title>Safs - HTML</title>
+    <title>People’s Struggle Alliance - About Us</title>
 
     <!-- ====== Google Fonts ====== -->
+    <link rel="shortcut icon" href="../assets/media/icons/PSA logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Gemunu+Libre:wght@200..800&family=Noto+Sans+Sinhala:wght@100..900&family=Noto+Sans+Tamil+Supplement&family=Noto+Sans+Tamil:wght@100&family=Noto+Serif+Sinhala:wght@100..900&family=Tiro+Tamil:ital@0;1&display=swap" rel="stylesheet">
@@ -81,7 +82,7 @@
                         <div class="social-aria2">
                             <a target="_blank" href="https://www.facebook.com/peoplesstrugglealliance?mibextid=ZbWKwL" class="fb"><i class="fab fa-facebook-f"></i></a>
                             <a target="_blank" href="#" class="twit"><i class="fab fa-twitter"></i></a>
-                            <a target="_blank" href="#" class="ins"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="https://wa.me/94716487812" class="wtz"><i class="fa-brands fa-whatsapp"></i></a>
                             <a target="_blank" href="https://youtube.com/@peoplesstrugglealliance?si=Fj1v0Nxske7lMXXD" class="yt"><i class="fab fa-youtube"></i></a>
                             <a target="_blank" href="https://www.tiktok.com/@psa_lk?_t=8pL3TTMOKOX&_r=1" class="tik"><i class="fab fa-tiktok"></i></a>
 
@@ -129,6 +130,10 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Q & A</a>
+                        <div class="nav-hover d-none"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="supportus.php">SUPPORT US</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                 </ul>
@@ -180,7 +185,7 @@
             <div class="row justify-content-start">
                 <div class="col-lg-12">
                     <div class="section-title text-start">
-                        <h1><img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""> ජන <span style="color: #ffc900;">අරගල</span> සන්ධානය <img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon" width="42px" alt=""></h1>
+                        <h1><img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon d-none d-md-inline d-lg-inline" width="42px" alt=""> ජන <span style="color: #ffc900;">අරගල</span> සන්ධානය <img src="assets/media/flaticon icons/PSA umb.png" class="umbIcon d-none d-md-inline d-lg-inline" width="42px" alt=""></h1>
                         <h4>කවුද මේ ජන අරගල සන්ධානය(PSA)?</h4>
                         <p>
                             ජන අරගල සන්ධානය යනු ගාලුමුවදොර අරගලයට සහ පෙර පැවති අරගල සහ ජනතා නැගිටීම්වලට සම්බන්ධ වූ ශ්‍රී ලංකාවේ ක්‍රියාකාරීන්, වෘත්තිකයන්, කලාකරුවන් සහ වාමාංශික පක්ෂ කිහිපයක්ද එක්ව සෑදුනු ජනතාවගේ සන්ධානයකි.
@@ -195,20 +200,29 @@
                         <!-- <div class="about-bg" style="background-image: url(../assets/media/web-img/psa\ english.jpg)">
                        
                     </div> -->
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide "><img src="../assets/media/web-img/psa english.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="../assets/media/web-img/psa sinhala.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="../assets/media/web-img/psa tamil.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="../assets/media/web-img/psa president-english.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide"><img src="../assets/media/web-img/psa president-sinhala.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide"><img src="../assets/media/web-img/psa president-tamil.jpg" alt="">
-                                </div>
-                            </div>
-
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                        <?php 
+                     $abrs = Database::search("SELECT * FROM `about_img` ORDER BY `date` ASC");
+                     $abnum = $abrs->num_rows;
+                     if($abnum == 0){
+                        ?>
+                       <div class="swiper-slide"><img src="../assets/media/web-img/psa english.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/media/web-img/psa sinhala.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/media/web-img/psa tamil.jpg" alt=""></div>
+                    <?php
+                    }
+                     for ($i = 0; $i < $abnum; $i++) {
+                       $ab = $abrs->fetch_assoc();
+                    ?>
+                            <div class="swiper-slide "><img src="../admin/<?php echo($ab['path']) ?>" alt=""></div>
+                            <?php
+                     }
+                            ?>
+                            
                         </div>
+
+                    </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="about-content-ab">
@@ -244,6 +258,68 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="blog-content-footer"></div>
+        <div class="container">
+            <div class="row ">
+            <div class="col-lg-6">
+                    <div class="about-content-ab">
+                        <h2>ඇයි <span>බෝපෙට</span> ඡන්දෙ දෙන්නෙ?</h2>
+                        <p>
+                            <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+                            නුවන් සංජීව බෝපගේ යනු ජන අරගල සන්ධානය (PSA) විසින් ඉදිරිපත් කරන ලද ජනාධිපති අපේක්ෂකයා වන අතර එහි විධායක කමිටු සාමාජිකයෙකි. ඔහු කොළඹ නීති විද්‍යාලයෙන් නීතිය පිළිබඳ උසස් අධ්‍යාපනය හැදෑරූ අතර, කොළඹ විශ්වවිද්‍යාලයෙන් නීතිය සහ ජාත්‍යන්තර සබඳතා පිළිබඳ ශාස්ත්‍රපති උපාධිය හැදෑරීය. ඔහු කොළඹ ඩී.එස්.සේනානායක විද්‍යාලයේ ආදි සිසුවෙකි.                       </p>
+
+                        <p>
+                            <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+                            ඔහු 2007 දී දිවුරුම් දුන් අතර, එතැන් සිට මහජන අභිලාෂයන් සම්බන්ධයෙන් විශේෂ අවධානයක් යොමු කරමින් නීතිඥයෙකු ලෙස කටයුතු කර ඇත. භූගත ජලය අපවිත්‍ර වීමට හේතුවන චුන්නාකම් තාප බලාගාරයට එරෙහිව එවැනි සුවිශේෂී සිද්ධීන් දෙකක් සහ ශ්‍රී ලංකා රජය විසින් ICCPR පනත යටතේ වැරදි ලෙස අත්අඩංගුවට ගෙන රඳවා තබා ගන්නා ලද බ්ලොග්කරු/ලේඛක රම්සි රසීක් විසින් ඉදිරිපත් කරන ලද මූලික අයිතිවාසිකම් පෙත්සම් දෙකක් වෙනුවෙන් ඔහු සටන් කලේය.                    </p>
+                        <p>
+                            <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+                            2003 වසරේ සිට වමේ දේශපාලනයේ ක්‍රියාකාරී වූ ඔහු මීතොටමුල්ල කුණු කන්දට එරෙහි අරගලය, වතු කම්කරුවන්ගේ දෛනික වැටුප රුපියල් 1000ක් ඉල්ලා 1000 ව්‍යාපාරය වැනි ජනතා අරගල රැසක කොටස්කරුවෙකි.            </p>
+                        <p>
+                            <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+
+                            ඔහු කුඩා දරුවන් තිදෙනෙකුගේ පියෙකු වන අතර, විවේක ගැනීම සඳහා ගායනා කිරීමට සහ ගිටාර් වාදනය කිරීමට කැමතියි.                        </p>
+                        <p>
+                            <img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
+
+                            නුවන් තම වැඩිහිටි ජීවිතයෙන් වැඩි කොටසක් කැප කර ඇත්තේ සමානාත්මතාවය, යුක්තිය සහ සමස්ත පද්ධති වෙනසක් සඳහා සටන් කිරීම සඳහා ය.                        
+                        </p>
+
+                        <h5>
+                            
+
+                        බෝපගේට ඡන්දය ජනතාවගේ ජයග්‍රහණය!
+                        </h5>
+
+
+                    </div>
+                    <div class="row text-center justify-content-center mb-5 mb-lg-0 ">
+    <div class="col text-end ">
+
+        <img src="../assets/media/flaticon icons/PSA umb.png" class="umbIcon " width="64px" alt=""> 
+    </div>
+    <div class="col text-start">
+
+        <i class="fa-solid fa-x" style="font-size: 60px;"></i>             
+    </div>
+
+</div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- <div class="about-bg" style="background-image: url(../assets/media/web-img/psa\ english.jpg)">
+                       
+                    </div> -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide "><img src="../assets/media/web-img/Bope Smiling.png" alt=""></div>
+
+                            
+                        </div>
+
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -311,17 +387,17 @@
             </div>
 
             <div class="mx-5 row g-2 row-gap-0 text-end ">
-                <div class="col-12 col-lg-3 col-md-6 ">
+                <div class="col-12 col-lg-4 col-md-6 ">
 
-                    <p class="text-start"><img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">පෙරටුගාමී සමාජවාදි පක්ෂය‍</p>
+                    <p class="text-start"><img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon m-2" width="18px" alt="">පෙරටුගාමී සමාජවාදි පක්ෂය‍</p>
                 </div>
-                <div class="col-12 col-lg-3 col-md-6 ">
+                <div class="col-12 col-lg-4 col-md-6 ">
 
-                    <p class="text-start"><img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">නව ප්‍රජාතන්ත්‍රවාදී මාක්ස් ලෙනින්වාදී පක්ෂය‍</p>
+                    <p class="text-start"><img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon m-2" width="18px" alt="">නව ප්‍රජාතන්ත්‍රවාදී මාක්ස් ලෙනින්වාදී පක්ෂය‍</p>
                 </div>
-                <div class="col-12 col-lg-3 col-md-6 ">
+                <div class="col-12 col-lg-4 col-md-6 ">
 
-                    <p class="text-start"><img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">සමාජවාදී ජනතා සංසදය</p>
+                    <p class="text-start"><img src="../assets/media/flaticon icons/PSA red umb.png" class="umbIcon m-2" width="18px" alt="">සමාජවාදී ජනතා සංසදය</p>
                 </div>
 
             </div>

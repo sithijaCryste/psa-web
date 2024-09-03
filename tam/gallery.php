@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8" />
-    <title>Safs - HTML</title>
+    <title>People’s Struggle Alliance - Video Gallery</title>
 
     <!-- ====== Google Fonts ====== -->
+    <link rel="shortcut icon" href="../assets/media/icons/PSA logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" />
 
     <!-- ====== ALL CSS ====== -->
@@ -81,7 +82,7 @@
                         <div class="social-aria2">
                             <a target="_blank" href="https://www.facebook.com/peoplesstrugglealliance?mibextid=ZbWKwL" class="fb"><i class="fab fa-facebook-f"></i></a>
                             <a target="_blank" href="#" class="twit"><i class="fab fa-twitter"></i></a>
-                            <a target="_blank" href="#" class="ins"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="https://wa.me/94716487812" class="wtz"><i class="fa-brands fa-whatsapp"></i></a>
                             <a target="_blank" href="https://youtube.com/@peoplesstrugglealliance?si=Fj1v0Nxske7lMXXD" class="yt"><i class="fab fa-youtube"></i></a>
                             <a target="_blank" href="https://www.tiktok.com/@psa_lk?_t=8pL3TTMOKOX&_r=1" class="tik"><i class="fab fa-tiktok"></i></a>
 
@@ -129,6 +130,10 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Q & A</a>
+                        <div class="nav-hover d-none"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="supportus.php">SUPPORT US</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                 </ul>

@@ -78,6 +78,9 @@ for($y = 0; $y < $num; $y++ ){
                             <div class="col-12">
                             <i class="fa-solid fa-circle-dot"></i>  <a href="#" class="text-white text-decoration-none">Q & A </a>
                             </div>
+                            <div class="col-12">
+                            <i class="fa-solid fa-circle-dot"></i>  <a href="supportus.php" class="text-white text-decoration-none">Support Us</a>
+                            </div>
                         </div>
                     </div>
                     
@@ -88,7 +91,7 @@ for($y = 0; $y < $num; $y++ ){
                         <div class="copyright-text">
                             <p class="text-white">
                                 &copy; 2024
-                                <a href="https://www.begindot.com/">People’s Struggle Alliance</a>
+                                <a href="https://www.psalliance.lk/">People’s Struggle Alliance</a>
                             </p>
                         </div>
                     </div>
