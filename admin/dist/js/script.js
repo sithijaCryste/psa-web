@@ -271,6 +271,113 @@ function newsDelete(x){
 
     }
 }
+function addblog(){
+    var title = document.getElementById('blogTitle');
+    var content = tinymce.get('blogDescription').getContent();
+    var date = document.getElementById('blogDate');
+    var main = document.getElementById('blogimg');
+    var titleSi = document.getElementById('blogTitleSi');
+    var contentSi = tinymce.get('blogDescriptionSi').getContent();
+    var titleTa = document.getElementById('blogTitleTa');
+    var contentTa = tinymce.get('blogDescriptionTa').getContent();
+    console.log('Content Element:', content); // To check if element is being fetched
+console.log('Content Value:', content.value); // To check if it has a value
+    var form = new FormData();
+    form.append('title',title.value);
+    form.append('content',content);
+    form.append('titleTa',titleTa.value);
+    form.append('contentTa',contentTa);
+    form.append('titleSi',titleSi.value);
+    form.append('contentSi',contentSi);
+    form.append('date',date.value);
+    form.append('image',main.files[0]);
+   
+    var request = new XMLHttpRequest();
+
+    request.onreadystatechange = function(){
+        if(request.readyState == 4 & request.status == 200){
+            var response = request.responseText;
+            if (response == "success"){
+                alert(response);
+            }else{
+                alert(response);
+            }
+        }
+    }
+    request.open("POST", "blog-addProcess.php", true);
+    request.send(form);
+    
+}
+
+function blogDelete(x){
+    if (confirm("Are you sure deleting this?")) {
+        var f = new FormData();
+        f.append("n", x);
+
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 & request.status == 200) {
+                var response = request.responseText;
+                alert(response);
+                window.location.reload();
+
+            }
+        }
+
+        request.open("POST", "blog-deleteProcess.php", true);
+        request.send(f);
+
+    }
+}
+function updateblog(){
+    var id = document.getElementById('nId');
+    var title = document.getElementById('ublogTitle');
+    var content = tinymce.get('ublogDescription').getContent();
+    var date = document.getElementById('ublogDate');
+    var main = document.getElementById('ublogimg');
+    var titleSi = document.getElementById('ublogTitleSi');
+    var contentSi = tinymce.get('ublogDescriptionSi').getContent();
+    var titleTa = document.getElementById('ublogTitleTa');
+    var contentTa = tinymce.get('ublogDescriptionTa').getContent();
+    var loading = document.getElementById("loading");
+    var sendbtn = document.getElementById("updatebtn");
+  
+
+    var form = new FormData();
+    form.append('id',id.value);
+    form.append('title',title.value);
+    form.append('content',content);
+    form.append('titleTa',titleTa.value);
+    form.append('contentTa',contentTa);
+    form.append('titleSi',titleSi.value);
+    form.append('contentSi',contentSi);
+    form.append('date',date.value);
+    form.append('image',main.files[0]);
+
+    var request = new XMLHttpRequest();
+
+    request.onreadystatechange = function(){
+        if(request.readyState == 4 & request.status == 200){
+            loading.style.display = "none"; // Hide loading element
+            var response = request.responseText;
+            if (response == "success" || response == "update Success" || response == "update Successsuccess"){
+                alert("Update successfull");
+                window.location.reload();
+                sendbtn.style.display = "block"; 
+            }else{
+                alert(response);
+                sendbtn.style.display = "block"; 
+
+            }
+        }
+    }
+    loading.style.display = "block"; // Show loading element
+    sendbtn.style.display = "none"; // Hide sending element
+    request.open("POST", "blog-updateProcess.php", true);
+    request.send(form);
+    
+}
+
 
 function addNotice() {
     var noticeURL = document.getElementById('NoticeLink');

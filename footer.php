@@ -70,6 +70,9 @@ for($y = 0; $y < $num; $y++ ){
                             <i class="fa-solid fa-circle-dot"></i>  <a href="news.php" class="text-white text-decoration-none">News </a>
                             </div>
                             <div class="col-12">
+                            <i class="fa-solid fa-circle-dot"></i>  <a href="blog.php" class="text-white text-decoration-none">people’s Blog </a>
+                            </div>
+                            <div class="col-12">
                             <i class="fa-solid fa-circle-dot"></i>  <a href="gallery.php" class="text-white text-decoration-none">Gallery </a>
                             </div>
                             <div class="col-12">

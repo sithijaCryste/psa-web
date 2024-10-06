@@ -34,7 +34,7 @@ if (empty($name)) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'skaushalya308@gmail.com';
+        $mail->Username = 'psalliancelk@gmail.com';
         // Use an environment variable or a more secure method to store this
         $mail->Password = getenv('GMAIL_PASSWORD'); 
         $mail->SMTPSecure = 'ssl';
@@ -42,7 +42,7 @@ if (empty($name)) {
         
         $mail->setFrom($email, $name);
         $mail->addReplyTo($email, $name);
-        $mail->addAddress('skaushalya308@gmail.com');
+        $mail->addAddress('psalliancelk@gmail.com');
         $mail->isHTML(true);
         $mail->Subject = 'New Email - ' . $subject;
         

@@ -82,7 +82,30 @@
               
             </ul>
           </li>
-          
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                blogs
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./blogAll.php" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>blogs All</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./blog-add.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>blogs Add</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
           <li class="nav-item ">
             <a href="#" class="nav-link ">
               <i class="nav-icon far fa-image"></i>

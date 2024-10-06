@@ -4,6 +4,18 @@
 <html lang="en">
 
 <head>
+     <!-- Basic Meta Tags -->
+     <meta name="title" content="People's Struggle Alliance (PSA) - A Voice for the People">
+    <meta name="description" content="The People's Struggle Alliance (PSA) is a political movement dedicated to social justice, equality, and empowering the working class. Join us in our fight for a fair and just society.">
+    <meta name="keywords" content="People's Struggle Alliance, PSA, political left, socialism, communism, social justice, equality, working class, political movement, progressive politics, psallaince, people' struggle, struggle, sri lanka, ජන අරගල සන්ධානය, අරගල, අරගල පක්ෂය, ජනතා පක්ෂය ">
+    <meta name="author" content="People's Struggle Alliance">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.psalliance.lk">
+    <meta property="og:title" content="People's Struggle Alliance (PSA) - A Voice for the People">
+    <meta property="og:description" content="The People's Struggle Alliance (PSA) is a political movement dedicated to social justice, equality, and empowering the working class. Join us in our fight for a fair and justice society.">
+    <meta property="og:image" content="https://www.psallaince.lk/media/icons/PSA logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8" />
@@ -121,6 +133,10 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="news.php">NEWS</a>
+                        <div class="nav-hover d-none"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.php" id="blog-page">PEOPLE'S BLOG</a>
                         <div class="nav-hover d-none"></div>
                     </li>
                     <li class="nav-item">

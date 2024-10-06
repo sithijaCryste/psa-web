@@ -1005,6 +1005,9 @@ button:focus {
   margin-bottom: 30px;
   border-radius: 10px;
 }
+.single-blog p{
+  font-size: 16px;
+}
 .single-blog1 {
   background-color: #ffc800;
   padding: 15px;
@@ -2324,9 +2327,14 @@ body.loaded #preloader {
   height: 100%;
 }
 .blog-mainImg{
-    width: 100%;
+    justify-content: center;
+    width: 90%;
     height: 800px;
     overflow: hidden;
+}
+.blog-mainImg .img{
+  width: 100%;
+  height: 100%;
 }
 .blog-img{
     width: 100%;

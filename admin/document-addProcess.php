@@ -36,7 +36,7 @@ if (isset($_SESSION["a"])) {
                     mkdir($directory, 0777, true);
                 }
 
-                $file_name1 = $directory . uniqid() . $file_extension;
+                $file_name1 = $directory . $inputDocTitle . $file_extension;
 
                 // Move the first file to the server
                 if (move_uploaded_file($file["tmp_name"], $file_name1)) {
@@ -47,7 +47,7 @@ if (isset($_SESSION["a"])) {
                         $file2 = $_FILES["docFile2"];
 
                         if (in_array($file2["type"], $allowed_file_extensions)) {
-                            $file_name2 = $directory . uniqid() . $file_extension;
+                            $file_name2 = $directory .$inputDocTitle. $file_extension;
 
                             // Move the second file to the server
                             if (!move_uploaded_file($file2["tmp_name"], $file_name2)) {

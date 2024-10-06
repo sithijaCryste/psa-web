@@ -140,6 +140,10 @@ $url = $protocol . $host . $uri;
                         <a class="nav-link " href="news.php" id="news-page">NEWS</a>
                         <div class="nav-hover d-none"></div>
                     </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="blog.php" id="blog-page">PEOPLES'S BLOG</a>
+                        <div class="nav-hover d-none"></div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="gallery.php" id="gallery-page">GALLERY</a>
                         <div class="nav-hover d-none"></div>

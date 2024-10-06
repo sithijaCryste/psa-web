@@ -3,6 +3,18 @@
 <html lang="en">
 
 <head>
+<meta name="title" content="People's Struggle Alliance (PSA) - A Voice for the People">
+    <meta name="description" content="The People's Struggle Alliance (PSA) is a political movement dedicated to social justice, equality, and empowering the working class. Join us in our fight for a fair and just society.">
+    <meta name="keywords" content="People's Struggle Alliance, PSA, support struggle , political left, socialism, communism, social justice, equality, working class, political movement, progressive politics, psallaince, people' struggle, struggle, sri lanka, ජන අරගල සන්ධානය, අරගල, අරගල පක්ෂය, ජනතා පක්ෂය ">
+    <meta name="author" content="People's Struggle Alliance">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.psalliance.lk">
+    <meta property="og:title" content="People's Struggle Alliance (PSA) - A Voice for the People">
+    <meta property="og:description" content="The People's Struggle Alliance (PSA) is a political movement dedicated to social justice, equality, and empowering the working class. Join us in our fight for a fair and justice society.">
+    <meta property="og:image" content="https://www.psallaince.lk/media/icons/PSA logo.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8" />
@@ -123,6 +135,10 @@
                         <div class="nav-hover d-none"></div>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="blog.php" id="blog-page">PEOPLE'S BLOG</a>
+                        <div class="nav-hover d-none"></div>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="gallery.php">GALLERY</a>
                         <div class="nav-hover d-none"></div>
                     </li>
@@ -239,7 +255,7 @@
 
                             unimaginable violence and suffering, as encapsulated by a thirty year long civil
                             war ending in brutal genocide. To break the deadlock of divisive and zero-sum
-                            race-based politics, we propose a system of regions with self-governing powers
+                            ethnicity-based politics, we propose a system of regions with self-governing powers
                             which breaks away from the centralisation of power and where people regardless
                             of their ethnicity have control over their economy, environment and political
                             leadership.
@@ -278,11 +294,11 @@ many laws which violate people’s civil rights, criminalise entire communities 
 are anti-democratic. We propose to abolish these laws outright, instead of merely
 amending them as many governments have done historically and many parties
 propose to now.                        </p>
-                        <h2>6. A state where everyone is treated equally without priority to one religion, one race or one language</h2>
+                        <h2>6. A state where everyone is treated equally without priority to one religion, one ethnicity or one language</h2>
                         <p>
                             <img src="assets/media/flaticon icons/PSA red umb.png" class="umbIcon" width="18px" alt="">
 
-                            Religion has no place in politics, even if it stands for people's right to believe or not believe in a religion. Further, we believe in equality for all races, languages ​​and religions and therefore treat all religions and races equally without giving any race or religion a prominent place in the Constitution. We recognize Sinhala, Tamil and English as the official languages ​​of Sri Lanka and enable people to access education and government services in all three languages.                        </p>
+                            Religion has no place in politics, even if it stands for people's right to believe or not believe in a religion. Further, we believe in equality for all ethnicities, languages ​​and religions and therefore treat all religions and ethnicities equally without giving any ethnicity or religion a prominent place in the Constitution. We recognize Sinhala, Tamil and English as the official languages ​​of Sri Lanka and enable people to access education and government services in all three languages.                        </p>
                         <h2>7. Build a Sri Lanka which places wealth in the hands of the working people
 who earn it, and a society which safeguards the people’s fundamental rights
 to food, health care, education and housing.</h2>
@@ -290,7 +306,7 @@ to food, health care, education and housing.</h2>
 
                         
 
-<h5>If you believe in a Sri Lanka that is not for elites and where all people are free to live equally and enjoy a high standard of living regardless of race, gender, religion, caste and gender, then support us to spread our political message and support our campaign.</h5>
+<h5>If you believe in a Sri Lanka that is not for elites and where all people are free to live equally and enjoy a high standard of living regardless of ethnicity, gender, religion, caste and gender, then support us to spread our political message and support our campaign.</h5>
 
 
                     </div>

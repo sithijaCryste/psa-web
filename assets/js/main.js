@@ -427,6 +427,116 @@ function searchNews(x) {
     request.open("POST", "searchProcess.php", true);
     request.send(f);
   }
+  function searchBlog(x) {
+    var page = x;
+    var Blog = document.getElementById("sBlog");
+  
+    // alert(page);
+    // alert(Blog.value);
+  
+    var f = new FormData();
+    f.append("b", Blog.value);
+    f.append("pg", page);
+    f.append("type", "BlogSearch");
+  
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if ((request.readyState == 4) & (request.status == 200)) {
+        var response = request.responseText;
+        // alert(response);
+        document.getElementById("bid").innerHTML = response;
+      }
+    };
+  
+    request.open("POST", "searchProcess.php", true);
+    request.send(f);
+  }
+  function loadBlogSin(t) {
+    var page = t;
+    // alert(x);
+
+    var f = new FormData();
+    f.append("b", page);
+
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState == 4 & request.status == 200) {
+            var response = request.responseText;
+            // alert(response);
+            document.getElementById("sbid").innerHTML = response;
+        }
+    }
+
+    request.open("POST", "loadBlogSiProcess.php", true);
+    request.send(f);
+}
+  function searchBlogS(x) {
+    var page = x;
+    var Blog = document.getElementById("sBlog");
+  
+    // alert(page);
+    // alert(Blog.value);
+  
+    var f = new FormData();
+    f.append("b", Blog.value);
+    f.append("pg", page);
+    f.append("type", "BlogSearch");
+  
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if ((request.readyState == 4) & (request.status == 200)) {
+        var response = request.responseText;
+        // alert(response);
+        document.getElementById("sbid").innerHTML = response;
+      }
+    };
+  
+    request.open("POST", "searchProcessSi.php", true);
+    request.send(f);
+  }
+  function loadBlogTam(t) {
+    var page = t;
+    // alert(x);
+
+    var f = new FormData();
+    f.append("b", page);
+
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState == 4 & request.status == 200) {
+            var response = request.responseText;
+            // alert(response);
+            document.getElementById("tbid").innerHTML = response;
+        }
+    }
+
+    request.open("POST", "loadBlogTaProcess.php", true);
+    request.send(f);
+}
+  function searchBlogT(x) {
+    var page = x;
+    var Blog = document.getElementById("sBlog");
+  
+    // alert(page);
+    // alert(Blog.value);
+  
+    var f = new FormData();
+    f.append("b", Blog.value);
+    f.append("pg", page);
+    f.append("type", "BlogSearch");
+  
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if ((request.readyState == 4) & (request.status == 200)) {
+        var response = request.responseText;
+        // alert(response);
+        document.getElementById("tbid").innerHTML = response;
+      }
+    };
+  
+    request.open("POST", "searchProcessTa.php", true);
+    request.send(f);
+  }
   function searchDocTa(x) {
     var page = x;
     var doc = document.getElementById("Tadoc");
@@ -622,3 +732,61 @@ function searchNews(x) {
     r.send(form);
     
   }
+
+  function loadBlog(x) {
+    var page = x;
+    // alert(x);
+
+    var f = new FormData();
+    f.append("n", page);
+
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState == 4 & request.status == 200) {
+            var response = request.responseText;
+            // alert(response);
+            document.getElementById("bid").innerHTML = response;
+        }
+    }
+
+    request.open("POST", "loadBlogProcess.php", true);
+    request.send(f);
+}
+function loadBlogSi(s) {
+    var page = s;
+    // alert(x);
+
+    var f = new FormData();
+    f.append("n", page);
+
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState == 4 & request.status == 200) {
+            var response = request.responseText;
+            // alert(response);
+            document.getElementById("snid").innerHTML = response;
+        }
+    }
+
+    request.open("POST", "loadBlogSiProcess.php", true);
+    request.send(f);
+}
+function loadBlogTa(t) {
+    var page = t;
+    // alert(x);
+
+    var f = new FormData();
+    f.append("n", page);
+
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState == 4 & request.status == 200) {
+            var response = request.responseText;
+            // alert(response);
+            document.getElementById("tnid").innerHTML = response;
+        }
+    }
+
+    request.open("POST", "loadBlogTaProcess.php", true);
+    request.send(f);
+}

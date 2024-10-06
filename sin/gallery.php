@@ -120,6 +120,10 @@
                         <a class="nav-link " href="news.php">NEWS</a>
                         <div class="nav-hover d-none"></div>
                     </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="blog.php" id="blog-page">PEOPLES'S BLOG</a>
+                        <div class="nav-hover d-none"></div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="gallery.php">GALLERY</a>
                         <div class="nav-hover d-none"></div>
